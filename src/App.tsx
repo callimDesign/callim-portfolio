@@ -1,3 +1,5 @@
+import CmsJournalDetail from './pages/journals/CmsJournalDetail';
+import ContentPreview from './pages/ContentPreview';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -8,6 +10,8 @@ import Home from './pages/Home';
 import Journals_Detail from './pages/journals/familymonth';
 import GoyangPrintersDay from "./pages/journals/goyang-2025-printer's-day";
 import PopupMessageCard from './pages/journals/popupcard';
+import DongjaseokMuseum from './pages/journals/dongjaseok-museum';
+import DongjaseokMudsSelection from './pages/journals/dongjaseok-muds-selection';
 import ExhibitionBetweenPoemAndCup from './pages/journals/exhibitionBetweenPoemAndCup';
 import InnovationVoucherBrandSupport from './pages/journals/innovationVoucherBrandSupport';
 import Journals from './pages/journals/Journals';
@@ -29,6 +33,8 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/journals" element={<Journals />} />
+        <Route path="/content-preview" element={<ContentPreview />} />
+        <Route path="/journal/:slug" element={<CmsJournalDetail />} />
         <Route path="/product" element={<Product />} />
         <Route path="/branding" element={<Branding />} />
         <Route path="/package" element={<Package />} />
@@ -41,6 +47,8 @@ export default function App() {
         <Route path="/journal/family-month-envelope" element={<Journals_Detail />} />
         <Route path="/journal/goyang-2025-printer-day" element={<GoyangPrintersDay />} />
         <Route path="/journal/popup-message-card" element={<PopupMessageCard />} />
+        <Route path="/journal/dongjaseok-museum" element={<DongjaseokMuseum />} />
+        <Route path="/journal/dongjaseok-muds-selection" element={<DongjaseokMudsSelection />} />
         <Route path="/journal/exhibition-between-poem-and-cup" element={<ExhibitionBetweenPoemAndCup />} />
         <Route path="/journal/innovation-voucher-brand-support" element={<InnovationVoucherBrandSupport />} />
       </Routes>

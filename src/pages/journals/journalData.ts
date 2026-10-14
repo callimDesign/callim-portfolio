@@ -1,4 +1,7 @@
+import { cmsJournals } from '../../content/loadJournals';
 import journalListItem01 from "../../images/journal/family-month/journal01.jpg";
+import dongjaseokThumbnail from "../../images/journal/dongjaseok-museum/dongjaseok-museum-01.jpg";
+import dongjaseokSelectionThumbnail from "../../images/journal/dongjaseok-muds-selection/dongjaseok-muds-selection-01.jpg";
 import journalListItem02 from "../../images/journal/goyang-2025-printer's-day/goyang-2025-printer's-day (7).jpg";
 import journalListItem03 from "../../images/journal/pop-up-massage-card/pop-up-massage-card02.webp";
 import journalListItem04 from "../../images/journal/kyoha-library-exhibition/kyoha-library-exhibition01.webp";
@@ -16,6 +19,27 @@ export interface JournalEntry {
 }
 
 export const journalList: JournalEntry[] = [
+  ...cmsJournals,
+  {
+    id: "dongjaseok-museum",
+    date: "2026.09.02",
+    title: "국립중앙박물관 뮷즈 현장에서 만난 캘리엠 동자석 인형 키링",
+    detailTitle: "국립중앙박물관 뮷즈 현장에서 만난\n캘리엠 동자석 인형 키링",
+    desc: "2026 뮷즈 공모에 선정된 캘리엠의 동자석 인형 키링을 국립중앙박물관 상품관에서 만났습니다.",
+    detailDesc: "캘리엠의 동자석 인형키링이 국립중앙박물관에서 관람객들을 기다립니다.",
+    link: "/journal/dongjaseok-museum",
+    image: dongjaseokThumbnail
+  },
+  {
+    id: "dongjaseok-muds-selection",
+    date: "2026.07.21",
+    title: "2026년 뮷즈(MU:DS) 공모 선정! 동자석 인형 키링 개발 이야기",
+    detailTitle: "2026년 뮷즈(MU:DS) 공모 선정!\n동자석 인형 키링 개발 이야기",
+    desc: "제주 동자석의 수호 의미를 담은 캘리엠의 동자석 인형 키링이 2026년 뮷즈(MU:DS) 공모 상품으로 선정되었습니다.",
+    detailDesc: "제주 동자석의 의미를 오늘의 감성으로 담아낸 작은 수호자.\n캘리엠의 동자석 인형 키링이 2026년 뮷즈 공모에 선정되었습니다.",
+    link: "/journal/dongjaseok-muds-selection",
+    image: dongjaseokSelectionThumbnail
+  },
   {
     id: "popup-message-card",
     date: "2026.06.15",
@@ -29,8 +53,8 @@ export const journalList: JournalEntry[] = [
   {
     id: "family-month-envelope",
     date: "2026.04.23",
-    title: "가정의 달 기념 신상 봉투 출시",
-    detailTitle: "가정의 달 기념 신상 봉투 출시",
+    title: "가정의 달 기념 봉투 출시",
+    detailTitle: "가정의 달 기념 봉투 출시",
     desc: "5월, 가정의 달을 맞이하여 사랑을 전달할 수 있는 캘리엠의 봉투 4종을 제작하였습니다.",
     detailDesc: "5월 가정의 달을 맞이하여 사랑을 전달할 수 있는\n캘리엠의 봉투 4종을 제작하였습니다.",
     link: "/journal/family-month-envelope",
