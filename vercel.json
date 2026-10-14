@@ -1,0 +1,1 @@
+{"rewrites":[{"source":"/admin","destination":"/admin/index.html"},{"source":"/admin/","destination":"/admin/index.html"},{"source":"/journals","destination":"/index.html"},{"source":"/journal/:path*","destination":"/index.html"},{"source":"/portfolio/:path*","destination":"/index.html"},{"source":"/content-preview","destination":"/index.html"}]}

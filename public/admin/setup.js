@@ -1,10 +1,9 @@
 const localMode=['localhost','127.0.0.1','[::1]'].includes(location.hostname);
-if(!localMode){document.body.textContent='운영용 로그인은 아직 연결하지 않았습니다. 현재는 로컬 테스트만 가능합니다.';}
-else if(!window.CMS){document.body.textContent='글쓰기 도구를 불러오지 못했습니다. 인터넷 연결을 확인해 주세요.';}
+if(!window.CMS){document.body.textContent='글쓰기 도구를 불러오지 못했습니다. 인터넷 연결을 확인해 주세요.';}
 else {
- CMS.init({config:{load_config_file:false,locale:'ko',backend:{name:'git-gateway'},local_backend:{url:'http://127.0.0.1:8082/api/v1'},media_folder:'public/media',public_folder:'/media',collections:[{
+ CMS.init({config:{load_config_file:false,locale:'ko',backend:localMode?{name:'git-gateway'}:{name:'github',repo:'callimDesign/callim-portfolio',branch:'main',base_url:location.origin,auth_endpoint:'api/auth'},...(localMode?{local_backend:{url:'http://127.0.0.1:8082/api/v1'}}:{publish_mode:'editorial_workflow'}),media_folder:'public/media',public_folder:'/media',collections:[{
  name:'journals',label:'Journals · 저널',folder:'src/content/journals',create:true,format:'json',identifier_field:'title',slug:'{{fields.date}}-{{slug}}',
- description:'로컬 테스트: 저장은 이 컴퓨터 파일에만 반영됩니다. GitHub 전송·공개 배포는 하지 않습니다. 기존 글은 아직 이 양식으로 이전하지 않았습니다.',
+ description:'초안 저장 후 게시할 수 있습니다. 기존 글의 관리자 편집 이전은 준비 중입니다.',
  fields:[
  {label:'목록 제목',name:'title',widget:'string'},
  {label:'작성일',name:'date',widget:'datetime',format:'YYYY.MM.DD',date_format:'YYYY.MM.DD',time_format:false},
