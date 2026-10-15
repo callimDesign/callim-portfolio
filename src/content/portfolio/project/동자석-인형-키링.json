@@ -35,5 +35,6 @@
   "template": "portfolio-default",
   "image": "/media/목업이미지-3-.jpg",
   "year": 2026,
-  "category": "project"
+  "category": "project",
+  "publishedAt": "2026-10-15T10:38:33+09:00"
 }
