@@ -61,7 +61,7 @@ const HonestKFood = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center pb-16">
               <div className="space-y-12">
                 <span 
-                  className="text-[calc(10px+5pt)] md:text-xs font-bold tracking-[0.4em] uppercase text-brand-ink inline-block opacity-60"
+                  className="text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase text-brand-ink inline-block opacity-60"
                 >
                   {"Package Design Portfolio"}</span>
                 
@@ -80,25 +80,25 @@ const HonestKFood = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 border-t border-brand-ink/5 pt-12 pb-24">
             <div>
               <div className="space-y-2">
-                <span className="text-[calc(10px+5pt)] font-bold tracking-widest opacity-30 uppercase">Client</span>
+                <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Client</span>
                 <p className="text-sm md:text-base font-sans">{content.client}</p>
               </div>
             </div>
             <div>
               <div className="space-y-2">
-                <span className="text-[calc(10px+5pt)] font-bold tracking-widest opacity-30 uppercase">Category</span>
+                <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Category</span>
                 <p className="text-sm md:text-base font-sans">{content.detailCategory}</p>
               </div>
             </div>
             <div>
               <div className="space-y-2">
-                <span className="text-[calc(10px+5pt)] font-bold tracking-widest opacity-30 uppercase">Scope</span>
+                <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Scope</span>
                 <p className="text-sm md:text-base font-sans whitespace-pre-line"><Lines text={content.scope}/></p>
               </div>
             </div>
             <div>
               <div className="space-y-2">
-                <span className="text-[calc(10px+5pt)] font-bold tracking-widest opacity-30 uppercase">Keywords</span>
+                <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Keywords</span>
                 <p className="text-sm md:text-base font-sans leading-relaxed"><Lines text={content.keywords}/></p>
               </div>
             </div>
@@ -114,7 +114,7 @@ const HonestKFood = () => {
         <Reveal>
           <div className="space-y-12">
             <div className="space-y-4">
-              <span className="text-[calc(10px+5pt)] font-bold tracking-[0.4em] uppercase opacity-30">{"Final Outcome"}</span>
+              <span className="text-[10px] font-bold tracking-[0.4em] uppercase opacity-30">{"Final Outcome"}</span>
               <h2 className="text-3xl md:text-5xl font-maruburi leading-tight"><Lines text={content.conclusionTitle}/></h2>
             </div>
             <p className="text-base md:text-lg font-sans font-light leading-relaxed max-w-2xl mx-auto opacity-70"><Lines text={content.closingText}/></p>

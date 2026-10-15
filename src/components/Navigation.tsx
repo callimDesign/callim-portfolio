@@ -30,7 +30,7 @@ export const Navigation = ({ transparent = false }: { transparent?: boolean }) =
         </Link>
         
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-12 text-[calc(10px+5pt)] font-bold tracking-[0.2em] uppercase opacity-40">
+        <div className="hidden md:flex gap-12 text-[10px] font-bold tracking-[0.2em] uppercase opacity-40">
           {menuItems.map((item) => (
             item.isLink ? (
               <Link key={item.name} to={item.href} className="hover:opacity-100 transition-opacity">

@@ -123,19 +123,19 @@ const Hero = () => {
       <div className="relative z-10 text-center px-6 max-w-[1500px] mx-auto pointer-events-none">
         <div className="pointer-events-auto">
           <Reveal>
-            <h1 className="w-full md:w-[1500px] mx-auto text-[calc(40px+5pt)] md:text-[calc(100px+5pt)] font-serif italic mb-8 text-white leading-tight drop-shadow-[0_4px_14px_rgba(0,0,0,0.75)]">
+            <h1 className="w-full md:w-[1500px] mx-auto text-[40px] md:text-[100px] font-serif italic mb-8 text-white leading-tight drop-shadow-[0_4px_14px_rgba(0,0,0,0.75)]">
               Little Things, <br className="md:hidden" /> More Precious
             </h1>
           </Reveal>
           <Reveal delay={0.2}>
-            <h2 className="text-[calc(14px+5pt)] md:text-[calc(30px+5pt)] font-bold mb-6 md:mb-10 serif-kor tracking-widest text-white/100 drop-shadow-[0_4px_14px_rgba(0,0,0,0.75)]">
+            <h2 className="text-[14px] md:text-[30px] font-bold mb-6 md:mb-10 serif-kor tracking-widest text-white/100 drop-shadow-[0_4px_14px_rgba(0,0,0,0.75)]">
               아날로그의 온기로 <br className="md:hidden" />일상의 가치를 디자인합니다
             </h2>
           </Reveal>
           <div className="hidden md:block">
             <Reveal delay={0.4}>
               <div className="w-40 h-[2px] bg-white/40 mx-auto mb-10" />
-              <p className="text-[calc(19px+5pt)] text-white/100 max-w-xl mx-auto leading-relaxed tracking-[0.1em] uppercase font-bold drop-shadow-[0_4px_14px_rgba(0,0,0,0.75)]">
+              <p className="text-[19px] text-white/100 max-w-xl mx-auto leading-relaxed tracking-[0.1em] uppercase font-bold drop-shadow-[0_4px_14px_rgba(0,0,0,0.75)]">
                 소소한 일상의 기록부터 기업의 가치를 담는 브랜딩까지, <br />
                 캘리엠이 전하는 따스한 시각 언어
               </p>
@@ -151,7 +151,7 @@ const About = () => (
   <Section id="about" className="pt-10 pb-2 md:!pt-[150px] md:!pb-[150px]">
     <Reveal>
       <div className="mb-5 md:mb-8">
-        <h2 className="relative inline-block text-[calc(16px+5pt)] font-sans font-medium uppercase tracking-tight md:pt-5 md:text-8xl md:font-serif md:tracking-tighter md:text-brand-ink md:opacity-10">
+        <h2 className="relative inline-block text-[16px] font-sans font-medium uppercase tracking-tight md:pt-5 md:text-8xl md:font-serif md:tracking-tighter md:text-brand-ink md:opacity-10">
           ABOUT
           <span className="absolute -bottom-2 right-0 h-[2px] w-screen bg-brand-ink/20 md:hidden" />
         </h2>
@@ -225,7 +225,7 @@ const BrandCore = () => (
               <Reveal delay={idx * 0.1}>
                 <div className="space-y-3 md:space-y-6 text-center">
                   <span
-                    className={`text-[calc(10px+5pt)] uppercase tracking-[0.3em] font-bold ${
+                    className={`text-[10px] uppercase tracking-[0.3em] font-bold ${
                       idx === 1 ? 'text-brand-ink/40 md:text-white/60' : 'text-white/60'
                     }`}
                   >
@@ -301,7 +301,7 @@ const Portfolio = () => {
     <Section id="portfolio" className="space-y-6 md:space-y-6 pt-10 md:!pt-[100px] !pb-0">
       <Reveal>
       <div className="mb-[30px] md:mb-[8px]">
-        <h2 className="relative inline-block text-[calc(16px+5pt)] font-sans font-medium uppercase tracking-tight md:pt-5 md:text-8xl md:font-serif md:tracking-tighter md:text-brand-ink md:opacity-10">
+        <h2 className="relative inline-block text-[16px] font-sans font-medium uppercase tracking-tight md:pt-5 md:text-8xl md:font-serif md:tracking-tighter md:text-brand-ink md:opacity-10">
           PORTFOLIO
           <span className="absolute -bottom-2 right-0 h-[2px] w-screen bg-brand-ink/20 md:hidden" />
         </h2>
@@ -348,7 +348,7 @@ const Portfolio = () => {
               {/* READ MORE */}
               <span 
                 className={cn(
-                   "absolute z-10 inline-flex items-center gap-2 text-[calc(9px+5pt)] font-bold uppercase tracking-[0.15em] border-b pb-1 transition-all duration-300",
+                   "absolute z-10 inline-flex items-center gap-2 text-[9px] font-bold uppercase tracking-[0.15em] border-b pb-1 transition-all duration-300",
                   cat.id === "product_featured"
                     ? "right-4 md:right-auto md:left-[490px] bottom-[16px] text-brand-ink/80 border-brand-ink/20 hover:gap-5"
                     : "right-4 md:right-auto md:left-[220px] bottom-[16px] text-brand-ink/80 border-brand-ink/20 hover:gap-5"
@@ -371,11 +371,11 @@ const BrandJournal = () => (
     {/* Mobile Title */}
     <div className="md:hidden mb-5">
       <Link to="/journals" className="flex justify-between items-baseline">
-        <h2 className="relative inline-block text-[calc(16px+5pt)] font-sans font-medium uppercase tracking-tight text-brand-ink/90">
+        <h2 className="relative inline-block text-[16px] font-sans font-medium uppercase tracking-tight text-brand-ink/90">
           JOURNALS
           <span className="absolute -bottom-2 right-0 h-[2px] w-screen bg-brand-ink/20" />
         </h2>
-        <span className="text-[calc(10px+5pt)] opacity-40 font-bold tracking-[0.3em] uppercase">VIEW ALL</span>
+        <span className="text-[10px] opacity-40 font-bold tracking-[0.3em] uppercase">VIEW ALL</span>
       </Link>
     </div>
 
@@ -386,7 +386,7 @@ const BrandJournal = () => (
           <h2 className="relative inline-block text-3xl font-sans font-medium uppercase tracking-tight text-brand-ink/90 md:pt-5 md:text-8xl md:font-serif md:tracking-tighter md:text-brand-ink md:opacity-10 group-hover:text-brand-accent transition-all">
             JOURNALS
           </h2>
-          <span className="text-[calc(10px+5pt)] opacity-40 font-bold tracking-[0.3em] uppercase group-hover:opacity-60 transition-opacity">
+          <span className="text-[10px] opacity-40 font-bold tracking-[0.3em] uppercase group-hover:opacity-60 transition-opacity">
             VIEW ALL
           </span>
         </Link>
@@ -424,17 +424,17 @@ const BrandJournal = () => (
                 item.link ? "cursor-pointer" : "cursor-default"
               )}
             >
-              <span className="text-[calc(10px+5pt)] font-bold tracking-widest opacity-40 mb-2 md:mb-3 block">{item.date}</span>
+              <span className="text-[10px] font-bold tracking-widest opacity-40 mb-2 md:mb-3 block">{item.date}</span>
               <h3 className={cn(
                 "serif-kor mb-3 md:mb-4 duration-300 group-hover:text-[#7A5C50]/70 transition-colors leading-snug",
-                idx === 0 ? "text-base md:text-xl" : "text-[calc(15px+5pt)] md:text-xl"
+                idx === 0 ? "text-base md:text-xl" : "text-[15px] md:text-xl"
               )}>
                 {item.title}
               </h3>
               <p className="hidden md:block text-sm opacity-60 leading-relaxed font-light">
                 {item.desc}
               </p>
-              <div className="mt-4 hidden md:flex items-center gap-2 md:group-hover:gap-5 text-[calc(10px+5pt)] font-bold uppercase tracking-widest opacity-60 translate-x-0 md:opacity-0 md:-translate-x-4 md:group-hover:opacity-60 md:group-hover:translate-x-0 transition-all ease-out">
+              <div className="mt-4 hidden md:flex items-center gap-2 md:group-hover:gap-5 text-[10px] font-bold uppercase tracking-widest opacity-60 translate-x-0 md:opacity-0 md:-translate-x-4 md:group-hover:opacity-60 md:group-hover:translate-x-0 transition-all ease-out">
                 READ MORE <span className="text-base leading-none">→</span>
               </div>
             </Link>
@@ -450,7 +450,7 @@ const Contact = () => (
     <div className="bg-brand-accent/5 rounded-[3rem] p-12 md:p-24 text-center space-y-12">
       <Reveal>
         <span className="italic-serif text-brand-accent text-lg">Connect with us</span>
-        <h2 className="text-[calc(17px+5pt)] md:text-[calc(28px+5pt)] serif-kor mt-4">
+        <h2 className="text-[17px] md:text-[28px] serif-kor mt-4">
           당신의 소중한 가치에 <br /> 캘리엠의 온기를 더해보세요
         </h2>
       </Reveal>

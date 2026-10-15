@@ -170,9 +170,9 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
       <section className="pt-[92px] md:pt-40 pb-4 md:pb-8 px-6 md:px-12 lg:px-24 max-w-[2400px] mx-auto">
         <Reveal>
           <div className="space-y-1.5 md:space-y-4">
-            <span className="text-[calc(11px+5pt)] font-bold tracking-[0.3em] uppercase opacity-40">Shop Our Collections</span>
+            <span className="text-[11px] font-bold tracking-[0.3em] uppercase opacity-40">Shop Our Collections</span>
             <h1 className="text-4xl md:text-5xl font-serif tracking-tight leading-tight text-brand-ink/90">Products</h1>
-            <p className="text-[calc(14px+5pt)] md:text-[calc(18px+5pt)] opacity-60 serif-kor leading-relaxed max-w-2xl">
+            <p className="text-[14px] md:text-[18px] opacity-60 serif-kor leading-relaxed max-w-2xl">
               캘리그라피의 온기와 고유한 디자인이 담긴 <br />
               캘리엠의 제품들을 만나보세요.
             </p>
@@ -190,7 +190,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
                   className={cn(
-                    "text-[calc(11px+5pt)] font-bold tracking-[0.1em] whitespace-nowrap transition-all pb-1 border-b-2 cursor-pointer",
+                    "text-[11px] font-bold tracking-[0.1em] whitespace-nowrap transition-all pb-1 border-b-2 cursor-pointer",
                     activeCategory === cat.id 
                       ? "text-brand-ink border-brand-accent opacity-100" 
                       : "text-brand-ink/40 border-transparent hover:opacity-100"
@@ -226,7 +226,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                 {/* Section 1: Keywords and Search (Col Span 2) */}
                 <div className="lg:col-span-2 space-y-5">
                   <div className="flex justify-between items-center">
-                    <span className="text-[calc(10px+5pt)] font-bold tracking-[0.18em] opacity-40 uppercase">키워드 및 검색 (Keywords & Search)</span>
+                    <span className="text-[10px] font-bold tracking-[0.18em] opacity-40 uppercase">키워드 및 검색 (Keywords & Search)</span>
                   </div>
                   
                   {/* Search Bar Container with removable tag pills inside */}
@@ -238,7 +238,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                       {tempKeywords.map((kw) => (
                         <span 
                           key={kw} 
-                          className="inline-flex items-center gap-1 bg-brand-accent/10 text-brand-accent text-[calc(11px+5pt)] font-medium px-2 py-0.5 rounded-sm select-none"
+                          className="inline-flex items-center gap-1 bg-brand-accent/10 text-brand-accent text-[11px] font-medium px-2 py-0.5 rounded-sm select-none"
                         >
                           #{kw}
                           <button 
@@ -258,7 +258,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         placeholder={tempKeywords.length === 0 ? "이름이나 설명 검색..." : "추가 텍스트 검색..."}
-                        className="flex-1 min-w-[124px] bg-transparent text-[calc(13px+5pt)] text-brand-ink placeholder:text-brand-ink/30 focus:outline-none py-1 h-[26px]"
+                        className="flex-1 min-w-[124px] bg-transparent text-[13px] text-brand-ink placeholder:text-brand-ink/30 focus:outline-none py-1 h-[26px]"
                       />
                       
                       {searchQuery && (
@@ -279,7 +279,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                         setCommittedSearchQuery(searchQuery);
                         setIsFilterOpen(false);
                       }}
-                      className="px-5 py-2 bg-brand-accent hover:opacity-90 text-white text-[calc(11px+5pt)] font-bold tracking-widest transition-all rounded-sm cursor-pointer whitespace-nowrap"
+                      className="px-5 py-2 bg-brand-accent hover:opacity-90 text-white text-[11px] font-bold tracking-widest transition-all rounded-sm cursor-pointer whitespace-nowrap"
                     >
                       최종 검색
                     </button>
@@ -301,7 +301,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                               }
                             }}
                             className={cn(
-                              "px-2.5 py-1 text-[calc(11px+5pt)] font-medium transition-colors border rounded-sm cursor-pointer",
+                              "px-2.5 py-1 text-[11px] font-medium transition-colors border rounded-sm cursor-pointer",
                               isSelected
                                 ? "bg-brand-accent border-brand-accent text-white"
                                 : "bg-transparent border-brand-ink/15 text-brand-ink/70 hover:border-brand-accent hover:text-brand-accent"
@@ -317,7 +317,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                     {filteredKeywords.length > 10 && (
                       <button
                         onClick={() => setIsAllKeywordsExpanded(!isAllKeywordsExpanded)}
-                        className="text-[calc(11px+5pt)] font-bold text-brand-accent hover:opacity-80 transition-opacity uppercase tracking-wider py-1 cursor-pointer"
+                        className="text-[11px] font-bold text-brand-accent hover:opacity-80 transition-opacity uppercase tracking-wider py-1 cursor-pointer"
                       >
                         {isAllKeywordsExpanded ? "▲ 접기 (Show Less)" : `▼ 키워드 더보기 (Show More) (+${filteredKeywords.length - 10})`}
                       </button>
@@ -329,12 +329,12 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                 <div className="lg:border-l lg:border-brand-ink/5 lg:pl-10 space-y-6 flex flex-col justify-between">
                   {/* Publication Year */}
                   <div className="space-y-2">
-                    <span className="block text-[calc(10px+5pt)] font-bold tracking-[0.18em] opacity-40 uppercase">출시 연도 (Publication Year)</span>
+                    <span className="block text-[10px] font-bold tracking-[0.18em] opacity-40 uppercase">출시 연도 (Publication Year)</span>
                     <div className="flex items-center gap-2">
                       <select 
                         value={yearRange.min} 
                         onChange={(e) => setYearRange({ ...yearRange, min: Number(e.target.value) })}
-                        className="bg-transparent border border-brand-ink/15 rounded-sm px-2.5 py-1.5 text-[calc(12px+5pt)] font-medium text-brand-ink/80 focus:outline-none focus:border-brand-accent transition-colors cursor-pointer"
+                        className="bg-transparent border border-brand-ink/15 rounded-sm px-2.5 py-1.5 text-[12px] font-medium text-brand-ink/80 focus:outline-none focus:border-brand-accent transition-colors cursor-pointer"
                       >
                         {Array.from({ length: 11 }, (_, i) => 2016 + i).map(y => (
                           <option key={y} value={y}>{y}년</option>
@@ -344,7 +344,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                       <select 
                         value={yearRange.max} 
                         onChange={(e) => setYearRange({ ...yearRange, max: Number(e.target.value) })}
-                        className="bg-transparent border border-brand-ink/15 rounded-sm px-2.5 py-1.5 text-[calc(12px+5pt)] font-medium text-brand-ink/80 focus:outline-none focus:border-brand-accent transition-colors cursor-pointer"
+                        className="bg-transparent border border-brand-ink/15 rounded-sm px-2.5 py-1.5 text-[12px] font-medium text-brand-ink/80 focus:outline-none focus:border-brand-accent transition-colors cursor-pointer"
                       >
                         {Array.from({ length: 11 }, (_, i) => 2016 + i).map(y => (
                           <option key={y} value={y}>{y}년</option>
@@ -355,12 +355,12 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
 
                   {/* Sort Order */}
                   <div className="space-y-2">
-                    <span className="block text-[calc(10px+5pt)] font-bold tracking-[0.18em] opacity-40 uppercase">정렬 방식 (Sort Order)</span>
+                    <span className="block text-[10px] font-bold tracking-[0.18em] opacity-40 uppercase">정렬 방식 (Sort Order)</span>
                     <div className="flex gap-4">
                       <button
                         onClick={() => setSortBy('latest')}
                         className={cn(
-                          "text-[calc(12px+5pt)] font-medium tracking-wide pb-1 transition-all border-b-2 cursor-pointer",
+                          "text-[12px] font-medium tracking-wide pb-1 transition-all border-b-2 cursor-pointer",
                           sortBy === 'latest' ? "border-brand-accent text-brand-ink font-semibold" : "border-transparent text-brand-ink/40 hover:text-brand-ink"
                         )}
                       >
@@ -369,7 +369,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                       <button
                         onClick={() => setSortBy('oldest')}
                         className={cn(
-                          "text-[calc(12px+5pt)] font-medium tracking-wide pb-1 transition-all border-b-2 cursor-pointer",
+                          "text-[12px] font-medium tracking-wide pb-1 transition-all border-b-2 cursor-pointer",
                           sortBy === 'oldest' ? "border-brand-accent text-brand-ink font-semibold" : "border-transparent text-brand-ink/40 hover:text-brand-ink"
                         )}
                       >
@@ -383,7 +383,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                     <div className="pt-2">
                       <button
                         onClick={handleResetFilters}
-                        className="inline-flex items-center gap-1.5 text-[calc(11px+5pt)] font-bold text-brand-ink/60 hover:text-brand-accent transition-colors py-1 uppercase tracking-wider cursor-pointer font-sans"
+                        className="inline-flex items-center gap-1.5 text-[11px] font-bold text-brand-ink/60 hover:text-brand-accent transition-colors py-1 uppercase tracking-wider cursor-pointer font-sans"
                       >
                         <RotateCcw className="w-3.5 h-3.5" />
                         필터 초기화 (Reset Filters)
@@ -399,7 +399,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
      
       {(committedKeywords.length > 0 || committedSearchQuery) && (
         <div className="max-w-[1800px] mx-auto px-6 md:px-12 lg:px-24 pt-4 flex flex-wrap gap-2 text-left items-center bg-brand-bg">
-          <span className="text-[calc(11px+5pt)] font-bold tracking-[0.1em] text-brand-ink/40 mr-1 uppercase">선택된 필터:</span>
+          <span className="text-[11px] font-bold tracking-[0.1em] text-brand-ink/40 mr-1 uppercase">선택된 필터:</span>
           {committedKeywords.map((kw) => (
             <button
               key={kw}
@@ -409,7 +409,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                 setCommittedKeywords(updated);
                 setTempKeywords(updated);
               }}
-              className="inline-flex items-center gap-1.5 border border-brand-accent/30 bg-brand-accent/5 px-2.5 py-1 text-[calc(11px+5pt)] font-medium text-brand-accent hover:bg-brand-accent hover:text-white transition-all rounded-sm cursor-pointer"
+              className="inline-flex items-center gap-1.5 border border-brand-accent/30 bg-brand-accent/5 px-2.5 py-1 text-[11px] font-medium text-brand-accent hover:bg-brand-accent hover:text-white transition-all rounded-sm cursor-pointer"
             >
               #{kw}
               <X className="w-3 h-3" />
@@ -422,7 +422,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                 setCommittedSearchQuery('');
                 setSearchQuery('');
               }}
-              className="inline-flex items-center gap-1.5 border border-brand-ink/15 bg-brand-ink/[0.02] px-2.5 py-1 text-[calc(11px+5pt)] font-medium text-brand-ink/70 hover:border-brand-accent hover:text-brand-accent transition-all rounded-sm cursor-pointer"
+              className="inline-flex items-center gap-1.5 border border-brand-ink/15 bg-brand-ink/[0.02] px-2.5 py-1 text-[11px] font-medium text-brand-ink/70 hover:border-brand-accent hover:text-brand-accent transition-all rounded-sm cursor-pointer"
             >
               검색어: "{committedSearchQuery}"
               <X className="w-3 h-3" />
@@ -431,7 +431,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
 
           <button
             onClick={handleResetFilters}
-            className="text-[calc(11px+5pt)] font-bold text-brand-ink/40 hover:text-brand-accent ml-2 underline underline-offset-2 cursor-pointer transition-colors"
+            className="text-[11px] font-bold text-brand-ink/40 hover:text-brand-accent ml-2 underline underline-offset-2 cursor-pointer transition-colors"
           >
             모두 비우기
           </button>
@@ -456,26 +456,26 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                 {/* Mobile Layout (2 Cols) */}
                 <div className="lg:hidden space-y-1 text-left">
                   <p 
-                    className="text-[calc(14px+5pt)] font-medium leading-snug"
+                    className="text-[14px] font-medium leading-snug"
                     style={{ color: categoryColors[product.category] }}
                   >
                     #{categories.find(c => c.id === product.category)?.label}
                   </p>
-                  <h3 className="text-[calc(14px+5pt)] font-sans font-semibold leading-snug text-brand-ink">
+                  <h3 className="text-[14px] font-sans font-semibold leading-snug text-brand-ink">
                     {product.title}
                   </h3>
                 </div>
 
                 {/* PC Layout (4 Cols) */}
                 <div className="hidden lg:flex items-baseline justify-between gap-4 text-left">
-                  <h3 className="text-[calc(23px+5pt)] font-sans font-semibold leading-snug text-brand-ink">
+                  <h3 className="text-[23px] font-sans font-semibold leading-snug text-brand-ink">
                     {product.title}
                   </h3>
                   <div className="shrink-0 font-normal leading-snug text-right text-brand-ink">
-                    <span style={{ color: categoryColors[product.category] }} className="text-[calc(14px+5pt)]">
+                    <span style={{ color: categoryColors[product.category] }} className="text-[14px]">
                       {categories.find(c => c.id === product.category)?.label}
                     </span>
-                    <span className="text-[calc(12px+5pt)]"> · {product.year}</span>
+                    <span className="text-[12px]"> · {product.year}</span>
                   </div>
                 </div>
               </div>
@@ -533,21 +533,21 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                 <div className="w-full md:w-[50%] p-6 md:p-10 flex flex-col justify-between md:h-full overflow-y-auto">
                   <div className="space-y-6 md:space-y-8">
                     <div className="space-y-2 text-left">
-                      <span className="text-[calc(10px+5pt)] font-bold tracking-[0.2em] opacity-40 uppercase">
+                      <span className="text-[10px] font-bold tracking-[0.2em] opacity-40 uppercase">
                         {activeCategoryLabel} · {selectedProduct.year}
                       </span>
-                      <h2 className="text-2xl md:text-[calc(28px+5pt)] font-serif tracking-tight leading-tight text-brand-ink/90 serif-kor break-keep">
+                      <h2 className="text-2xl md:text-[28px] font-serif tracking-tight leading-tight text-brand-ink/90 serif-kor break-keep">
                         {selectedProduct.title}
                       </h2>
                     </div>
 
-                    <p className="text-[calc(14px+5pt)] leading-relaxed text-brand-ink/70 serif-kor break-keep whitespace-pre-line text-left">
+                    <p className="text-[14px] leading-relaxed text-brand-ink/70 serif-kor break-keep whitespace-pre-line text-left">
                       {selectedProduct.desc}
                     </p>
 
                     {/* Keywords */}
                     <div className="space-y-2 text-left">
-                       <span className="block text-[calc(9px+5pt)] font-bold tracking-[0.18em] uppercase text-brand-ink/35">
+                       <span className="block text-[9px] font-bold tracking-[0.18em] uppercase text-brand-ink/35">
                          Keywords
                        </span>
                        <div className="flex flex-wrap gap-2">
@@ -561,7 +561,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                                setActiveCategory('all');
                                setSelectedProduct(null);
                              }}
-                             className="border border-brand-ink/15 px-3 py-1.5 text-[calc(12px+5pt)] font-medium text-brand-ink/70 hover:border-brand-accent hover:text-brand-accent transition-colors"
+                             className="border border-brand-ink/15 px-3 py-1.5 text-[12px] font-medium text-brand-ink/70 hover:border-brand-accent hover:text-brand-accent transition-colors"
                            >
                              #{keyword}
                            </button>
@@ -571,8 +571,8 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
 
                     {/* Size Box */}
                     <div className="border border-brand-ink/10 px-4 py-3 space-y-1 text-left">
-                       <span className="block text-[calc(9px+5pt)] font-bold tracking-[0.15em] opacity-40 uppercase">SIZE</span>
-                       <span className="block text-[calc(13px+5pt)] serif-kor text-brand-ink/80">{selectedProduct.size ?? TEMP_PRODUCT_DETAIL.size}</span>
+                       <span className="block text-[9px] font-bold tracking-[0.15em] opacity-40 uppercase">SIZE</span>
+                       <span className="block text-[13px] serif-kor text-brand-ink/80">{selectedProduct.size ?? TEMP_PRODUCT_DETAIL.size}</span>
                     </div>
                   </div>
 
@@ -581,7 +581,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                       href={selectedProduct.storeUrl ?? TEMP_PRODUCT_DETAIL.storeUrl} 
                       target="_blank" 
                       rel="noreferrer"
-                      className="flex items-center justify-center w-full border border-brand-ink/20 py-3.5 text-[calc(11px+5pt)] font-bold tracking-[0.2em] uppercase hover:border-brand-accent hover:text-brand-accent hover:bg-brand-ink/[0.01] transition-all duration-300"
+                      className="flex items-center justify-center w-full border border-brand-ink/20 py-3.5 text-[11px] font-bold tracking-[0.2em] uppercase hover:border-brand-accent hover:text-brand-accent hover:bg-brand-ink/[0.01] transition-all duration-300"
                     >
                       네이버 스마트스토어 바로가기
                     </a>

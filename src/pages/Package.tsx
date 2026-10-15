@@ -75,9 +75,9 @@ const Package = () => {
       <section className="pt-[92px] md:pt-40 pb-4 md:pb-8 px-6 md:px-12 lg:px-24 max-w-[2400px] mx-auto">
         <Reveal>
           <div className="space-y-1.5 md:space-y-4">
-            <span className="text-[calc(11px+5pt)] font-bold tracking-[0.3em] uppercase opacity-40">Portfolio</span>
-            <h1 className="text-[calc(30px+5pt)] md:text-[calc(53px+5pt)] font-serif tracking-tight leading-tight text-brand-ink/90">PACKAGE</h1>
-            <p className="text-[calc(14px+5pt)] md:text-[calc(18px+5pt)] opacity-60 serif-kor leading-relaxed max-w-2xl">
+            <span className="text-[11px] font-bold tracking-[0.3em] uppercase opacity-40">Portfolio</span>
+            <h1 className="text-[30px] md:text-[53px] font-serif tracking-tight leading-tight text-brand-ink/90">PACKAGE</h1>
+            <p className="text-[14px] md:text-[18px] opacity-60 serif-kor leading-relaxed max-w-2xl">
               제품의 가치를 손끝으로 전하는 <br />
               감도 깊은 패키지 솔루션을 제안합니다.
             </p>
@@ -103,7 +103,7 @@ const Package = () => {
                   e.currentTarget.src = FEATURED_FALLBACK;
                 }}
               />
-              <div className="hidden md:block absolute top-4 left-4 md:top-8 md:left-8 bg-brand-accent/90 text-white text-[calc(9px+5pt)] md:text-[calc(10px+5pt)] font-bold tracking-[0.2em] px-3 md:px-4 py-1.5 uppercase">
+              <div className="hidden md:block absolute top-4 left-4 md:top-8 md:left-8 bg-brand-accent/90 text-white text-[9px] md:text-[10px] font-bold tracking-[0.2em] px-3 md:px-4 py-1.5 uppercase">
                 NEWEST CASE
               </div>
             </div>
@@ -114,15 +114,15 @@ const Package = () => {
               onClick={() => featuredProject.link && navigate(featuredProject.link)}
             >
               <div className="space-y-2 md:space-y-4">
-                <span className="text-[calc(10px+5pt)] md:text-[calc(11px+5pt)] font-bold tracking-[0.2em] opacity-40 uppercase">Newest Case · {featuredProject.year}</span>
-                <h2 className="text-[calc(24px+5pt)] md:text-[calc(44px+5pt)] lg:text-[calc(30px+5pt)] serif-kor leading-tight whitespace-pre-line break-keep">{featuredProject.title}</h2>
-                <p className="text-[calc(14px+5pt)] md:text-[calc(18px+5pt)] serif-kor opacity-60 leading-relaxed w-full max-w-full break-keep">
+                <span className="text-[10px] md:text-[11px] font-bold tracking-[0.2em] opacity-40 uppercase">Newest Case · {featuredProject.year}</span>
+                <h2 className="text-[24px] md:text-[44px] lg:text-[30px] serif-kor leading-tight whitespace-pre-line break-keep">{featuredProject.title}</h2>
+                <p className="text-[14px] md:text-[18px] serif-kor opacity-60 leading-relaxed w-full max-w-full break-keep">
                   {featuredProject.desc}
                 </p>
               </div>
               <div className="pt-0 md:pt-2">
                 <button 
-                  className="inline-flex items-center gap-2 md:gap-3 text-[calc(10px+5pt)] md:text-[calc(11px+5pt)] font-bold tracking-[0.25em] md:tracking-[0.3em] uppercase border-b border-brand-ink/20 pb-1 hover:border-brand-accent hover:text-brand-accent transition-all group"
+                  className="inline-flex items-center gap-2 md:gap-3 text-[10px] md:text-[11px] font-bold tracking-[0.25em] md:tracking-[0.3em] uppercase border-b border-brand-ink/20 pb-1 hover:border-brand-accent hover:text-brand-accent transition-all group"
                   onClick={(e) => {
                     e.stopPropagation();
                     if (featuredProject.link) navigate(featuredProject.link);
@@ -147,7 +147,7 @@ const Package = () => {
             <button 
               onClick={() => setIsFilterOpen(!isFilterOpen)}
               className={cn(
-                "inline-flex items-center  justify-center rounded-full border w-9 h-9 md:w-auto md:h-auto md:px-4 md:py-2 text-[calc(10px+5pt)] md:text-[calc(11px+5pt)] font-bold tracking-[0.16em] md:tracking-[0.1em] transition-all hover:opacity-100",
+                "inline-flex items-center  justify-center rounded-full border w-9 h-9 md:w-auto md:h-auto md:px-4 md:py-2 text-[10px] md:text-[11px] font-bold tracking-[0.16em] md:tracking-[0.1em] transition-all hover:opacity-100",
                 isFilterOpen
                   ? "border-brand-accent/50 text-brand-accent"
                   : "border-brand-ink/15 text-brand-ink/45 hover:border-brand-ink/30 hover:text-brand-ink/70"
@@ -170,7 +170,7 @@ const Package = () => {
               <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 grid grid-cols-1 md:grid-cols-2 gap-16">
                 <div className="space-y-6">
                   <div className="flex justify-between items-end">
-                    <span className="text-[calc(10px+5pt)] font-bold tracking-widest opacity-40 uppercase">Publication Year</span>
+                    <span className="text-[10px] font-bold tracking-widest opacity-40 uppercase">Publication Year</span>
                     <span className="text-lg serif-kor">{yearRange.min} — {yearRange.max}</span>
                   </div>
                   <div className="relative h-6 flex items-center">
@@ -199,18 +199,18 @@ const Package = () => {
                       className="absolute w-full appearance-none bg-transparent pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-brand-accent [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-[0_0_0_4px_rgba(255,255,255,1)]"
                     />
                   </div>
-                  <div className="flex justify-between text-[calc(9px+5pt)] font-bold opacity-30 mt-2">
+                  <div className="flex justify-between text-[9px] font-bold opacity-30 mt-2">
                     <span>2016</span><span>2022</span><span>2024</span><span>2026</span>
                   </div>
                 </div>
 
                 <div className="space-y-6">
-                  <span className="text-[calc(10px+5pt)] font-bold tracking-widest opacity-40 uppercase">Sort Order</span>
+                  <span className="text-[10px] font-bold tracking-widest opacity-40 uppercase">Sort Order</span>
                   <div className="flex bg-brand-ink/5 p-1 rounded-full w-fit">
                     <button
                       onClick={() => setSortBy('latest')}
                       className={cn(
-                        "px-6 py-2 rounded-full text-[calc(10px+5pt)] font-bold tracking-widest transition-all",
+                        "px-6 py-2 rounded-full text-[10px] font-bold tracking-widest transition-all",
                         sortBy === 'latest' ? "bg-white text-brand-ink shadow-sm" : "opacity-40"
                       )}
                     >
@@ -219,7 +219,7 @@ const Package = () => {
                     <button
                       onClick={() => setSortBy('oldest')}
                       className={cn(
-                        "px-6 py-2 rounded-full text-[calc(10px+5pt)] font-bold tracking-widest transition-all",
+                        "px-6 py-2 rounded-full text-[10px] font-bold tracking-widest transition-all",
                         sortBy === 'oldest' ? "bg-white text-brand-ink shadow-sm" : "opacity-40"
                       )}
                     >
@@ -264,12 +264,12 @@ const Package = () => {
                       }
                     }}
                   />
-                  <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4 bg-brand-ink/90 text-white text-[calc(9px+5pt)] md:text-[calc(10px+5pt)] font-bold tracking-[0.2em] px-2 py-0.5">
+                  <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4 bg-brand-ink/90 text-white text-[9px] md:text-[10px] font-bold tracking-[0.2em] px-2 py-0.5">
                     {project.year}
                   </div>
                 </div>
                 <div className="space-y-2 max-w-[400px] mr-auto md:mx-auto">
-                  <h3 className="text-[calc(17px+5pt)] md:text-[calc(26px+5pt)] font-sans font-medium leading-snug tracking-normal whitespace-pre-line">{project.title}</h3>
+                  <h3 className="text-[17px] md:text-[26px] font-sans font-medium leading-snug tracking-normal whitespace-pre-line">{project.title}</h3>
                 </div>
               </div>
             </Reveal>
