@@ -1,3 +1,4 @@
+import {useTemplateContent} from '../../content/cmsContent';
 import { useEffect } from 'react';
 import { Navigation } from '../../components/Navigation';
 import { Footer } from '../../components/Footer';
@@ -22,10 +23,12 @@ import sec3Img2 from '../../images/project/goyang-milktea/2-3.webp';
 
 
 const GoyangFlowerTea = () => {
+  const content = useTemplateContent("goyang-flower-tea");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  if (!content) return null;
   return (
     <div className="bg-brand-bg min-h-screen selection:bg-brand-accent/20 font-sans">
       <Navigation />
@@ -34,13 +37,13 @@ const GoyangFlowerTea = () => {
       <section className="relative h-[78vh] md:h-screen overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={heroImgMobile} 
-            alt="Goyang International Flower Exhibition Tea Hero Mobile" 
+            src={content.content["image_01"]} 
+            alt={content.content["alt_02"]} 
             className="md:hidden w-full h-full object-cover object-center"
           />
           <img 
-            src={heroImg} 
-            alt="Goyang International Flower Exhibition Tea Hero" 
+            src={content.content["image_03"]} 
+            alt={content.content["alt_04"]} 
             className="hidden md:block w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/10 z-20" />
@@ -57,25 +60,21 @@ const GoyangFlowerTea = () => {
                 <span 
                   className="text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase text-brand-ink inline-block opacity-60"
                 >
-                  Project Design Portfolio
-                </span>
+                  {content.content["text_05"]}</span>
                 
                 <div className="space-y-4">
                   <h1 className="text-4xl md:text-6xl font-maruburi tracking-tight text-brand-ink leading-[1.2]">
-                    고양국제꽃박람회 <br />
-                    밀크티백 세트
-                  </h1>
+                    {content.content["text_06"]}<br />
+                    {content.content["text_07"]}</h1>
                   <p className="text-sm md:text-base font-medium tracking-[0.2em] uppercase opacity-40">
-                    GOYANG FLOWER TEA BAG SET
-                  </p>
+                    {content.content["text_08"]}</p>
                 </div>
               </div>
 
               <div>
                 <p className="text-base md:text-lg font-sans font-light text-brand-ink/70 leading-relaxed max-w-lg text-left">
-                  고양시의 문화와 풍경을 감성적인 일러스트와  <br className="hidden md:block" />
-                  밀크티로 풀어낸 지역 특화 상품 개발 프로젝트입니다.
-                </p>
+                  {content.content["text_09"]}<br className="hidden md:block" />
+                  {content.content["text_10"]}</p>
               </div>
             </div>
           </Reveal>
@@ -85,19 +84,19 @@ const GoyangFlowerTea = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 md:gap-12 border-t border-brand-ink/5 pt-8 pb-8 md:pt-12 md:pb-24">
               <div className="space-y-2">
                 <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Client</span>
-                <p className="text-sm md:text-base font-sans font-medium">고양국제박람회재단</p>
+                <p className="text-sm md:text-base font-sans font-medium">{content.content["text_11"]}</p>
               </div>
               <div className="space-y-2">
                 <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Category</span>
-                <p className="text-sm md:text-base font-sans font-medium">Package Design / Branding</p>
+                <p className="text-sm md:text-base font-sans font-medium">{content.content["text_12"]}</p>
               </div>
               <div className="space-y-2">
                 <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Scope</span>
-                <p className="text-sm md:text-base font-sans font-medium whitespace-pre-line">Product Design / Package Design / Illustration / Branding</p>
+                <p className="text-sm md:text-base font-sans font-medium whitespace-pre-line">{content.content["text_13"]}</p>
               </div>
               <div className="space-y-2">
                 <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Keywords</span>
-                <p className="text-sm md:text-base font-sans font-medium leading-relaxed">Goyang / Local Goods / Illustration / Milk Tea / Tourism</p>
+                <p className="text-sm md:text-base font-sans font-medium leading-relaxed">{content.content["text_14"]}</p>
               </div>
             </div>
           </Reveal>
@@ -109,17 +108,14 @@ const GoyangFlowerTea = () => {
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug">
-              지역의 이야기를 상품으로 만들다
-            </h3>
+              {content.content["text_15"]}</h3>
             <div className="space-y-4 md:space-y-6 text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70">
               <p>
-                고양시는 아름다운 자연과 문화가 공존하는 도시입니다. <br className="hidden md:block" />
-                캘리엠은 단순한 기념품이 아닌, 지역의 풍경과 감성을 담아 오래 기억될 수 있는 상품을 만들고자 했습니다.
-              </p>
+                {content.content["text_16"]}<br className="hidden md:block" />
+                {content.content["text_17"]}</p>
               <p>
-                고양국제꽃박람회와 일산호수공원 등 지역의 상징적인 장소를 일러스트로 표현하고, <br className="hidden md:block" />
-                이를 밀크티와 결합하여 새로운 형태의 지역 굿즈를 제안했습니다.
-              </p>
+                {content.content["text_18"]}<br className="hidden md:block" />
+                {content.content["text_19"]}</p>
             </div>
           </div>
         </Reveal>
@@ -130,14 +126,14 @@ const GoyangFlowerTea = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           <Reveal delay={0.1}>
             <div className="md:aspect-[3/4] aspect-auto overflow-hidden bg-brand-ink/5">
-              <img src={sec1Img2Mobile} alt="3종 세트 연출컷 02 Mobile" className="md:hidden w-full h-auto object-cover" />
-              <img src={sec1Img2} alt="3종 세트 연출컷 02" className="hidden md:block w-full h-full object-cover" />
+              <img src={content.content["image_20"]} alt={content.content["alt_21"]} className="md:hidden w-full h-auto object-cover" />
+              <img src={content.content["image_22"]} alt={content.content["alt_23"]} className="hidden md:block w-full h-full object-cover" />
             </div>
           </Reveal>
           <Reveal delay={0.2}>
             <div className="md:aspect-[3/4] aspect-auto overflow-hidden bg-brand-ink/5">
-              <img src={sec1Img3Mobile} alt="3종 세트 연출컷 03 Mobile" className="md:hidden w-full h-auto object-cover" />
-              <img src={sec1Img3} alt="3종 세트 연출컷 03" className="hidden md:block w-full h-full object-cover" />
+              <img src={content.content["image_24"]} alt={content.content["alt_25"]} className="md:hidden w-full h-auto object-cover" />
+              <img src={content.content["image_26"]} alt={content.content["alt_27"]} className="hidden md:block w-full h-full object-cover" />
             </div>
           </Reveal>
         </div>
@@ -147,13 +143,11 @@ const GoyangFlowerTea = () => {
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug">
-              고양의 순간을 담은 일러스트
-            </h3>
+              {content.content["text_28"]}</h3>
             <p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70">
-              제품에 사용된 일러스트는 고양시를 대표하는 장소와 풍경을 바탕으로 제작되었습니다. <br className="hidden md:block" />
-              지역의 이미지를 단순히 기록하는 것이 아니라, 따뜻한 감성과 이야기로 재해석하여 <br className="hidden md:block" />
-              누구나 편안하게 공감할 수 있는 시각 언어로 표현했습니다.
-            </p>
+              {content.content["text_29"]}<br className="hidden md:block" />
+              {content.content["text_30"]}<br className="hidden md:block" />
+              {content.content["text_31"]}</p>
           </div>
         </Reveal>
       </Section>
@@ -163,12 +157,12 @@ const GoyangFlowerTea = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           <Reveal delay={0.1}>
             <div className="aspect-[3/4] overflow-hidden bg-brand-ink/5">
-              <img src={sec2Img2} alt="티백 디자인 개별컷 02" className="w-full h-full object-cover" />
+              <img src={content.content["image_32"]} alt={content.content["alt_33"]} className="w-full h-full object-cover" />
             </div>
           </Reveal>
           <Reveal delay={0.2}>
             <div className="aspect-[3/4] overflow-hidden bg-brand-ink/5">
-              <img src={sec2Img3} alt="티백 디자인 개별컷 03" className="w-full h-full object-cover" />
+              <img src={content.content["image_34"]} alt={content.content["alt_35"]} className="w-full h-full object-cover" />
             </div>
           </Reveal>
         </div>
@@ -178,13 +172,11 @@ const GoyangFlowerTea = () => {
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug">
-              패키지에 담은 지역의 가치
-            </h3>
+              {content.content["text_36"]}</h3>
             <p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70">
-              밀크티백 세트는 선물용으로도 활용할 수 있도록 패키지 구조부터 세심하게 설계했습니다. <br className="hidden md:block" />
-              친환경 크라프트 패키지와 절제된 그래픽 구성은 지역 상품이 지닌 진정성과 <br className="hidden md:block" />
-              따뜻한 감성을 자연스럽게 전달하도록 디자인되었습니다.
-            </p>
+              {content.content["text_37"]}<br className="hidden md:block" />
+              {content.content["text_38"]}<br className="hidden md:block" />
+              {content.content["text_39"]}</p>
           </div>
         </Reveal>
       </Section>
@@ -194,12 +186,12 @@ const GoyangFlowerTea = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           <Reveal delay={0.1}>
             <div className="aspect-[3/4] overflow-hidden bg-brand-ink/5">
-              <img src={sec3Img1} alt="패키지 오픈컷" className="w-full h-full object-cover" />
+              <img src={content.content["image_40"]} alt={content.content["alt_41"]} className="w-full h-full object-cover" />
             </div>
           </Reveal>
           <Reveal delay={0.2}>
             <div className="aspect-[3/4] overflow-hidden bg-brand-ink/5">
-              <img src={sec3Img2} alt="패키지 구조컷" className="w-full h-full object-cover" />
+              <img src={content.content["image_42"]} alt={content.content["alt_43"]} className="w-full h-full object-cover" />
             </div>
           </Reveal>
         </div>
@@ -209,13 +201,11 @@ const GoyangFlowerTea = () => {
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug">
-              지역을 기억하는 새로운 방식
-            </h3>
+              {content.content["text_44"]}</h3>
             <p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70">
-              이번 프로젝트는 단순한 식음료 상품 개발을 넘어, 지역의 풍경과 이야기를 사람들의 일상 속으로 연결하는 작업이었습니다. <br className="hidden md:block" />
-              한 장의 일러스트와 한 잔의 차를 통해 고양을 경험하고 <br className="hidden md:block" />
-              기억할 수 있는 새로운 관광 콘텐츠를 제안하고자 했습니다.
-            </p>
+              {content.content["text_45"]}<br className="hidden md:block" />
+              {content.content["text_46"]}<br className="hidden md:block" />
+              {content.content["text_47"]}</p>
           </div>
         </Reveal>
       </Section>
@@ -227,14 +217,13 @@ const GoyangFlowerTea = () => {
         <Reveal>
           <div className="space-y-7 md:space-y-12">
             <div className="space-y-4">
-              <span className="text-[10px] font-bold tracking-[0.4em] uppercase opacity-30">Final Message</span>
+              <span className="text-[10px] font-bold tracking-[0.4em] uppercase opacity-30">{content.content["text_48"]}</span>
               <h2 className="text-3xl md:text-5xl font-maruburi leading-tight">
-                A Cup Filled With Goyang
-              </h2>
+                {content.content["text_49"]}</h2>
             </div>
             <div className="space-y-6 text-[15px] md:text-lg font-sans font-light leading-relaxed max-w-2xl mx-auto opacity-70">
-              <p>고양시의 대표적인 풍경과 이야기를 따뜻한 일러스트와 서정적인 색감으로 한 잔의 밀크티에 담아냈습니다.</p>
-              <p>단순한 상품 디자인을 넘어, 고양의 소중한 순간들이 누구나 일상 속에서 오랫동안 꺼내어 볼 수 있는 따뜻한 기억으로 남을 수 있도록 완성하였습니다.</p>
+              <p>{content.content["text_50"]}</p>
+              <p>{content.content["text_51"]}</p>
             </div>
             <div className="pt-8">
               <div className="w-1 h-24 bg-brand-accent/20 mx-auto" />

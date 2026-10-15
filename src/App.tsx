@@ -1,3 +1,4 @@
+import TemplateDetail from './pages/TemplateDetail';
 import CmsJournalDetail from './pages/journals/CmsJournalDetail';
 import ContentPreview from './pages/ContentPreview';
 /**
@@ -34,7 +35,8 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/journals" element={<Journals />} />
         <Route path="/content-preview" element={<ContentPreview />} />
-        <Route path="/journal/:slug" element={<CmsJournalDetail />} />
+        <Route path="/journal/:slug" element={<TemplateDetail />} />
+        <Route path="/portfolio/:slug" element={<TemplateDetail />} />
         <Route path="/product" element={<Product />} />
         <Route path="/branding" element={<Branding />} />
         <Route path="/package" element={<Package />} />

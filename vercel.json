@@ -1,1 +1,56 @@
-{"rewrites":[{"source":"/admin","destination":"/admin/index.html"},{"source":"/admin/","destination":"/admin/index.html"},{"source":"/journals","destination":"/index.html"},{"source":"/journal/:path*","destination":"/index.html"},{"source":"/portfolio/:path*","destination":"/index.html"},{"source":"/content-preview","destination":"/index.html"}]}
+{
+  "rewrites": [
+    {
+      "source": "/admin",
+      "destination": "/admin/index.html"
+    },
+    {
+      "source": "/admin/",
+      "destination": "/admin/index.html"
+    },
+    {
+      "source": "/journals",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/journal/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/portfolio/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/content-preview",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/branding",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/package",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/project",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/product",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/project/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/package/:path*",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import {cmsProducts} from '../content/cmsContent';
 import { useEffect, useState, useMemo } from 'react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
@@ -39,110 +40,9 @@ const categoryColors: Record<string, string> = {
   lifestyle: '#279843',
 };
 
-const products = [
-  {
-    id: 1,
-    category: 'envelope',
-    title: 'E2204 늘 사랑하고 감사드립니다',
-    desc: '캘리엠의 시그니처 캘리그라피가 담긴 프리미엄 봉투',
-    image: prod1,
-    year: 2026,
-    isFeatured: true,
-    size: '80 x 170 mm',
-    keywords: ['감사', '선물', '봉투', '캘리그라피'],
-    storeUrl: 'https://smartstore.naver.com/',
-  },
-  {
-    id: 2,
-    category: 'envelope',
-    title: 'E2601HN 늘 사랑하고 감사드립니다',
-    desc: '포근한 질감의 종이에 담긴 따뜻한 축하의 말',
-    image: prod2,
-    year: 2026,
-    size: '80 x 170 mm',
-    keywords: ['사랑', '축하', '봉투', '캘리그라피'],
-    storeUrl: 'https://smartstore.naver.com/',
-  },
-  {
-    id: 3,
-    category: 'envelope',
-    title: 'E2403YA 사랑과 은혜',
-    desc: '계절의 변화를 담은 수채화 스타일 of 아트 엽서',
-    image: prod3,
-    year: 2026,
-    size: '80 x 170 mm',
-    keywords: ['수채화', '은혜', '봉투', '그림'],
-    storeUrl: 'https://smartstore.naver.com/',
-  },
-  {
-    id: 4,
-    category: 'envelope',
-    title: 'E2601CA LOVE(Pink)',
-    desc: '오롯이 나에게 집중하는 시간을 위한 정갈한 노트',
-    image: prod4,
-    year: 2026,
-    size: '80 x 170 mm',
-    keywords: ['핑크', '사랑', '봉투', '러브'],
-    storeUrl: 'https://smartstore.naver.com/',
-  },
-  {
-    id: 5,
-    category: 'lifestyle',
-    title: 'Little Things More Precious',
-    desc: '작은 것들로 채워지는 더 소중한 하루',
-    image: prod5,
-    year: 2026,
-    size: '445 x 550 mm',
-    keywords: ['라이프스타일', '선물', '프리미엄'],
-    storeUrl: 'https://calli-m.com/product/detail.html?product_no=631&cate_no=27&display_group=1',
-  },
-  {
-    id: 6,
-    category: 'card',
-    title: 'MCCA2601 하트(LOVE)',
-    desc: '진심이 닿기를 바라는 마음으로 적어 내려가는 카드',
-    image: prod6,
-    year: 2026,
-    size: '90 x 90 mm',
-    keywords: ['하트', '러브', '카드', '기념일'],
-    storeUrl: 'https://smartstore.naver.com/',
-  },
-  {
-    id: 7,
-    category: 'card',
-    title: 'MCCA2602_카네이션02(LOVE)',
-    desc: '무심결에 지나친 풍경 속 따스한 시선을 담은 사진 엽서',
-    image: prod7,
-    year: 2026,
-    size: '90 x 90 mm',
-    keywords: ['카네이션', '감사', '카드', '어버이날'],
-    storeUrl: 'https://smartstore.naver.com/',
-  },
-  {
-    id: 8,
-    category: 'card',
-    title: 'MCCA2603 카네이션01(사랑합니다)',
-    desc: '지구의 마음을 생각한 친환경 소재와 디자인',
-    image: prod8,
-    year: 2026,
-    size: '90 x 90 mm',
-    keywords: ['카네이션', '사랑', '카드', '스승의날'],
-    storeUrl: 'https://smartstore.naver.com/',
-  },
-  {
-    id: 9,
-    category: 'postcard',
-    title: 'PHN 2401 BE YOURSEFL',
-    desc: '깊은 여운을 남기는 클래식한 봉투 마감의 미학',
-    image: prod9,
-    year: 2025,
-    size: '100 x 148 mm',
-    keywords: ['엽서', '클래식', '여운', '인생'],
-    storeUrl: 'https://smartstore.naver.com/',
-  },
-];
+const products = cmsProducts;
 
-const Product = () => {
+const Product = ({previewProduct}: {previewProduct?: any}) => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -157,7 +57,7 @@ const Product = () => {
   const [isAllKeywordsExpanded, setIsAllKeywordsExpanded] = useState(false);
 
   // Selected Product State for Modal
-  const [selectedProduct, setSelectedProduct] = useState<any>(null);
+  const [selectedProduct, setSelectedProduct] = useState<any>(previewProduct || null);
 
   useEffect(() => {
     window.scrollTo(0, 0);

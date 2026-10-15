@@ -1,3 +1,4 @@
+import {portfolioList} from '../content/cmsContent';
 import { useEffect, useState, useMemo } from 'react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
@@ -12,81 +13,7 @@ import featuredImg from '../images/package/honest-k-food/featured-honest-k-food.
 const featuredImage = featuredImg;
 const FEATURED_FALLBACK = 'https://images.unsplash.com/photo-1594914141221-72782069ed89?auto=format&fit=crop&q=80&w=1600';
 
-const packageProjects = [
-  {
-    id: 1,
-    title: '어니스트케이푸드\n까나리어간장',
-    desc: '어니스트케이푸드의 깊은 풍미와 정성을 담은 프리미엄 까나리어간장 패키지',
-    image: featuredImage,
-    year: 2024,
-    isFeatured: true,
-    link: '/package/honest-k-food',
-  },
-  {
-    id: 2,
-    title: '어니스트케이푸드\n까나리어간장',
-    desc: '어니스트케이푸드의 깊은 풍미와 정성을 담은 프리미엄 까나리어간장 패키지',
-    image: featuredImage,
-    year: 2023,
-    link: '/package/honest-k-food',
-  },
-  {
-    id: 3,
-    title: '코스메틱 브랜드 패키지',
-    desc: '자연 유래 성분의 순수함을 담은 미니멀한 텍스처와 라벨 디자인',
-    image: 'https://images.unsplash.com/photo-1556229167-731383569762?auto=format&fit=crop&q=80&w=800',
-    year: 2024,
-    isPlaceholder: true,
-  },
-  {
-    id: 4,
-    title: '스페셜티 커피 원두 백',
-    desc: '산지의 이야기를 담은 일러스트와 캘리그라피의 조화',
-    image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80&w=800',
-    year: 2022,
-    isPlaceholder: true,
-  },
-  {
-    id: 5,
-    title: '스테이 무드 어메니티 세트',
-    desc: '쉼의 가치를 전달하는 차분한 톤의 숙소 전용 어메니티 패키지',
-    image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&q=80&w=800',
-    year: 2021,
-    isPlaceholder: true,
-  },
-  {
-    id: 6,
-    title: '계절 과일 청 패키지',
-    desc: '달콤한 결실을 축하하는 화사한 색감의 라벨 시스템',
-    image: 'https://images.unsplash.com/photo-1589733904268-9de9048a1081?auto=format&fit=crop&q=80&w=800',
-    year: 2023,
-    isPlaceholder: true,
-  },
-  {
-    id: 7,
-    title: '프리미엄 와인 라벨 디자인',
-    desc: '깊은 풍미와 세월의 가치를 담은 클래식한 실링 왁스와 타이포그래피',
-    image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800',
-    year: 2024,
-    isPlaceholder: true,
-  },
-  {
-    id: 8,
-    title: '아트북 한정판 케이스',
-    desc: '섬세한 종이 질감과 수작업의 정성을 느낄 수 있는 북케이스',
-    image: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800',
-    year: 2022,
-    isPlaceholder: true,
-  },
-  {
-    id: 9,
-    title: '오가닉 패브릭 패키지',
-    desc: '부드러운 손길을 연상시키는 타이포 위주의 친환경 포장 재질',
-    image: 'https://images.unsplash.com/photo-1534349762230-e0cadf78f5ea?auto=format&fit=crop&q=80&w=800',
-    year: 2023,
-    isPlaceholder: true,
-  },
-];
+const packageProjects = portfolioList("package",[{"id":1,"title":"어니스트케이푸드\n까나리어간장","desc":"어니스트케이푸드의 깊은 풍미와 정성을 담은 프리미엄 까나리어간장 패키지","image":"/media/existing/package/honest-k-food/featured-honest-k-food.png","year":2024,"isFeatured":true,"link":"/package/honest-k-food"},{"id":2,"title":"어니스트케이푸드\n까나리어간장","desc":"어니스트케이푸드의 깊은 풍미와 정성을 담은 프리미엄 까나리어간장 패키지","image":"/media/existing/package/honest-k-food/featured-honest-k-food.png","year":2023,"link":"/package/honest-k-food"},{"id":3,"title":"코스메틱 브랜드 패키지","desc":"자연 유래 성분의 순수함을 담은 미니멀한 텍스처와 라벨 디자인","image":"https://images.unsplash.com/photo-1556229167-731383569762?auto=format&fit=crop&q=80&w=800","year":2024,"isPlaceholder":true},{"id":4,"title":"스페셜티 커피 원두 백","desc":"산지의 이야기를 담은 일러스트와 캘리그라피의 조화","image":"https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80&w=800","year":2022,"isPlaceholder":true},{"id":5,"title":"스테이 무드 어메니티 세트","desc":"쉼의 가치를 전달하는 차분한 톤의 숙소 전용 어메니티 패키지","image":"https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&q=80&w=800","year":2021,"isPlaceholder":true},{"id":6,"title":"계절 과일 청 패키지","desc":"달콤한 결실을 축하하는 화사한 색감의 라벨 시스템","image":"https://images.unsplash.com/photo-1589733904268-9de9048a1081?auto=format&fit=crop&q=80&w=800","year":2023,"isPlaceholder":true},{"id":7,"title":"프리미엄 와인 라벨 디자인","desc":"깊은 풍미와 세월의 가치를 담은 클래식한 실링 왁스와 타이포그래피","image":"https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800","year":2024,"isPlaceholder":true},{"id":8,"title":"아트북 한정판 케이스","desc":"섬세한 종이 질감과 수작업의 정성을 느낄 수 있는 북케이스","image":"https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800","year":2022,"isPlaceholder":true},{"id":9,"title":"오가닉 패브릭 패키지","desc":"부드러운 손길을 연상시키는 타이포 위주의 친환경 포장 재질","image":"https://images.unsplash.com/photo-1534349762230-e0cadf78f5ea?auto=format&fit=crop&q=80&w=800","year":2023,"isPlaceholder":true}]);
 
 const Package = () => {
   const navigate = useNavigate();

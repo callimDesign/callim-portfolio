@@ -1,3 +1,4 @@
+import {portfolioList} from '../content/cmsContent';
 import { useEffect, useState, useMemo } from 'react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
@@ -12,97 +13,7 @@ import literacyFeatured from '../images/project/literacy-art-exhibition/featured
 import goyangTeaFeatured from '../images/project/goyang-milktea/1-1.webp';
 import seongbukFeatured from '../images/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (1).webp';
 
-const projectList = [
-  {
-    id: 11,
-    title: '성북동 엽서 프로젝트',
-    desc: '구도심의 오래된 골목과 일상의 따스함을 기록한 일러스트레이션 엽서 디자인 프로젝트입니다.',
-    image: seongbukFeatured,
-    year: 2025,
-    link: '/project/seongbuk-postcard',
-  },
-  {
-    id: 1,
-    title: '성인문해교육 시화전',
-    desc: '문해 학습자들의 시와 그림에 담긴 삶의 이야기를 따뜻한 시선으로 풀어낸 공공 디자인 프로젝트입니다.',
-    image: literacyFeatured,
-    year: 2026,
-    link: '/project/literacy-art-exhibition',
-    isFeatured: true,
-  },
-  {
-    id: 2,
-    title: '고양국제꽃박람회 밀크티백 세트',
-    desc: ' 고양의 소중한 순간을 담은 한정 기획 밀크티백 세트입니다',
-    image: goyangTeaFeatured,
-    year: 2026,
-    link: '/project/goyang-flower-tea',
-  },
-  {
-    id: 3,
-    title: '현대 예술 재단 비주얼 시스템',
-    desc: '예술적 가치와 대중의 연결을 형상화한 유연한 그래픽 모티프',
-    image: 'https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?auto=format&fit=crop&q=80&w=800',
-    year: 2023,
-    isPlaceholder: true,
-  },
-  {
-    id: 4,
-    title: '도시 상생 프로젝트 ‘결’',
-    desc: '지역 공동체의 활성화를 돕는 따뜻한 시선의 커뮤니티 디자인',
-    image: 'https://images.unsplash.com/photo-1449156001935-cf2d41a7911b?auto=format&fit=crop&q=80&w=800',
-    year: 2024,
-    isPlaceholder: true,
-  },
-  {
-    id: 5,
-    title: '미래 교육 연구소 심볼 디자인',
-    desc: '지식의 확산과 성장을 담은 기하학적 라인 아트 프로젝트',
-    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800',
-    year: 2022,
-    isPlaceholder: true,
-  },
-  {
-    id: 6,
-    title: '자연 보호 캠페인 ‘숨’',
-    desc: '자연의 회복력을 붓터치의 생동감으로 표현한 환경 프로젝트',
-    image: 'https://images.unsplash.com/photo-1542601906970-d4d80754037b?auto=format&fit=crop&q=80&w=800',
-    year: 2021,
-    isPlaceholder: true,
-  },
-  {
-    id: 7,
-    title: '글로벌 포럼 시각 언어 구축',
-    desc: '다양한 국적과 문화의 화합을 상징하는 다채로운 패턴 시스템',
-    image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800',
-    year: 2023,
-    isPlaceholder: true,
-  },
-  {
-    id: 8,
-    title: '스타트업 액셀러레이터 브랜딩',
-    desc: '도전과 혁신의 에너지를 담은 대담한 컬러와 타이포그래피',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800',
-    year: 2024,
-    isPlaceholder: true,
-  },
-  {
-    id: 9,
-    title: '전시공간 ‘이음’ 공간 브랜딩',
-    desc: '공간의 흐름과 작품이 하나로 어우러지는 경험 디자인 프로젝트',
-    image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800',
-    year: 2022,
-    isPlaceholder: true,
-  },
-  {
-    id: 10,
-    title: '디지털 아카이브 비주얼 가이드',
-    desc: '방대한 데이터를 직관적으로 탐색할 수 있는 체계적인 디자인 시스템',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800',
-    year: 2023,
-    isPlaceholder: true,
-  },
-];
+const projectList = portfolioList("project",[{"id":11,"title":"성북동 엽서 프로젝트","desc":"구도심의 오래된 골목과 일상의 따스함을 기록한 일러스트레이션 엽서 디자인 프로젝트입니다.","image":"/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (1).webp","year":2025,"link":"/project/seongbuk-postcard"},{"id":1,"title":"성인문해교육 시화전","desc":"문해 학습자들의 시와 그림에 담긴 삶의 이야기를 따뜻한 시선으로 풀어낸 공공 디자인 프로젝트입니다.","image":"/media/existing/project/literacy-art-exhibition/featured.webp","year":2026,"link":"/project/literacy-art-exhibition","isFeatured":true},{"id":2,"title":"고양국제꽃박람회 밀크티백 세트","desc":" 고양의 소중한 순간을 담은 한정 기획 밀크티백 세트입니다","image":"/media/existing/project/goyang-milktea/1-1.webp","year":2026,"link":"/project/goyang-flower-tea"},{"id":3,"title":"현대 예술 재단 비주얼 시스템","desc":"예술적 가치와 대중의 연결을 형상화한 유연한 그래픽 모티프","image":"https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?auto=format&fit=crop&q=80&w=800","year":2023,"isPlaceholder":true},{"id":4,"title":"도시 상생 프로젝트 ‘결’","desc":"지역 공동체의 활성화를 돕는 따뜻한 시선의 커뮤니티 디자인","image":"https://images.unsplash.com/photo-1449156001935-cf2d41a7911b?auto=format&fit=crop&q=80&w=800","year":2024,"isPlaceholder":true},{"id":5,"title":"미래 교육 연구소 심볼 디자인","desc":"지식의 확산과 성장을 담은 기하학적 라인 아트 프로젝트","image":"https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800","year":2022,"isPlaceholder":true},{"id":6,"title":"자연 보호 캠페인 ‘숨’","desc":"자연의 회복력을 붓터치의 생동감으로 표현한 환경 프로젝트","image":"https://images.unsplash.com/photo-1542601906970-d4d80754037b?auto=format&fit=crop&q=80&w=800","year":2021,"isPlaceholder":true},{"id":7,"title":"글로벌 포럼 시각 언어 구축","desc":"다양한 국적과 문화의 화합을 상징하는 다채로운 패턴 시스템","image":"https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800","year":2023,"isPlaceholder":true},{"id":8,"title":"스타트업 액셀러레이터 브랜딩","desc":"도전과 혁신의 에너지를 담은 대담한 컬러와 타이포그래피","image":"https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800","year":2024,"isPlaceholder":true},{"id":9,"title":"전시공간 ‘이음’ 공간 브랜딩","desc":"공간의 흐름과 작품이 하나로 어우러지는 경험 디자인 프로젝트","image":"https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800","year":2022,"isPlaceholder":true},{"id":10,"title":"디지털 아카이브 비주얼 가이드","desc":"방대한 데이터를 직관적으로 탐색할 수 있는 체계적인 디자인 시스템","image":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800","year":2023,"isPlaceholder":true}]);
 
 const Project = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);

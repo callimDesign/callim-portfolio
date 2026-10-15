@@ -1,3 +1,4 @@
+import {useTemplateContent} from '../../content/cmsContent';
 import { useEffect } from 'react';
 import { Navigation } from '../../components/Navigation';
 import { Footer } from '../../components/Footer';
@@ -14,10 +15,12 @@ import calendarDetail02 from '../../images/project/literacy-art-exhibition/calen
 
 
 const LiteracyArtExhibition = () => {
+  const content = useTemplateContent("literacy-art-exhibition");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  if (!content) return null;
   return (
     <div className="bg-brand-bg min-h-screen selection:bg-brand-accent/20 font-sans">
       <Navigation />
@@ -26,13 +29,13 @@ const LiteracyArtExhibition = () => {
       <section className="relative h-[78vh] md:h-screen overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={heroPosterMobile} 
-            alt="Literacy Art Exhibition Hero Mobile" 
+            src={content.content["image_01"]} 
+            alt={content.content["alt_02"]} 
             className="md:hidden w-full h-full object-cover object-center"
           />
           <img 
-            src={heroPoster} 
-            alt="Literacy Art Exhibition Hero" 
+            src={content.content["image_03"]} 
+            alt={content.content["alt_04"]} 
             className="hidden md:block w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/10 z-20" />
@@ -49,25 +52,21 @@ const LiteracyArtExhibition = () => {
                 <span 
                   className="text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase text-brand-ink inline-block opacity-60"
                 >
-                  Project Design Portfolio
-                </span>
+                  {content.content["text_05"]}</span>
                 
                 <div className="space-y-4">
                   <h1 className="text-4xl md:text-6xl font-maruburi tracking-tight text-brand-ink leading-[1.2]">
-                    성인문해교육 <br />
-                    시화전
-                  </h1>
+                    {content.content["text_06"]}<br />
+                    {content.content["text_07"]}</h1>
                   <p className="text-sm md:text-base font-medium tracking-[0.2em] uppercase opacity-40">
-                    LITERACY ART EXHIBITION
-                  </p>
+                    {content.content["text_08"]}</p>
                 </div>
               </div>
 
               <div>
                 <p className="text-base md:text-lg font-sans font-light text-brand-ink/70 leading-relaxed max-w-lg text-left">
-                  문해 학습자들의 시와 그림에 담긴 삶의 이야기를 <br className="hidden md:block" />
-                  따뜻한 시선으로 풀어낸 공공 디자인 프로젝트입니다.
-                </p>
+                  {content.content["text_09"]}<br className="hidden md:block" />
+                  {content.content["text_10"]}</p>
               </div>
             </div>
           </Reveal>
@@ -77,19 +76,19 @@ const LiteracyArtExhibition = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 md:gap-12 border-t border-brand-ink/5 pt-8 pb-8 md:pt-12 md:pb-24">
               <div className="space-y-2">
                 <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Client</span>
-                <p className="text-sm md:text-base font-sans font-medium">국가평생교육진흥원</p>
+                <p className="text-sm md:text-base font-sans font-medium">{content.content["text_11"]}</p>
               </div>
               <div className="space-y-2">
                 <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Category</span>
-                <p className="text-sm md:text-base font-sans font-medium">Public Design / Editorial Design</p>
+                <p className="text-sm md:text-base font-sans font-medium">{content.content["text_12"]}</p>
               </div>
               <div className="space-y-2">
                 <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Scope</span>
-                <p className="text-sm md:text-base font-sans font-medium whitespace-pre-line">Poster Design / Calendar Design</p>
+                <p className="text-sm md:text-base font-sans font-medium whitespace-pre-line">{content.content["text_13"]}</p>
               </div>
               <div className="space-y-2">
                 <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Keywords</span>
-                <p className="text-sm md:text-base font-sans font-medium leading-relaxed">Literacy / Learning / Community / Warmth</p>
+                <p className="text-sm md:text-base font-sans font-medium leading-relaxed">{content.content["text_14"]}</p>
               </div>
             </div>
           </Reveal>
@@ -101,18 +100,15 @@ const LiteracyArtExhibition = () => {
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug">
-              배움은 삶을 다시 표현하는 일입니다
-            </h3>
+              {content.content["text_15"]}</h3>
             <div className="space-y-4 md:space-y-6 text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70">
               <p>
-                문해교육은 단순히 글자를 읽고 쓰는 기술을 넘어, <br className="hidden md:block" />
-                자신의 생각과 삶을 스스로 표현할 수 있도록 돕는 배움입니다.
-              </p>
+                {content.content["text_16"]}<br className="hidden md:block" />
+                {content.content["text_17"]}</p>
               <p>
-                문해 학습자들의 시와 그림은 한 사람의 시간이 담긴 기록이자, <br className="hidden md:block" />
-                다시 시작하는 삶의 용기를 보여줍니다. <br className="hidden md:block" />
-                캘리엠은 이 따뜻한 이야기가 포스터와 캘린더 안에서 차분히 전해질 수 있도록 디자인했습니다.
-              </p>
+                {content.content["text_18"]}<br className="hidden md:block" />
+                {content.content["text_19"]}<br className="hidden md:block" />
+                {content.content["text_20"]}</p>
             </div>
           </div>
         </Reveal>
@@ -123,12 +119,12 @@ const LiteracyArtExhibition = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           <Reveal delay={0.1}>
             <div className="aspect-[3/4] overflow-hidden bg-brand-ink/5">
-              <img src={posterVertical} alt="Poster Vertical Design" className="w-full h-full object-cover" />
+              <img src={content.content["image_21"]} alt={content.content["alt_22"]} className="w-full h-full object-cover" />
             </div>
           </Reveal>
           <Reveal delay={0.2}>
             <div className="aspect-[3/4] overflow-hidden bg-brand-ink/5">
-              <img src={posterHorizontal} alt="Poster Horizontal Design" className="w-full h-full object-cover" />
+              <img src={content.content["image_23"]} alt={content.content["alt_24"]} className="w-full h-full object-cover" />
             </div>
           </Reveal>
         </div>
@@ -138,13 +134,11 @@ const LiteracyArtExhibition = () => {
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug">
-              진솔한 이야기를 전하는 포스터 디자인
-            </h3>
+              {content.content["text_25"]}</h3>
             <p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70">
-              문해 시화전 포스터는 학습자들의 시와 그림이 지닌 순수한 감동을 중심에 두고 구성했습니다. <br className="hidden md:block" />
-              행사의 공공성과 교육적 의미가 분명하게 전달되도록 정보 구조는 명확하게 정리하되, <br className="hidden md:block" />
-              전체 분위기는 따뜻하고 부드럽게 표현했습니다.
-            </p>
+              {content.content["text_26"]}<br className="hidden md:block" />
+              {content.content["text_27"]}<br className="hidden md:block" />
+              {content.content["text_28"]}</p>
           </div>
         </Reveal>
       </Section>
@@ -154,8 +148,8 @@ const LiteracyArtExhibition = () => {
         <Reveal>
           <div className="relative aspect-[16/9] overflow-hidden bg-brand-ink/5">
             <img 
-              src={calendarGrid} 
-              alt="Calendar System Grid" 
+              src={content.content["image_29"]} 
+              alt={content.content["alt_30"]} 
               className="w-full h-full object-cover"
             />
           </div>
@@ -166,13 +160,11 @@ const LiteracyArtExhibition = () => {
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug">
-              한 해를 채운 배움의 문장들
-            </h3>
+              {content.content["text_31"]}</h3>
             <p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70">
-              2026년 캘린더는 문해 학습자들의 작품이 일상 속에서 오래 머물 수 있도록 기획한 디자인 결과물입니다. <br className="hidden md:block" />
-              각 달마다 시와 그림이 가진 고유한 감정을 살리고, <br className="hidden md:block" />
-              한 장 한 장 넘길 때마다 배움의 기쁨과 삶의 이야기가 자연스럽게 이어지도록 구성했습니다.
-            </p>
+              {content.content["text_32"]}<br className="hidden md:block" />
+              {content.content["text_33"]}<br className="hidden md:block" />
+              {content.content["text_34"]}</p>
           </div>
         </Reveal>
       </Section>
@@ -182,12 +174,12 @@ const LiteracyArtExhibition = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           <Reveal delay={0.1}>
             <div className="aspect-square overflow-hidden bg-brand-ink/5">
-              <img src={calendarDetail01} alt="Calendar Detail 01" className="w-full h-full object-cover" />
+              <img src={content.content["image_35"]} alt={content.content["alt_36"]} className="w-full h-full object-cover" />
             </div>
           </Reveal>
           <Reveal delay={0.2}>
             <div className="aspect-square overflow-hidden bg-brand-ink/5">
-              <img src={calendarDetail02} alt="Calendar Detail 02" className="w-full h-full object-cover" />
+              <img src={content.content["image_37"]} alt={content.content["alt_38"]} className="w-full h-full object-cover" />
             </div>
           </Reveal>
         </div>
@@ -197,13 +189,11 @@ const LiteracyArtExhibition = () => {
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug">
-              작품의 온기를 살린 편집 디자인
-            </h3>
+              {content.content["text_39"]}</h3>
             <p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70">
-              캘린더의 각 페이지는 작품이 가진 분위기를 해치지 않도록 여백과 시선의 흐름을 섬세하게 조정했습니다. <br className="hidden md:block" />
-              시 문구와 그림이 함께 읽히도록 타이포그래피의 크기와 배치를 정리하고, <br className="hidden md:block" />
-              월별 정보는 조용히 배치해 작품 자체가 주인공이 되도록 했습니다.
-            </p>
+              {content.content["text_40"]}<br className="hidden md:block" />
+              {content.content["text_41"]}<br className="hidden md:block" />
+              {content.content["text_42"]}</p>
           </div>
         </Reveal>
       </Section>
@@ -213,14 +203,13 @@ const LiteracyArtExhibition = () => {
         <Reveal>
           <div className="space-y-7 md:space-y-12">
             <div className="space-y-4">
-              <span className="text-[10px] font-bold tracking-[0.4em] uppercase opacity-30">Final Message</span>
+              <span className="text-[10px] font-bold tracking-[0.4em] uppercase opacity-30">{content.content["text_43"]}</span>
               <h2 className="text-3xl md:text-5xl font-maruburi leading-tight">
-                There Is No Age For Learning
-              </h2>
+                {content.content["text_44"]}</h2>
             </div>
             <div className="space-y-6 text-[15px] md:text-lg font-sans font-light leading-relaxed max-w-2xl mx-auto opacity-70">
-              <p>배움에는 나이가 없고, 한 사람의 이야기는 언제든 다시 시작될 수 있습니다.</p>
-              <p>캘리엠은 앞으로도 사람의 마음과 삶을 연결하는 디자인을 이어가겠습니다.</p>
+              <p>{content.content["text_45"]}</p>
+              <p>{content.content["text_46"]}</p>
             </div>
             <div className="pt-8">
               <div className="w-1 h-24 bg-brand-accent/20 mx-auto" />

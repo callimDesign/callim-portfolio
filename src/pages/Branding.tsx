@@ -1,3 +1,4 @@
+import {portfolioList} from '../content/cmsContent';
 import { useEffect, useState, useMemo } from 'react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
@@ -10,89 +11,7 @@ import featuredImage from '../images/branding/limewood/featured.webp';
 
 import { useNavigate } from 'react-router-dom';
 
-const brandingProjects = [
-  {
-    id: 0,
-    title: '친환경 원목 어린이 가구 브랜드 리뉴얼',
-    desc: '브랜드의 철학과 감성을 다시 정의하며 시각적 일관성과 브랜드 방향성을 구축한 전략 브랜딩 프로젝트입니다.',
-    image: featuredImage,
-    year: 2026,
-    isFeatured: true,
-    slug: '/project/brand-renewal'
-  },
-  {
-    id: 1,
-    title: '친환경 원목 어린이 가구 브랜드 리뉴얼',
-    desc: '브랜드의 철학과 감성을 다시 정의하며 시각적 일관성과 브랜드 방향성을 구축한 전략 브랜딩 프로젝트입니다.',
-    image: featuredImage,
-    year: 2026,
-    slug: '/project/brand-renewal'
-  },
-  {
-    id: 2,
-    title: '서울시청 온오프라인 캠페인',
-    desc: '시민의 목소리를 담은 캘리그라피 아트워크와 그래픽 가이드',
-    image: 'https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?auto=format&fit=crop&q=80&w=800',
-    year: 2023,
-    isPlaceholder: true,
-  },
-  {
-    id: 3,
-    title: '자연의 숨 브랜딩',
-    desc: '친환경 화장품 브랜드의 결을 살린 서체와 비주얼 디자인',
-    image: 'https://images.unsplash.com/photo-1605647540924-852290f6b0d5?auto=format&fit=crop&q=80&w=800',
-    year: 2024,
-    isPlaceholder: true,
-  },
-  {
-    id: 4,
-    title: '월간 캘리엠 굿즈 패키지',
-    desc: '매달 새로운 붓글씨로 만나는 일상 속 예술 프로젝트',
-    image: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6?auto=format&fit=crop&q=80&w=800',
-    year: 2022,
-    isPlaceholder: true,
-  },
-  {
-    id: 5,
-    title: '오래된 정원 북디자인',
-    desc: '시간의 흔적과 문학적 감수성을 담아낸 캘리그라피 커버',
-    image: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800',
-    year: 2021,
-    isPlaceholder: true,
-  },
-  {
-    id: 6,
-    title: '전통주 향기 브랜딩',
-    desc: '전통의 현대적 재해석, 우아한 붓놀림으로 표현된 로고',
-    image: 'https://images.unsplash.com/photo-1569437061241-a848be43cc82?auto=format&fit=crop&q=80&w=800',
-    year: 2023,
-    isPlaceholder: true,
-  },
-  {
-    id: 7,
-    title: '스테이 무드 브랜딩',
-    desc: '쉼의 가치를 담은 감성 숙소의 통합 시각 언어 구축',
-    image: 'https://images.unsplash.com/photo-1506422748170-36946330058b?auto=format&fit=crop&q=80&w=800',
-    year: 2024,
-    isPlaceholder: true,
-  },
-  {
-    id: 8,
-    title: '한글의 미 전시 브랜딩',
-    desc: '국립한글박물관 특별 전시의 메인 테마 및 어플리케이션 디자인',
-    image: 'https://images.unsplash.com/photo-1512411425032-15f793540c4a?auto=format&fit=crop&q=80&w=800',
-    year: 2022,
-    isPlaceholder: true,
-  },
-  {
-    id: 9,
-    title: '카페 림(Lymm) 아이덴티티',
-    desc: '숲속의 여유로운 휴식을 형상화한 유기적 라인의 로고 마크',
-    image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800',
-    year: 2023,
-    isPlaceholder: true,
-  },
-];
+const brandingProjects = portfolioList("branding",[{"id":0,"title":"친환경 원목 어린이 가구 브랜드 리뉴얼","desc":"브랜드의 철학과 감성을 다시 정의하며 시각적 일관성과 브랜드 방향성을 구축한 전략 브랜딩 프로젝트입니다.","image":"/media/existing/branding/limewood/featured.webp","year":2026,"isFeatured":true,"slug":"/project/brand-renewal"},{"id":1,"title":"친환경 원목 어린이 가구 브랜드 리뉴얼","desc":"브랜드의 철학과 감성을 다시 정의하며 시각적 일관성과 브랜드 방향성을 구축한 전략 브랜딩 프로젝트입니다.","image":"/media/existing/branding/limewood/featured.webp","year":2026,"slug":"/project/brand-renewal"},{"id":2,"title":"서울시청 온오프라인 캠페인","desc":"시민의 목소리를 담은 캘리그라피 아트워크와 그래픽 가이드","image":"https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?auto=format&fit=crop&q=80&w=800","year":2023,"isPlaceholder":true},{"id":3,"title":"자연의 숨 브랜딩","desc":"친환경 화장품 브랜드의 결을 살린 서체와 비주얼 디자인","image":"https://images.unsplash.com/photo-1605647540924-852290f6b0d5?auto=format&fit=crop&q=80&w=800","year":2024,"isPlaceholder":true},{"id":4,"title":"월간 캘리엠 굿즈 패키지","desc":"매달 새로운 붓글씨로 만나는 일상 속 예술 프로젝트","image":"https://images.unsplash.com/photo-1589118949245-7d38baf380d6?auto=format&fit=crop&q=80&w=800","year":2022,"isPlaceholder":true},{"id":5,"title":"오래된 정원 북디자인","desc":"시간의 흔적과 문학적 감수성을 담아낸 캘리그라피 커버","image":"https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800","year":2021,"isPlaceholder":true},{"id":6,"title":"전통주 향기 브랜딩","desc":"전통의 현대적 재해석, 우아한 붓놀림으로 표현된 로고","image":"https://images.unsplash.com/photo-1569437061241-a848be43cc82?auto=format&fit=crop&q=80&w=800","year":2023,"isPlaceholder":true},{"id":7,"title":"스테이 무드 브랜딩","desc":"쉼의 가치를 담은 감성 숙소의 통합 시각 언어 구축","image":"https://images.unsplash.com/photo-1506422748170-36946330058b?auto=format&fit=crop&q=80&w=800","year":2024,"isPlaceholder":true},{"id":8,"title":"한글의 미 전시 브랜딩","desc":"국립한글박물관 특별 전시의 메인 테마 및 어플리케이션 디자인","image":"https://images.unsplash.com/photo-1512411425032-15f793540c4a?auto=format&fit=crop&q=80&w=800","year":2022,"isPlaceholder":true},{"id":9,"title":"카페 림(Lymm) 아이덴티티","desc":"숲속의 여유로운 휴식을 형상화한 유기적 라인의 로고 마크","image":"https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800","year":2023,"isPlaceholder":true}]);
 
 const Branding = () => {
   const navigate = useNavigate();
