@@ -20,14 +20,14 @@ const BrandIntro = () => (
   <Section id="brand-intro" className="flex flex-col md:flex-row gap-8 lg:gap-24 items-start pt-[26px] pb-[140px] md:pb-32">
     <div className="md:w-1/2">
       <Reveal>
-        <h2 className="text-[22px] md:text-4xl font-bold leading-tight serif-kor">
+        <h2 className="text-[calc(22px+5pt)] md:text-4xl font-bold leading-tight serif-kor">
           아날로그의 온기로 <br /> 일상의 가치를 디자인합니다
         </h2>
       </Reveal>
     </div>
     <div className="md:w-1/2">
       <Reveal delay={0.2}>
-        <div className="w-full max-w-[450px] h-auto space-y-6 text-[14px] md:text-lg leading-relaxed opacity-80">
+        <div className="w-full max-w-[450px] h-auto space-y-6 text-[calc(14px+5pt)] md:text-lg leading-relaxed opacity-80">
           <p className="w-full md:w-[450px]">
             우리는 빠르게 변화하는 디지털 환경 속에서도 변하지 않는 본질의 가치를 믿습니다. 
             손끝에서 전해지는 질감, 종이 위의 번짐, 그리고 그 안에 담긴 시간의 흔적들.
@@ -71,7 +71,7 @@ const BrandValues = () => (
             <Reveal delay={idx * 0.1}>
               <div className="space-y-6 text-center md:text-left">
                 <span
-                  className={`text-[10px] uppercase tracking-[0.3em] font-bold ${
+                  className={`text-[calc(10px+5pt)] uppercase tracking-[0.3em] font-bold ${
                     idx === 1 ? 'text-brand-ink/40 md:text-white/60' : 'text-white/60'
                   }`}
                 >
@@ -100,9 +100,9 @@ const BrandIdentity = () => (
     {/* Section Header */}
     <Reveal>
       <div className="mb-12 md:mb-16 text-center">
-        <span className="text-[11px] uppercase tracking-[0.3em] opacity-40 font-bold mb-4 block">About CALLI-M</span>
-        <h2 className="text-[28px] md:text-5xl font-sans font-medium tracking-tight text-brand-ink mb-8">Brand Identity</h2>
-        <p className="text-[14px] md:text-[20px] leading-relaxed text-brand-ink/60 max-w-[720px] mx-auto break-keep font-sans">
+        <span className="text-[calc(11px+5pt)] uppercase tracking-[0.3em] opacity-40 font-bold mb-4 block">About CALLI-M</span>
+        <h2 className="text-[calc(28px+5pt)] md:text-5xl font-sans font-medium tracking-tight text-brand-ink mb-8">Brand Identity</h2>
+        <p className="text-[calc(14px+5pt)] md:text-[calc(20px+5pt)] leading-relaxed text-brand-ink/60 max-w-[720px] mx-auto break-keep font-sans">
           캘리엠(CalliM)의 로고는 알파벳 ‘C’와 ‘M’의 유기적인 결합을 통해, 
           감성 콘텐츠를 기반으로 제품과 서비스를 만들어가는 브랜드의 비전을 시각화합니다.
         </p>
@@ -138,13 +138,13 @@ const BrandIdentity = () => (
       {/* 01. Brand Concept */}
       <Reveal delay={0.2}>
         <div className="space-y-0.3 md:space-y-6 text-left">
-          <span className="text-[11px] md:text-[12px] font-bold tracking-[0.18em] text-brand-accent/60 uppercase block">01. Brand Concept</span>
+          <span className="text-[calc(11px+5pt)] md:text-[calc(12px+5pt)] font-bold tracking-[0.18em] text-brand-accent/60 uppercase block">01. Brand Concept</span>
           <div className="grid grid-cols-1 md:grid-cols-[minmax(360px,440px)_1fr] gap-3 md:gap-16 items-start">
             {/* Left Column */}
-            <h4 className="text-[26px] md:text-[31px] lg:text-[34px] font-bold leading-tight serif-kor text-brand-ink md:whitespace-nowrap">감성을 짓고, 가치를 만들다</h4>
+            <h4 className="text-[calc(26px+5pt)] md:text-[calc(31px+5pt)] lg:text-[calc(34px+5pt)] font-bold leading-tight serif-kor text-brand-ink md:whitespace-nowrap">감성을 짓고, 가치를 만들다</h4>
             {/* Right Column */}
             <div>
-              <p className="text-[14px] md:text-[20px] leading-[1.75] text-brand-ink/75 break-keep font-sans">
+              <p className="text-[calc(14px+5pt)] md:text-[calc(20px+5pt)] leading-[1.75] text-brand-ink/75 break-keep font-sans">
                 캘리엠의 ‘Calli’는 단순히 아름다운 손글씨에 머무르지 않습니다.
                 사람의 온기와 마음을 담아내는 감성 콘텐츠로서, 일상에 아날로그적 감성과 따뜻한 이야기를 불어넣습니다.
               </p>
@@ -157,28 +157,28 @@ const BrandIdentity = () => (
       {/* 02. Meaning of 'M' */}
       <Reveal delay={0.3}>
         <div className="space-y-0.3 md:space-y-4 text-left">
-          <span className="text-[11px] md:text-[12px] font-bold tracking-[0.18em] text-brand-accent/60 uppercase block">02. Meaning of 'M'</span>
+          <span className="text-[calc(11px+5pt)] md:text-[calc(12px+5pt)] font-bold tracking-[0.18em] text-brand-accent/60 uppercase block">02. Meaning of 'M'</span>
           <div className="grid grid-cols-1 md:grid-cols-[minmax(360px,440px)_1fr] gap-3 md:gap-16 items-start">
             {/* Left Column */}
-            <h4 className="text-[26px] md:text-[31px] lg:text-[34px] font-bold leading-tight serif-kor text-brand-ink md:whitespace-nowrap">Merchandise & Make</h4>
+            <h4 className="text-[calc(26px+5pt)] md:text-[calc(31px+5pt)] lg:text-[calc(34px+5pt)] font-bold leading-tight serif-kor text-brand-ink md:whitespace-nowrap">Merchandise & Make</h4>
             {/* Right Column */}
             <div className="space-y-6 md:space-y-4 w-full">
-              <p className="text-[14px] md:text-[20px] leading-[1.75] text-brand-ink/75 break-keep font-sans">
+              <p className="text-[calc(14px+5pt)] md:text-[calc(20px+5pt)] leading-[1.75] text-brand-ink/75 break-keep font-sans">
                 'Calli'라는 감성적 토대 위에 결합된 'M'은 캘리엠이 나아가는 실천적 방향성을 상징합니다.
               </p>
 
               {/* Merchandise */}
               <div className="space-y-[6px]">
-                <h5 className="text-[19px] md:text-[23px] font-sans font-semibold text-brand-ink/80">Merchandise</h5>
-                <p className="text-[16px] md:text-[18px] leading-[1.75] text-brand-accent break-keep font-sans">
+                <h5 className="text-[calc(19px+5pt)] md:text-[calc(23px+5pt)] font-sans font-semibold text-brand-ink/80">Merchandise</h5>
+                <p className="text-[calc(16px+5pt)] md:text-[calc(18px+5pt)] leading-[1.75] text-brand-accent break-keep font-sans">
                   감성 콘텐츠를 제품과 굿즈로 구현하여 고객의 라이프스타일을 풍요롭게 채웁니다.
                 </p>
               </div>
 
               {/* Make */}
               <div className="space-y-[6px]">
-                <h5 className="text-[19px] md:text-[23px] font-sans font-semibold text-brand-ink/80">Make</h5>
-                <p className="text-[16px] md:text-[18px] leading-[1.75] text-brand-accent break-keep font-sans">
+                <h5 className="text-[calc(19px+5pt)] md:text-[calc(23px+5pt)] font-sans font-semibold text-brand-ink/80">Make</h5>
+                <p className="text-[calc(16px+5pt)] md:text-[calc(18px+5pt)] leading-[1.75] text-brand-accent break-keep font-sans">
                   아이디어와 감성을 서비스와 비즈니스로 직접 만들어내며 새로운 가치를 창출합니다.
                 </p>
               </div>
@@ -248,8 +248,8 @@ const History = () => {
     <Section id="history" className="py-24 md:py-40 border-t border-brand-ink/5">
       <Reveal>
         <div className="mb-16 md:mb-32 text-center">
-          <span className="text-[10px] uppercase tracking-[0.3em] opacity-40 font-bold">Timeline</span>
-          <h2 className="text-[20px] md:text-4xl font-sans font-medium tracking-tight mt-4">History</h2>
+          <span className="text-[calc(10px+5pt)] uppercase tracking-[0.3em] opacity-40 font-bold">Timeline</span>
+          <h2 className="text-[calc(20px+5pt)] md:text-4xl font-sans font-medium tracking-tight mt-4">History</h2>
         </div>
       </Reveal>
       <div className="max-w-6xl mx-auto px-6 relative">
@@ -278,7 +278,7 @@ const History = () => {
                           </span>
                           <div className="w-12 h-px bg-brand-ink/20 shrink-0" />
                         </div>
-                        <div className={`text-[13px] md:text-[15px] serif-kor tracking-tight leading-relaxed mt-2 ${
+                        <div className={`text-[calc(13px+5pt)] md:text-[calc(15px+5pt)] serif-kor tracking-tight leading-relaxed mt-2 ${
                           item.highlight ? 'font-bold opacity-90' : 'opacity-60'
                         }`}>
                           {Array.isArray(item.content) ? (
@@ -316,7 +316,7 @@ const History = () => {
                           {item.year}
                         </span>
                       </div>
-                      <div className={`text-[13px] md:text-[15px] serif-kor tracking-tight leading-relaxed mt-2 ${
+                      <div className={`text-[calc(13px+5pt)] md:text-[calc(15px+5pt)] serif-kor tracking-tight leading-relaxed mt-2 ${
                         item.highlight ? 'font-bold opacity-90' : 'opacity-60'
                       }`}>
                         {Array.isArray(item.content) ? (

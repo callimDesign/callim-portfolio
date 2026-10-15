@@ -1,0 +1,3 @@
+minimumReleaseAgeExclude:
+  - '@decap/cli@0.1.2'
+  - decap-server@3.11.5

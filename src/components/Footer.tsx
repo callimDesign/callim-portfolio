@@ -56,7 +56,7 @@ export const Footer = () => (
 
       {/* MENU SECTION */}
       <div className="space-y-4 md:space-y-6">
-        <h4 className="text-[10px] font-bold uppercase tracking-widest opacity-40">Menu</h4>
+        <h4 className="text-[calc(10px+5pt)] font-bold uppercase tracking-widest opacity-40">Menu</h4>
         <nav className="grid grid-cols-2 gap-y-2 gap-x-8 md:flex md:flex-col md:gap-3">
           <Link to="/#about" className="text-sm opacity-60 hover:opacity-100 hover:text-brand-accent transition-all w-fit">About</Link>
           <Link to="/#portfolio" className="text-sm opacity-60 hover:opacity-100 hover:text-brand-accent transition-all w-fit">Portfolio</Link>
@@ -67,7 +67,7 @@ export const Footer = () => (
 
       {/* CONTACT SECTION */}
       <div className="space-y-4 md:space-y-6">
-        <h4 className="text-[10px] font-bold uppercase tracking-widest opacity-40">Contact</h4>
+        <h4 className="text-[calc(10px+5pt)] font-bold uppercase tracking-widest opacity-40">Contact</h4>
         <div className="space-y-3 md:space-y-4 text-sm opacity-60">
           <div className="flex gap-3">
             <MapPin className="w-4 h-4 shrink-0 text-brand-accent" />
@@ -85,7 +85,7 @@ export const Footer = () => (
       </div>
     </div>
 
-    <div className="max-w-7xl mx-auto px-6 md:px-12 mt-12 md:mt-24 pt-6 md:pt-8 border-t border-brand-ink/5 text-[10px] font-bold uppercase tracking-widest opacity-20 flex flex-col md:flex-row justify-between gap-3 md:gap-4">
+    <div className="max-w-7xl mx-auto px-6 md:px-12 mt-12 md:mt-24 pt-6 md:pt-8 border-t border-brand-ink/5 text-[calc(10px+5pt)] font-bold uppercase tracking-widest opacity-20 flex flex-col md:flex-row justify-between gap-3 md:gap-4">
       <span>© 2026 CALLI-M. All rights reserved.</span>
       <span>Designed with Warmth in Goyang</span>
     </div>

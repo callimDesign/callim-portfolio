@@ -28,7 +28,7 @@ const CmsJournalDetail = ({ previewPost }: { previewPost?: Partial<CmsJournal> }
       <section className="pt-48 pb-12 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
         <Reveal>
           <div className="space-y-6">
-            <span className="text-[10px] font-bold tracking-[0.3em] uppercase opacity-40">Journal</span>
+            <span className="text-[calc(10px+5pt)] font-bold tracking-[0.3em] uppercase opacity-40">Journal</span>
             <h1 className="text-4xl md:text-5xl serif-kor leading-tight text-brand-ink/90 whitespace-pre-line">
               {journal.detailTitle || journal.title}
             </h1>

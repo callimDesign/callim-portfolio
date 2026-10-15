@@ -52,6 +52,21 @@
 }
 
 @theme {
+  /* Increase typography by 5pt while preserving spacing and breakpoints. */
+  --text-xs: calc(0.75rem + 5pt);
+  --text-sm: calc(0.875rem + 5pt);
+  --text-base: calc(1rem + 5pt);
+  --text-lg: calc(1.125rem + 5pt);
+  --text-xl: calc(1.25rem + 5pt);
+  --text-2xl: calc(1.5rem + 5pt);
+  --text-3xl: calc(1.875rem + 5pt);
+  --text-4xl: calc(2.25rem + 5pt);
+  --text-5xl: calc(3rem + 5pt);
+  --text-6xl: calc(3.75rem + 5pt);
+  --text-7xl: calc(4.5rem + 5pt);
+  --text-8xl: calc(6rem + 5pt);
+  --text-9xl: calc(8rem + 5pt);
+
   --color-brand-bg: #FDFCFB;
   --color-brand-ink: #2D2926;
   --color-brand-accent: #8C7861;
@@ -71,6 +86,7 @@
 
 @layer base {
   body {
+    font-size: var(--text-base);
     @apply bg-brand-bg text-brand-ink font-sans selection:bg-brand-accent/20;
     -webkit-font-smoothing: antialiased;
   }

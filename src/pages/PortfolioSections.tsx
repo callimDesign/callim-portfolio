@@ -196,7 +196,7 @@ const variants:Record<string,(block:any)=>any>={"brand-renewal-0":(block:any)=>(
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug"><Lines text={block.heading}/></h3>
-            <div className="space-y-4 md:space-y-6 text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70">
+            <div className="space-y-4 md:space-y-6 text-[calc(15px+5pt)] md:text-lg font-sans font-light leading-relaxed opacity-70">
               {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p><Lines text={text}/></p></span>)}
               
             </div>
@@ -221,7 +221,7 @@ const variants:Record<string,(block:any)=>any>={"brand-renewal-0":(block:any)=>(
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug"><Lines text={block.heading}/></h3>
-            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70"><Lines text={text}/></p></span>)}
+            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[calc(15px+5pt)] md:text-lg font-sans font-light leading-relaxed opacity-70"><Lines text={text}/></p></span>)}
           </div>
         </Reveal>
       </Section>),
@@ -240,7 +240,7 @@ const variants:Record<string,(block:any)=>any>={"brand-renewal-0":(block:any)=>(
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug"><Lines text={block.heading}/></h3>
-            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70"><Lines text={text}/></p></span>)}
+            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[calc(15px+5pt)] md:text-lg font-sans font-light leading-relaxed opacity-70"><Lines text={text}/></p></span>)}
           </div>
         </Reveal>
       </Section>),
@@ -262,7 +262,7 @@ const variants:Record<string,(block:any)=>any>={"brand-renewal-0":(block:any)=>(
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug"><Lines text={block.heading}/></h3>
-            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70"><Lines text={text}/></p></span>)}
+            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[calc(15px+5pt)] md:text-lg font-sans font-light leading-relaxed opacity-70"><Lines text={text}/></p></span>)}
           </div>
         </Reveal>
       </Section>),
@@ -270,7 +270,7 @@ const variants:Record<string,(block:any)=>any>={"brand-renewal-0":(block:any)=>(
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug"><Lines text={block.heading}/></h3>
-            <div className="space-y-4 md:space-y-6 text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70">
+            <div className="space-y-4 md:space-y-6 text-[calc(15px+5pt)] md:text-lg font-sans font-light leading-relaxed opacity-70">
               {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p><Lines text={text}/></p></span>)}
               
             </div>
@@ -297,7 +297,7 @@ const variants:Record<string,(block:any)=>any>={"brand-renewal-0":(block:any)=>(
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug"><Lines text={block.heading}/></h3>
-            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70"><Lines text={text}/></p></span>)}
+            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[calc(15px+5pt)] md:text-lg font-sans font-light leading-relaxed opacity-70"><Lines text={text}/></p></span>)}
           </div>
         </Reveal>
       </Section>),
@@ -319,7 +319,7 @@ const variants:Record<string,(block:any)=>any>={"brand-renewal-0":(block:any)=>(
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug"><Lines text={block.heading}/></h3>
-            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70"><Lines text={text}/></p></span>)}
+            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[calc(15px+5pt)] md:text-lg font-sans font-light leading-relaxed opacity-70"><Lines text={text}/></p></span>)}
           </div>
         </Reveal>
       </Section>),
@@ -341,7 +341,7 @@ const variants:Record<string,(block:any)=>any>={"brand-renewal-0":(block:any)=>(
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug"><Lines text={block.heading}/></h3>
-            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70"><Lines text={text}/></p></span>)}
+            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[calc(15px+5pt)] md:text-lg font-sans font-light leading-relaxed opacity-70"><Lines text={text}/></p></span>)}
           </div>
         </Reveal>
       </Section>),
@@ -349,7 +349,7 @@ const variants:Record<string,(block:any)=>any>={"brand-renewal-0":(block:any)=>(
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug"><Lines text={block.heading}/></h3>
-            <div className="space-y-4 md:space-y-6 text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70 break-keep">
+            <div className="space-y-4 md:space-y-6 text-[calc(15px+5pt)] md:text-lg font-sans font-light leading-relaxed opacity-70 break-keep">
               {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p><Lines text={text}/></p></span>)}
               
             </div>
@@ -374,7 +374,7 @@ const variants:Record<string,(block:any)=>any>={"brand-renewal-0":(block:any)=>(
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug"><Lines text={block.heading}/></h3>
-            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70 border-b border-brand-ink/5 pb-8 md:pb-16 text-center break-keep"><Lines text={text}/></p></span>)}
+            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[calc(15px+5pt)] md:text-lg font-sans font-light leading-relaxed opacity-70 border-b border-brand-ink/5 pb-8 md:pb-16 text-center break-keep"><Lines text={text}/></p></span>)}
           </div>
         </Reveal>
       </Section>),
@@ -396,7 +396,7 @@ const variants:Record<string,(block:any)=>any>={"brand-renewal-0":(block:any)=>(
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug"><Lines text={block.heading}/></h3>
-            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70 border-b border-brand-ink/5 pb-8 md:pb-16 text-center break-keep"><Lines text={text}/></p></span>)}
+            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[calc(15px+5pt)] md:text-lg font-sans font-light leading-relaxed opacity-70 border-b border-brand-ink/5 pb-8 md:pb-16 text-center break-keep"><Lines text={text}/></p></span>)}
           </div>
         </Reveal>
       </Section>),
@@ -418,7 +418,7 @@ const variants:Record<string,(block:any)=>any>={"brand-renewal-0":(block:any)=>(
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 text-center text-brand-ink">
             <h3 className="text-2xl md:text-3xl font-maruburi leading-snug"><Lines text={block.heading}/></h3>
-            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[15px] md:text-lg font-sans font-light leading-relaxed opacity-70 break-keep"><Lines text={text}/></p></span>)}
+            {(block.paragraphs||[]).map((text:string,index:number)=><span key={index} style={{display:'contents'}}><p className="text-[calc(15px+5pt)] md:text-lg font-sans font-light leading-relaxed opacity-70 break-keep"><Lines text={text}/></p></span>)}
           </div>
         </Reveal>
       </Section>)};

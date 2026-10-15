@@ -21,7 +21,7 @@ const Journals = () => {
       <section className="pt-48 pb-24 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
         <Reveal>
           <div className="space-y-6 text-center md:text-left">
-            <span className="text-[10px] font-bold tracking-[0.3em] uppercase opacity-40">Calli-M Journals</span>
+            <span className="text-[calc(10px+5pt)] font-bold tracking-[0.3em] uppercase opacity-40">Calli-M Journals</span>
             <h1 className="text-4xl md:text-6xl font-serif tracking-tight leading-tight text-brand-ink/90">Brand Journals</h1>
             <p className="text-lg opacity-60 serif-kor leading-relaxed max-w-2xl">
               캘리엠의 소식과 프로젝트, 수상 기록, <br className="hidden md:block" />
@@ -52,14 +52,14 @@ const Journals = () => {
                   />
                 </div>
                 <div className="space-y-4">
-                  <span className="text-[10px] font-bold tracking-widest opacity-40 block">{item.date}</span>
+                  <span className="text-[calc(10px+5pt)] font-bold tracking-widest opacity-40 block">{item.date}</span>
                   <h3 className="text-2xl serif-kor leading-tight group-hover:text-brand-accent transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-sm opacity-60 leading-relaxed font-light line-clamp-2">
                     {item.desc}
                   </p>
-                  <div className="pt-4 inline-flex items-center gap-2 text-[9px] font-bold uppercase tracking-[0.15em] border-b border-brand-ink/20 pb-1 opacity-0 group-hover:opacity-80 transition-all duration-300">
+                  <div className="pt-4 inline-flex items-center gap-2 text-[calc(9px+5pt)] font-bold uppercase tracking-[0.15em] border-b border-brand-ink/20 pb-1 opacity-0 group-hover:opacity-80 transition-all duration-300">
                     READ FULL STORY <span className="text-base leading-none">→</span>
                   </div>
                 </div>

@@ -60,7 +60,7 @@ const GoyangFlowerTea = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center pb-8 md:pb-16">
               <div className="space-y-12">
                 <span 
-                  className="text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase text-brand-ink inline-block opacity-60"
+                  className="text-[calc(10px+5pt)] md:text-xs font-bold tracking-[0.4em] uppercase text-brand-ink inline-block opacity-60"
                 >
                   {"Project Design Portfolio"}</span>
                 
@@ -81,19 +81,19 @@ const GoyangFlowerTea = () => {
           <Reveal>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 md:gap-12 border-t border-brand-ink/5 pt-8 pb-8 md:pt-12 md:pb-24">
               <div className="space-y-2">
-                <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Client</span>
+                <span className="text-[calc(10px+5pt)] font-bold tracking-widest opacity-30 uppercase">Client</span>
                 <p className="text-sm md:text-base font-sans font-medium">{content.client}</p>
               </div>
               <div className="space-y-2">
-                <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Category</span>
+                <span className="text-[calc(10px+5pt)] font-bold tracking-widest opacity-30 uppercase">Category</span>
                 <p className="text-sm md:text-base font-sans font-medium">{content.detailCategory}</p>
               </div>
               <div className="space-y-2">
-                <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Scope</span>
+                <span className="text-[calc(10px+5pt)] font-bold tracking-widest opacity-30 uppercase">Scope</span>
                 <p className="text-sm md:text-base font-sans font-medium whitespace-pre-line"><Lines text={content.scope}/></p>
               </div>
               <div className="space-y-2">
-                <span className="text-[10px] font-bold tracking-widest opacity-30 uppercase">Keywords</span>
+                <span className="text-[calc(10px+5pt)] font-bold tracking-widest opacity-30 uppercase">Keywords</span>
                 <p className="text-sm md:text-base font-sans font-medium leading-relaxed"><Lines text={content.keywords}/></p>
               </div>
             </div>
@@ -111,10 +111,10 @@ const GoyangFlowerTea = () => {
         <Reveal>
           <div className="space-y-7 md:space-y-12">
             <div className="space-y-4">
-              <span className="text-[10px] font-bold tracking-[0.4em] uppercase opacity-30">{"Final Message"}</span>
+              <span className="text-[calc(10px+5pt)] font-bold tracking-[0.4em] uppercase opacity-30">{"Final Message"}</span>
               <h2 className="text-3xl md:text-5xl font-maruburi leading-tight"><Lines text={content.conclusionTitle}/></h2>
             </div>
-            <div className="space-y-6 text-[15px] md:text-lg font-sans font-light leading-relaxed max-w-2xl mx-auto opacity-70">
+            <div className="space-y-6 text-[calc(15px+5pt)] md:text-lg font-sans font-light leading-relaxed max-w-2xl mx-auto opacity-70">
               <p>{"고양시의 대표적인 풍경과 이야기를 따뜻한 일러스트와 서정적인 색감으로 한 잔의 밀크티에 담아냈습니다."}</p>
               <p><Lines text={content.closingText}/></p>
             </div>
