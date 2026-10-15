@@ -8,46 +8,115 @@
   "category": "project",
   "route": "/project/seongbuk-postcard",
   "template": "seongbuk-postcard",
-  "layout": [
+  "sections": [
     {
-      "type": "seongbuk-postcard",
-      "image_01": "/media/existing/journal/seongbuk-dong-postcard/mobile-hero.webp",
-      "alt_02": "Seongbuk-dong Postcard Hero Mobile",
-      "image_03": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (1).webp",
-      "alt_04": "Seongbuk-dong Postcard Hero",
-      "text_05": "Project Design Portfolio",
-      "text_06": "성북동 엽서 프로젝트",
-      "text_07": "SEONGBUK-DONG POSTCARD PROJECT",
-      "text_08": "성북동 구도심의 오래된 골목과 건물이 품고 있는 도시의 서정적인 정서와 일상의 시간을 엽서 한 장에 따뜻한 일러스트와 감각적인 시선으로 풀어낸 기록입니다.",
-      "text_09": "성북동 엽서가게",
-      "text_10": "Illustration / Local Goods",
-      "text_11": "Postcard Design / Art Illustration / Art Direction",
-      "text_12": "Seongbuk / Old Town / Postcard / Memory / Local Archives",
-      "text_13": "어… 이 골목 알 것 같다. 이 가게 지나간 적 있어.",
-      "text_14": "성북동은 오래된 건물과 골목들이 도시의 시간을 조용히 품고 있는 동네입니다. 캘리엠은 작업하며 가졌던 성북동 구도심의 친근함과 골목길 너머로 피어나는 서정적인 분위기를 전하고 싶었습니다.",
-      "text_15": "캘리엠이 그린 성북동의 소소한 풍경들이 보시는 한 분 한 분의 소중한 기억과 연결되며, 일상에 서정적이고 잔잔한 즐거움이 되었으면 하는 바람을 담았습니다.",
-      "image_16": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (2).webp",
-      "alt_17": "성북동 골목 풍경",
-      "image_18": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (3).webp",
-      "alt_19": "성북동 고유한 정취",
-      "text_20": "도시의 유산과 일상의 가치를 기록하다",
-      "text_21": "과거와 현재가 자연스럽게 손닿아 이어져 가는 성북동의 특별한 장소들은 그 존재 자체만으로 깊은 이야기를 조용히 전해 주고 있습니다. 그렇기에 이번 작업은 단순한 드로잉을 넘어, 우리 삶터의 귀중한 헤리티지를 기록하는 가치 있는 기록으로 다가왔습니다.",
-      "image_22": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (4).webp",
-      "alt_23": "성북동 엽서 실물 1",
-      "image_24": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (5).webp",
-      "alt_25": "드로잉 디테일 연출",
-      "text_26": "실물에 고스란히 배어든 따뜻함",
-      "text_27": "실제 종이 엽서로 구현된 실물은 화면 너머로 보던 이미지보다 훨씬 밀도 높고 포근함을 선사합니다. 구도심 고유의 스쳐 흘러가기 쉬운 소탈한 장면들과 햇살이 스민 순간들을 포커싱하여 보는 이의 가슴속 깊이 오래오래 아로새겨질 수 있는 따스한 일러스트 레이아웃을 구축했습니다.",
-      "image_28": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (6).webp",
-      "alt_29": "드로잉 디테일 연출 2",
-      "image_30": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (7).webp",
-      "alt_31": "드로잉 디테일 연출 3",
-      "text_32": "성북동을 추억하는 다정한 매개체",
-      "text_33": "세월이 내려앉은 구도심의 낡은 비포장 길과 간판, 흐릿해진 벽보들이 캘리엠의 정교하고 부드러운 핸드드로잉 붓끝에서 새로운 생명력과 서정적인 아름다움으로 기록되었습니다. 그 정성이 담긴 실물 엽서 세트는 손에서 손으로 포근히 닿을 수 있는 가장 아름다운 기억의 매개체가 될 것입니다.",
-      "text_34": "Final Message",
-      "text_35": "Warm Memories of Old Alleys",
-      "text_36": "소중한 순간, 언제든 다정하게 가 닿아 안부를 건넬 수 있는 한 장의 따뜻한 엽서가 되기를 바랍니다.",
-      "text_37": "캘리엠은 도시가 품고 있는 보석 같은 아날로그의 장면들을 계속해서 차분히 기록해 나가겠습니다."
+      "type": "section",
+      "_variant": "seongbuk-postcard-0",
+      "photoLayout": "none",
+      "heading": "어… 이 골목 알 것 같다. 이 가게 지나간 적 있어.",
+      "paragraphs": [
+        "성북동은 오래된 건물과 골목들이 도시의 시간을 조용히 품고 있는 동네입니다. 캘리엠은 작업하며 가졌던 성북동 구도심의 친근함과 골목길 너머로 피어나는 서정적인 분위기를 전하고 싶었습니다.",
+        "캘리엠이 그린 성북동의 소소한 풍경들이 보시는 한 분 한 분의 소중한 기억과 연결되며, 일상에 서정적이고 잔잔한 즐거움이 되었으면 하는 바람을 담았습니다."
+      ],
+      "images": [],
+      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+    },
+    {
+      "type": "section",
+      "_variant": "seongbuk-postcard-1",
+      "photoLayout": "two",
+      "heading": "",
+      "paragraphs": [],
+      "images": [
+        {
+          "image": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (2).webp",
+          "alt": "성북동 골목 풍경"
+        },
+        {
+          "image": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (3).webp",
+          "alt": "성북동 고유한 정취"
+        }
+      ],
+      "_imageGuide": "현재 영역: 3:4 / 3:4 · 16:9는 1920 × 1080px, 16:11은 1600 × 1100px"
+    },
+    {
+      "type": "section",
+      "_variant": "seongbuk-postcard-2",
+      "photoLayout": "none",
+      "heading": "도시의 유산과 일상의 가치를 기록하다",
+      "paragraphs": [
+        "과거와 현재가 자연스럽게 손닿아 이어져 가는 성북동의 특별한 장소들은 그 존재 자체만으로 깊은 이야기를 조용히 전해 주고 있습니다. 그렇기에 이번 작업은 단순한 드로잉을 넘어, 우리 삶터의 귀중한 헤리티지를 기록하는 가치 있는 기록으로 다가왔습니다."
+      ],
+      "images": [],
+      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+    },
+    {
+      "type": "section",
+      "_variant": "seongbuk-postcard-3",
+      "photoLayout": "two",
+      "heading": "",
+      "paragraphs": [],
+      "images": [
+        {
+          "image": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (4).webp",
+          "alt": "성북동 엽서 실물 1"
+        },
+        {
+          "image": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (5).webp",
+          "alt": "드로잉 디테일 연출"
+        }
+      ],
+      "_imageGuide": "현재 영역: 3:4 / 3:4 · 16:9는 1920 × 1080px, 16:11은 1600 × 1100px"
+    },
+    {
+      "type": "section",
+      "_variant": "seongbuk-postcard-4",
+      "photoLayout": "none",
+      "heading": "실물에 고스란히 배어든 따뜻함",
+      "paragraphs": [
+        "실제 종이 엽서로 구현된 실물은 화면 너머로 보던 이미지보다 훨씬 밀도 높고 포근함을 선사합니다. 구도심 고유의 스쳐 흘러가기 쉬운 소탈한 장면들과 햇살이 스민 순간들을 포커싱하여 보는 이의 가슴속 깊이 오래오래 아로새겨질 수 있는 따스한 일러스트 레이아웃을 구축했습니다."
+      ],
+      "images": [],
+      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+    },
+    {
+      "type": "section",
+      "_variant": "seongbuk-postcard-5",
+      "photoLayout": "two",
+      "heading": "",
+      "paragraphs": [],
+      "images": [
+        {
+          "image": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (6).webp",
+          "alt": "드로잉 디테일 연출 2"
+        },
+        {
+          "image": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (7).webp",
+          "alt": "드로잉 디테일 연출 3"
+        }
+      ],
+      "_imageGuide": "현재 영역: 3:4 / 3:4 · 16:9는 1920 × 1080px, 16:11은 1600 × 1100px"
+    },
+    {
+      "type": "section",
+      "_variant": "seongbuk-postcard-6",
+      "photoLayout": "none",
+      "heading": "성북동을 추억하는 다정한 매개체",
+      "paragraphs": [
+        "세월이 내려앉은 구도심의 낡은 비포장 길과 간판, 흐릿해진 벽보들이 캘리엠의 정교하고 부드러운 핸드드로잉 붓끝에서 새로운 생명력과 서정적인 아름다움으로 기록되었습니다. 그 정성이 담긴 실물 엽서 세트는 손에서 손으로 포근히 닿을 수 있는 가장 아름다운 기억의 매개체가 될 것입니다."
+      ],
+      "images": [],
+      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
     }
-  ]
+  ],
+  "detailTitle": "성북동 엽서 프로젝트",
+  "client": "성북동 엽서가게",
+  "detailCategory": "Illustration / Local Goods",
+  "scope": "Postcard Design / Art Illustration / Art Direction",
+  "keywords": "Seongbuk / Old Town / Postcard / Memory / Local Archives",
+  "detailDesc": "성북동 구도심의 오래된 골목과 건물이 품고 있는 도시의 서정적인 정서와 일상의 시간을 엽서 한 장에 따뜻한 일러스트와 감각적인 시선으로 풀어낸 기록입니다.",
+  "conclusionTitle": "Warm Memories of Old Alleys",
+  "closingText": "캘리엠은 도시가 품고 있는 보석 같은 아날로그의 장면들을 계속해서 차분히 기록해 나가겠습니다.",
+  "heroImage": "/media/existing/journal/seongbuk-dong-postcard/seongbuk-dong-postcard (1).webp",
+  "heroMobileImage": "/media/existing/journal/seongbuk-dong-postcard/mobile-hero.webp"
 }

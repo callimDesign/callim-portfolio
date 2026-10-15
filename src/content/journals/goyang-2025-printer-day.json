@@ -8,20 +8,15 @@
   "link": "/journal/goyang-2025-printer-day",
   "image": "/media/existing/journal/goyang-2025-printer's-day/goyang-2025-printer's-day (7).jpg",
   "template": "goyang-2025-printer-day",
-  "layout": [
-    {
-      "type": "goyang-2025-printer-day",
-      "image_01": "/media/existing/journal/goyang-2025-printer's-day/goyang-2025-printer's-day (7).jpg",
-      "alt_02": "Goyang Printer's Day Award 1",
-      "image_03": "/media/existing/journal/goyang-2025-printer's-day/goyang-2025-printer's-day (5).jpg",
-      "alt_04": "Goyang Printer's Day Award 2",
-      "text_05": "“고양의 이야기를 담은 ",
-      "text_06": "한 잔의 차, ",
-      "text_07": "지역의 가치를 디자인하다.”",
-      "text_08": "캘리엠은 고양시의 대표 명소를 감성 일러스트로 재해석한 「Moments of Goyang」 밀크티백 세트를 기획하였습니다. 단순한 관광기념품을 넘어, 일상 속에서도 지역의 이야기를 경험할 수 있는 새로운 형태의 지역 굿즈를 제안하고자 했습니다.",
-      "text_09": "고양꽃박람회, 일산호수공원, 킨텍스, 행주산성 등 여섯 개 명소를 하나의 컬렉션으로 구성하였으며, 차와 디자인을 결합해 선물용과 소장용 모두에 적합한 제품으로 개발하였습니다.",
-      "text_10": "재사용 가능한 패키지 구조와 감성적인 일러스트, 고품질 인쇄 기술을 결합하여 지역성과 실용성을 동시에 구현하였으며, 이러한 완성도를 인정받아 2025 고양 인쇄기술경진대회 금상을 수상하였습니다.",
-      "text_11": "Back to Journals"
-    }
-  ]
+  "quote": "“고양의 이야기를 담은 \n 한 잔의 차, \n 지역의 가치를 디자인하다.”",
+  "paragraphs": [
+    "캘리엠은 고양시의 대표 명소를 감성 일러스트로 재해석한 「Moments of Goyang」 밀크티백 세트를 기획하였습니다. 단순한 관광기념품을 넘어, 일상 속에서도 지역의 이야기를 경험할 수 있는 새로운 형태의 지역 굿즈를 제안하고자 했습니다.",
+    "고양꽃박람회, 일산호수공원, 킨텍스, 행주산성 등 여섯 개 명소를 하나의 컬렉션으로 구성하였으며, 차와 디자인을 결합해 선물용과 소장용 모두에 적합한 제품으로 개발하였습니다.",
+    "재사용 가능한 패키지 구조와 감성적인 일러스트, 고품질 인쇄 기술을 결합하여 지역성과 실용성을 동시에 구현하였으며, 이러한 완성도를 인정받아 2025 고양 인쇄기술경진대회 금상을 수상하였습니다."
+  ],
+  "leftImage": "/media/existing/journal/goyang-2025-printer's-day/goyang-2025-printer's-day (7).jpg",
+  "rightImage": "/media/existing/journal/goyang-2025-printer's-day/goyang-2025-printer's-day (5).jpg",
+  "leftAlt": "Goyang Printer's Day Award 1",
+  "rightAlt": "Goyang Printer's Day Award 2",
+  "photoLayout": "two"
 }

@@ -1,3 +1,4 @@
+import {Lines} from '../../components/ContentLines';
 import {useTemplateContent} from '../../content/cmsContent';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -51,8 +52,8 @@ const InnovationVoucherBrandSupport = () => {
           <Reveal delay={0.2}>
             <div className="overflow-hidden aspect-[16/11] rounded-sm bg-brand-ink/5">
               <img 
-                src={content.content["image_01"]} 
-                alt={content.content["alt_02"]} 
+                src={content.leftImage} 
+                alt={content.leftAlt} 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
@@ -61,8 +62,8 @@ const InnovationVoucherBrandSupport = () => {
           <Reveal delay={0.3}>
             <div className="overflow-hidden aspect-[16/11] rounded-sm bg-brand-ink/5">
               <img 
-                src={content.content["image_03"]} 
-                alt={content.content["alt_04"]} 
+                src={content.rightImage} 
+                alt={content.rightAlt} 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
@@ -75,50 +76,10 @@ const InnovationVoucherBrandSupport = () => {
       <section className="px-6 md:px-12 lg:px-24 max-w-7xl mx-auto py-24 flex flex-col md:flex-row gap-16">
         <div className="md:w-1/3">
           <Reveal delay={0.4}>
-            <p className="text-brand-accent serif-kor text-xl md:text-2xl leading-relaxed italic whitespace-pre-line">
-              {content.content["text_05"]}{"\n"}
-              {content.content["text_06"]}{"\n"}
-              {content.content["text_07"]}</p>
+            <p className="text-brand-accent serif-kor text-xl md:text-2xl leading-relaxed italic whitespace-pre-line"><Lines text={content.quote}/></p>
           </Reveal>
         </div>
-        <div className="md:w-2/3 space-y-8 text-sm md:text-base leading-loose opacity-80 break-keep">
-          <Reveal delay={0.5}>
-            <p>
-              {content.content["text_08"]}<span className="font-semibold">{"<**** 디자인>"}</span>{content.content["text_09"]}</p>
-          </Reveal>
-          <Reveal delay={0.6}>
-            <div className="space-y-2">
-              <p className="font-semibold border-l-2 border-brand-accent/50 pl-3 text-brand-ink/90">
-                {content.content["text_10"]}</p>
-              <ul className="list-decimal list-inside pl-4 space-y-1">
-                <li>{content.content["text_11"]}</li>
-                <li>{content.content["text_12"]}</li>
-                <li>{content.content["text_13"]}</li>
-              </ul>
-              <p className="pt-2">
-                {content.content["text_14"]}</p>
-            </div>
-          </Reveal>
-          <Reveal delay={0.7}>
-            <p>
-              {content.content["text_15"]}</p>
-          </Reveal>
-          <Reveal delay={0.8}>
-            <div className="p-6 bg-brand-ink/5 rounded-sm space-y-3 border-l-4 border-brand-accent">
-              <p className="italic font-medium text-brand-ink/85 whitespace-pre-line">
-                {content.content["text_16"]}</p>
-              <p className="text-xs opacity-60 text-right">{content.content["text_17"]}</p>
-            </div>
-          </Reveal>
-          <Reveal delay={0.9}>
-            <p>
-              {content.content["text_18"]}</p>
-          </Reveal>
-          <Reveal delay={1.0}>
-            <p className="font-medium text-brand-ink/90">
-              {content.content["text_19"]}</p>
-          </Reveal>
-        </div>
+        <div className="md:w-2/3 space-y-8 text-sm md:text-base leading-loose opacity-80 break-keep">{(content.paragraphs||[]).map((text:string,index:number)=><Reveal key={index} delay={0.5+index*0.1}><p className="whitespace-pre-line">{text}</p></Reveal>)}</div>
       </section>
 
       {/* Footer / Back Button */}
@@ -129,7 +90,7 @@ const InnovationVoucherBrandSupport = () => {
             className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.3em] hover:gap-6 transition-all border-b border-brand-ink/30 pb-2"
           >
             <ChevronLeft className="w-4 h-4" />
-            {content.content["text_20"]}</Link>
+            Back to Journals</Link>
         </Reveal>
       </section>
 

@@ -521,7 +521,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
                 {/* Left: Product Image */}
                 <div className="w-full md:w-[50%] h-[320px] md:h-full bg-brand-ink/[0.02] flex-shrink-0 relative overflow-hidden border-b md:border-b-0 md:border-r border-brand-ink/10">
                   <img 
-                    src={detailImages[0]} 
+                    src={selectedProduct.detailImage || detailImages[0]} 
                     alt={selectedProduct.title} 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"

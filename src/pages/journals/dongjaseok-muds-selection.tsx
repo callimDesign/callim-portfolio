@@ -1,3 +1,4 @@
+import {Lines} from '../../components/ContentLines';
 import {useTemplateContent} from '../../content/cmsContent';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -51,8 +52,8 @@ const DongjaseokMudsSelection = () => {
           <Reveal delay={0.2}>
             <div className="overflow-hidden aspect-[16/11] rounded-sm bg-brand-ink/5">
               <img 
-                src={content.content["image_01"]} 
-                alt={content.content["alt_02"]} 
+                src={content.leftImage} 
+                alt={content.leftAlt} 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -61,8 +62,8 @@ const DongjaseokMudsSelection = () => {
           <Reveal delay={0.3}>
             <div className="overflow-hidden aspect-[16/11] rounded-sm bg-brand-ink/5">
               <img 
-                src={content.content["image_03"]} 
-                alt={content.content["alt_04"]} 
+                src={content.rightImage} 
+                alt={content.rightAlt} 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -75,24 +76,10 @@ const DongjaseokMudsSelection = () => {
       <section className="px-6 md:px-12 lg:px-24 max-w-7xl mx-auto py-24 flex flex-col md:flex-row gap-16">
         <div className="md:w-1/3">
           <Reveal delay={0.4}>
-            <p className="text-brand-accent serif-kor text-xl md:text-2xl leading-relaxed italic whitespace-pre-line">
-              {content.content["text_05"]}{"\n"}{content.content["text_06"]}{"\n"}{content.content["text_07"]}</p>
+            <p className="text-brand-accent serif-kor text-xl md:text-2xl leading-relaxed italic whitespace-pre-line"><Lines text={content.quote}/></p>
           </Reveal>
         </div>
-        <div className="md:w-2/3 space-y-8 text-sm md:text-base leading-loose opacity-80">
-          <Reveal delay={0.5}>
-            <p>{content.content["text_08"]}</p>
-          </Reveal>
-          <Reveal delay={0.6}>
-            <p>{content.content["text_09"]}</p>
-          </Reveal>
-          <Reveal delay={0.7}>
-            <p>{content.content["text_10"]}</p>
-          </Reveal>
-          <Reveal delay={0.8}>
-            <p>{content.content["text_11"]}</p>
-          </Reveal>
-        </div>
+        <div className="md:w-2/3 space-y-8 text-sm md:text-base leading-loose opacity-80">{(content.paragraphs||[]).map((text:string,index:number)=><Reveal key={index} delay={0.5+index*0.1}><p className="whitespace-pre-line">{text}</p></Reveal>)}</div>
       </section>
 
       {/* Footer / Back Button */}
@@ -103,7 +90,7 @@ const DongjaseokMudsSelection = () => {
             className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.3em] hover:gap-6 transition-all border-b border-brand-ink/30 pb-2"
           >
             <ChevronLeft className="w-4 h-4" />
-            {content.content["text_12"]}</Link>
+            Back to Journals</Link>
         </Reveal>
       </section>
 

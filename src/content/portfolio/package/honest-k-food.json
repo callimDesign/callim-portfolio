@@ -9,58 +9,121 @@
   "category": "package",
   "route": "/package/honest-k-food",
   "template": "honest-k-food",
-  "layout": [
+  "sections": [
     {
-      "type": "honest-k-food",
-      "alt_01": "HONEST K FOOD Hero",
-      "text_02": "Package Design Portfolio",
-      "text_03": "어니스트케이푸드 ",
-      "text_04": "까나리어간장",
-      "text_05": "백령도의 지역성과 건강한 식재료 철학을 담아 ",
-      "text_06": "로컬 식품 브랜드의 진정성을 시각적으로 풀어낸 패키지 디자인 프로젝트",
-      "text_07": "Honest K Food",
-      "text_08": "Package Design",
-      "text_09": "Label Sticker / Product Tag / ",
-      "text_10": "Package Box",
-      "text_11": "Local Food / Honest ingredients / ",
-      "text_12": "Natural Branding / Locality",
-      "alt_13": "Brand Story Visual",
-      "text_14": "지역의 식재료로 정직한 먹거리를 만드는 브랜드",
-      "text_15": "어니스트케이푸드는 지역의 식재료를 바탕으로 건강한 먹거리를 만들어가는 로컬 식품 브랜드입니다. ",
-      "text_16": "대기업 중심의 식품 시장 속에서도 지역 상품만이 가질 수 있는 가치에 주목하며, ",
-      "text_17": "지역 경제와 생산자의 진정성을 함께 담아내는 브랜드 방향성을 이어가고 있습니다.",
-      "text_18": "천연 재료만을 사용해 보다 건강한 식재료를 만들고자 하는 철학은 제품 하나하나에 자연스럽게 담겨 있으며, ",
-      "text_19": "캘리엠은 이러한 브랜드의 마음이 소비자에게 차분하게 전달될 수 있도록 패키지 디자인 작업을 진행했습니다.",
-      "alt_20": "Design Concept Visual",
-      "text_21": "백령도의 바다와 지역성을 담은 시각 언어",
-      "text_22": "패키지 디자인은 백령도의 청정한 이미지를 바탕으로 구성했습니다. ",
-      "text_23": "까나리 생선 일러스트와 바다를 연상시키는 그래픽 요소를 활용해 ",
-      "text_24": "제품의 원산지와 특징이 직관적으로 전달될 수 있도록 디자인했습니다.",
-      "text_25": "과장된 표현보다는 자연스럽고 정돈된 분위기에 집중했으며, ",
-      "text_26": "지역 식품이 가진 진정성과 신뢰감이 시각적으로 드러나도록 방향을 설정했습니다.",
-      "alt_27": "Label Detail 01",
-      "alt_28": "Label Detail 02",
-      "text_29": "정보 전달은 명확하게, 인상은 차분하게",
-      "text_30": "병 라벨 스티커부터 제품 설명 태그까지 동일한 디자인 언어를 적용하여 브랜드의 일관성을 유지했습니다. ",
-      "text_31": "복잡한 정보는 읽기 쉽고 부담 없는 레이아웃으로 정리했으며, 제품의 특징과 원재료 정보가 ",
-      "text_32": "자연스럽게 전달될 수 있도록 타이포그래피와 정보 구조를 구성했습니다.",
-      "alt_33": "Package Design Visual",
-      "text_34": "선물용으로도 어울리는 패키지 디자인",
-      "text_35": "까나리어간장 병을 담는 포장 박스에도 동일한 디자인 시스템을 적용하여 제품 전체의 완성도를 높였습니다. ",
-      "text_36": "일상에서 사용하는 식재료이면서도, 지역의 이야기를 담은 특별한 선물처럼 느껴질 수 있도록 ",
-      "text_37": "차분하고 정돈된 패키지 분위기를 목표로 했습니다.",
-      "text_38": "Final Outcome",
-      "text_39": "로컬 브랜드의 가치를 ",
-      "text_40": "차분하게 전달하는 패키지 디자인",
-      "text_41": "이번 프로젝트는 단순한 식품 패키지 제작을 넘어, 지역 식품 브랜드가 가진 진정성과 가치를 ",
-      "text_42": "디자인으로 전달하는 작업이었습니다. 캘리엠은 앞으로도 사람과 지역을 연결하는 브랜드와 함께하며, ",
-      "text_43": "작지만 의미 있는 이야기를 담은 디자인을 이어가고자 합니다.",
-      "package_image_1": "/media/existing/package/honest-k-food/featured-honest-k-food.png",
-      "package_image_2": "/media/existing/package/honest-k-food/overview.webp",
-      "package_image_3": "/media/existing/package/honest-k-food/detail-01.webp",
-      "package_image_4": "/media/existing/package/honest-k-food/label.webp",
-      "package_image_5": "/media/existing/package/honest-k-food/detail-02.webp",
-      "package_image_6": "/media/existing/package/honest-k-food/outcome.jpg"
+      "type": "section",
+      "_variant": "honest-k-food-0",
+      "photoLayout": "one",
+      "heading": "",
+      "paragraphs": [],
+      "images": [
+        {
+          "image": "/media/existing/package/honest-k-food/overview.webp",
+          "alt": "Brand Story Visual"
+        }
+      ],
+      "_imageGuide": "현재 영역: 16:9 · 16:9는 1920 × 1080px, 16:11은 1600 × 1100px"
+    },
+    {
+      "type": "section",
+      "_variant": "honest-k-food-1",
+      "photoLayout": "none",
+      "heading": "지역의 식재료로 정직한 먹거리를 만드는 브랜드",
+      "paragraphs": [
+        "어니스트케이푸드는 지역의 식재료를 바탕으로 건강한 먹거리를 만들어가는 로컬 식품 브랜드입니다. \n 대기업 중심의 식품 시장 속에서도 지역 상품만이 가질 수 있는 가치에 주목하며, \n 지역 경제와 생산자의 진정성을 함께 담아내는 브랜드 방향성을 이어가고 있습니다.",
+        "천연 재료만을 사용해 보다 건강한 식재료를 만들고자 하는 철학은 제품 하나하나에 자연스럽게 담겨 있으며, \n 캘리엠은 이러한 브랜드의 마음이 소비자에게 차분하게 전달될 수 있도록 패키지 디자인 작업을 진행했습니다."
+      ],
+      "images": [],
+      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+    },
+    {
+      "type": "section",
+      "_variant": "honest-k-food-2",
+      "photoLayout": "one",
+      "heading": "",
+      "paragraphs": [],
+      "images": [
+        {
+          "image": "/media/existing/package/honest-k-food/detail-01.webp",
+          "alt": "Design Concept Visual"
+        }
+      ],
+      "_imageGuide": "현재 영역: 21:9 · 권장 2100 × 900px"
+    },
+    {
+      "type": "section",
+      "_variant": "honest-k-food-3",
+      "photoLayout": "none",
+      "heading": "백령도의 바다와 지역성을 담은 시각 언어",
+      "paragraphs": [
+        "패키지 디자인은 백령도의 청정한 이미지를 바탕으로 구성했습니다. \n 까나리 생선 일러스트와 바다를 연상시키는 그래픽 요소를 활용해 \n 제품의 원산지와 특징이 직관적으로 전달될 수 있도록 디자인했습니다.",
+        "과장된 표현보다는 자연스럽고 정돈된 분위기에 집중했으며, \n 지역 식품이 가진 진정성과 신뢰감이 시각적으로 드러나도록 방향을 설정했습니다."
+      ],
+      "images": [],
+      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+    },
+    {
+      "type": "section",
+      "_variant": "honest-k-food-4",
+      "photoLayout": "two",
+      "heading": "",
+      "paragraphs": [],
+      "images": [
+        {
+          "image": "/media/existing/package/honest-k-food/label.webp",
+          "alt": "Label Detail 01"
+        },
+        {
+          "image": "/media/existing/package/honest-k-food/detail-02.webp",
+          "alt": "Label Detail 02"
+        }
+      ],
+      "_imageGuide": "현재 영역: 정사각형 1:1 · 각 사진 권장 1600 × 1600px"
+    },
+    {
+      "type": "section",
+      "_variant": "honest-k-food-5",
+      "photoLayout": "none",
+      "heading": "정보 전달은 명확하게, 인상은 차분하게",
+      "paragraphs": [
+        "병 라벨 스티커부터 제품 설명 태그까지 동일한 디자인 언어를 적용하여 브랜드의 일관성을 유지했습니다. \n 복잡한 정보는 읽기 쉽고 부담 없는 레이아웃으로 정리했으며, 제품의 특징과 원재료 정보가 \n 자연스럽게 전달될 수 있도록 타이포그래피와 정보 구조를 구성했습니다."
+      ],
+      "images": [],
+      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+    },
+    {
+      "type": "section",
+      "_variant": "honest-k-food-6",
+      "photoLayout": "one",
+      "heading": "",
+      "paragraphs": [],
+      "images": [
+        {
+          "image": "/media/existing/package/honest-k-food/outcome.jpg",
+          "alt": "Package Design Visual"
+        }
+      ],
+      "_imageGuide": "현재 영역: 16:9 · 16:9는 1920 × 1080px, 16:11은 1600 × 1100px"
+    },
+    {
+      "type": "section",
+      "_variant": "honest-k-food-7",
+      "photoLayout": "none",
+      "heading": "선물용으로도 어울리는 패키지 디자인",
+      "paragraphs": [
+        "까나리어간장 병을 담는 포장 박스에도 동일한 디자인 시스템을 적용하여 제품 전체의 완성도를 높였습니다. \n 일상에서 사용하는 식재료이면서도, 지역의 이야기를 담은 특별한 선물처럼 느껴질 수 있도록 \n 차분하고 정돈된 패키지 분위기를 목표로 했습니다."
+      ],
+      "images": [],
+      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
     }
-  ]
+  ],
+  "detailTitle": "어니스트케이푸드 \n 까나리어간장",
+  "client": "Honest K Food",
+  "detailCategory": "Package Design",
+  "scope": "Label Sticker / Product Tag / \nPackage Box",
+  "keywords": "Local Food / Honest ingredients / \nNatural Branding / Locality",
+  "detailDesc": "백령도의 지역성과 건강한 식재료 철학을 담아 \n 로컬 식품 브랜드의 진정성을 시각적으로 풀어낸 패키지 디자인 프로젝트",
+  "conclusionTitle": "로컬 브랜드의 가치를 \n 차분하게 전달하는 패키지 디자인",
+  "closingText": "이번 프로젝트는 단순한 식품 패키지 제작을 넘어, 지역 식품 브랜드가 가진 진정성과 가치를 \n 디자인으로 전달하는 작업이었습니다. 캘리엠은 앞으로도 사람과 지역을 연결하는 브랜드와 함께하며, \n 작지만 의미 있는 이야기를 담은 디자인을 이어가고자 합니다.",
+  "heroImage": "/media/existing/package/honest-k-food/featured-honest-k-food.png"
 }

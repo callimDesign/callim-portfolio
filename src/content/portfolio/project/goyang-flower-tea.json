@@ -8,60 +8,125 @@
   "category": "project",
   "route": "/project/goyang-flower-tea",
   "template": "goyang-flower-tea",
-  "layout": [
+  "sections": [
     {
-      "type": "goyang-flower-tea",
-      "image_01": "/media/existing/project/goyang-milktea/1-1 mobile.webp",
-      "alt_02": "Goyang International Flower Exhibition Tea Hero Mobile",
-      "image_03": "/media/existing/project/goyang-milktea/1-1.webp",
-      "alt_04": "Goyang International Flower Exhibition Tea Hero",
-      "text_05": "Project Design Portfolio",
-      "text_06": "고양국제꽃박람회 ",
-      "text_07": "밀크티백 세트",
-      "text_08": "GOYANG FLOWER TEA BAG SET",
-      "text_09": "고양시의 문화와 풍경을 감성적인 일러스트와  ",
-      "text_10": "밀크티로 풀어낸 지역 특화 상품 개발 프로젝트입니다.",
-      "text_11": "고양국제박람회재단",
-      "text_12": "Package Design / Branding",
-      "text_13": "Product Design / Package Design / Illustration / Branding",
-      "text_14": "Goyang / Local Goods / Illustration / Milk Tea / Tourism",
-      "text_15": "지역의 이야기를 상품으로 만들다",
-      "text_16": "고양시는 아름다운 자연과 문화가 공존하는 도시입니다. ",
-      "text_17": "캘리엠은 단순한 기념품이 아닌, 지역의 풍경과 감성을 담아 오래 기억될 수 있는 상품을 만들고자 했습니다.",
-      "text_18": "고양국제꽃박람회와 일산호수공원 등 지역의 상징적인 장소를 일러스트로 표현하고, ",
-      "text_19": "이를 밀크티와 결합하여 새로운 형태의 지역 굿즈를 제안했습니다.",
-      "image_20": "/media/existing/project/goyang-milktea/3-1 mobile.webp",
-      "alt_21": "3종 세트 연출컷 02 Mobile",
-      "image_22": "/media/existing/project/goyang-milktea/3-1.webp",
-      "alt_23": "3종 세트 연출컷 02",
-      "image_24": "/media/existing/project/goyang-milktea/3-2 mobile.webp",
-      "alt_25": "3종 세트 연출컷 03 Mobile",
-      "image_26": "/media/existing/project/goyang-milktea/3-2.webp",
-      "alt_27": "3종 세트 연출컷 03",
-      "text_28": "고양의 순간을 담은 일러스트",
-      "text_29": "제품에 사용된 일러스트는 고양시를 대표하는 장소와 풍경을 바탕으로 제작되었습니다. ",
-      "text_30": "지역의 이미지를 단순히 기록하는 것이 아니라, 따뜻한 감성과 이야기로 재해석하여 ",
-      "text_31": "누구나 편안하게 공감할 수 있는 시각 언어로 표현했습니다.",
-      "image_32": "/media/existing/project/goyang-milktea/1-2.webp",
-      "alt_33": "티백 디자인 개별컷 02",
-      "image_34": "/media/existing/project/goyang-milktea/2-1.webp",
-      "alt_35": "티백 디자인 개별컷 03",
-      "text_36": "패키지에 담은 지역의 가치",
-      "text_37": "밀크티백 세트는 선물용으로도 활용할 수 있도록 패키지 구조부터 세심하게 설계했습니다. ",
-      "text_38": "친환경 크라프트 패키지와 절제된 그래픽 구성은 지역 상품이 지닌 진정성과 ",
-      "text_39": "따뜻한 감성을 자연스럽게 전달하도록 디자인되었습니다.",
-      "image_40": "/media/existing/project/goyang-milktea/2-2.webp",
-      "alt_41": "패키지 오픈컷",
-      "image_42": "/media/existing/project/goyang-milktea/2-3.webp",
-      "alt_43": "패키지 구조컷",
-      "text_44": "지역을 기억하는 새로운 방식",
-      "text_45": "이번 프로젝트는 단순한 식음료 상품 개발을 넘어, 지역의 풍경과 이야기를 사람들의 일상 속으로 연결하는 작업이었습니다. ",
-      "text_46": "한 장의 일러스트와 한 잔의 차를 통해 고양을 경험하고 ",
-      "text_47": "기억할 수 있는 새로운 관광 콘텐츠를 제안하고자 했습니다.",
-      "text_48": "Final Message",
-      "text_49": "A Cup Filled With Goyang",
-      "text_50": "고양시의 대표적인 풍경과 이야기를 따뜻한 일러스트와 서정적인 색감으로 한 잔의 밀크티에 담아냈습니다.",
-      "text_51": "단순한 상품 디자인을 넘어, 고양의 소중한 순간들이 누구나 일상 속에서 오랫동안 꺼내어 볼 수 있는 따뜻한 기억으로 남을 수 있도록 완성하였습니다."
+      "type": "section",
+      "_variant": "goyang-flower-tea-0",
+      "photoLayout": "none",
+      "heading": "지역의 이야기를 상품으로 만들다",
+      "paragraphs": [
+        "고양시는 아름다운 자연과 문화가 공존하는 도시입니다. \n 캘리엠은 단순한 기념품이 아닌, 지역의 풍경과 감성을 담아 오래 기억될 수 있는 상품을 만들고자 했습니다.",
+        "고양국제꽃박람회와 일산호수공원 등 지역의 상징적인 장소를 일러스트로 표현하고, \n 이를 밀크티와 결합하여 새로운 형태의 지역 굿즈를 제안했습니다."
+      ],
+      "images": [],
+      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+    },
+    {
+      "type": "section",
+      "_variant": "goyang-flower-tea-1",
+      "photoLayout": "two",
+      "heading": "",
+      "paragraphs": [],
+      "images": [
+        {
+          "image": "/media/existing/project/goyang-milktea/3-1.webp",
+          "alt": "3종 세트 연출컷 02"
+        },
+        {
+          "image": "/media/existing/project/goyang-milktea/3-2.webp",
+          "alt": "3종 세트 연출컷 03"
+        }
+      ],
+      "_mobileImages": [
+        {
+          "image": "/media/existing/project/goyang-milktea/3-1 mobile.webp",
+          "alt": "3종 세트 연출컷 02 Mobile"
+        },
+        {
+          "image": "/media/existing/project/goyang-milktea/3-2 mobile.webp",
+          "alt": "3종 세트 연출컷 03 Mobile"
+        }
+      ],
+      "_imageGuide": "현재 영역: 3:4 / 3:4 · 16:9는 1920 × 1080px, 16:11은 1600 × 1100px"
+    },
+    {
+      "type": "section",
+      "_variant": "goyang-flower-tea-2",
+      "photoLayout": "none",
+      "heading": "고양의 순간을 담은 일러스트",
+      "paragraphs": [
+        "제품에 사용된 일러스트는 고양시를 대표하는 장소와 풍경을 바탕으로 제작되었습니다. \n 지역의 이미지를 단순히 기록하는 것이 아니라, 따뜻한 감성과 이야기로 재해석하여 \n 누구나 편안하게 공감할 수 있는 시각 언어로 표현했습니다."
+      ],
+      "images": [],
+      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+    },
+    {
+      "type": "section",
+      "_variant": "goyang-flower-tea-3",
+      "photoLayout": "two",
+      "heading": "",
+      "paragraphs": [],
+      "images": [
+        {
+          "image": "/media/existing/project/goyang-milktea/1-2.webp",
+          "alt": "티백 디자인 개별컷 02"
+        },
+        {
+          "image": "/media/existing/project/goyang-milktea/2-1.webp",
+          "alt": "티백 디자인 개별컷 03"
+        }
+      ],
+      "_imageGuide": "현재 영역: 3:4 / 3:4 · 16:9는 1920 × 1080px, 16:11은 1600 × 1100px"
+    },
+    {
+      "type": "section",
+      "_variant": "goyang-flower-tea-4",
+      "photoLayout": "none",
+      "heading": "패키지에 담은 지역의 가치",
+      "paragraphs": [
+        "밀크티백 세트는 선물용으로도 활용할 수 있도록 패키지 구조부터 세심하게 설계했습니다. \n 친환경 크라프트 패키지와 절제된 그래픽 구성은 지역 상품이 지닌 진정성과 \n 따뜻한 감성을 자연스럽게 전달하도록 디자인되었습니다."
+      ],
+      "images": [],
+      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+    },
+    {
+      "type": "section",
+      "_variant": "goyang-flower-tea-5",
+      "photoLayout": "two",
+      "heading": "",
+      "paragraphs": [],
+      "images": [
+        {
+          "image": "/media/existing/project/goyang-milktea/2-2.webp",
+          "alt": "패키지 오픈컷"
+        },
+        {
+          "image": "/media/existing/project/goyang-milktea/2-3.webp",
+          "alt": "패키지 구조컷"
+        }
+      ],
+      "_imageGuide": "현재 영역: 3:4 / 3:4 · 16:9는 1920 × 1080px, 16:11은 1600 × 1100px"
+    },
+    {
+      "type": "section",
+      "_variant": "goyang-flower-tea-6",
+      "photoLayout": "none",
+      "heading": "지역을 기억하는 새로운 방식",
+      "paragraphs": [
+        "이번 프로젝트는 단순한 식음료 상품 개발을 넘어, 지역의 풍경과 이야기를 사람들의 일상 속으로 연결하는 작업이었습니다. \n 한 장의 일러스트와 한 잔의 차를 통해 고양을 경험하고 \n 기억할 수 있는 새로운 관광 콘텐츠를 제안하고자 했습니다."
+      ],
+      "images": [],
+      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
     }
-  ]
+  ],
+  "detailTitle": "고양국제꽃박람회 \n 밀크티백 세트",
+  "client": "고양국제박람회재단",
+  "detailCategory": "Package Design / Branding",
+  "scope": "Product Design / Package Design / Illustration / Branding",
+  "keywords": "Goyang / Local Goods / Illustration / Milk Tea / Tourism",
+  "detailDesc": "고양시의 문화와 풍경을 감성적인 일러스트와  \n 밀크티로 풀어낸 지역 특화 상품 개발 프로젝트입니다.",
+  "conclusionTitle": "A Cup Filled With Goyang",
+  "closingText": "단순한 상품 디자인을 넘어, 고양의 소중한 순간들이 누구나 일상 속에서 오랫동안 꺼내어 볼 수 있는 따뜻한 기억으로 남을 수 있도록 완성하였습니다.",
+  "heroImage": "/media/existing/project/goyang-milktea/1-1.webp",
+  "heroMobileImage": "/media/existing/project/goyang-milktea/1-1 mobile.webp"
 }

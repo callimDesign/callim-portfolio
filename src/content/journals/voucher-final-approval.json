@@ -8,29 +8,20 @@
   "link": "/journal/innovation-voucher-brand-support",
   "image": "/media/existing/journal/innovation-voucher-brand-support/innovation-voucher-brand-support (1).webp",
   "template": "voucher-final-approval",
-  "layout": [
-    {
-      "type": "voucher-final-approval",
-      "image_01": "/media/existing/journal/innovation-voucher-brand-support/innovation-voucher-brand-support (1).webp",
-      "alt_02": "브랜드 지원 최종 승인 01",
-      "image_03": "/media/existing/journal/innovation-voucher-brand-support/innovation-voucher-brand-support (2).webp",
-      "alt_04": "브랜드 지원 최종 승인 02",
-      "text_05": "“브랜드의 철학을 담아",
-      "text_06": "더 오래 기억되는",
-      "text_07": "정체성을 만들다.”",
-      "text_08": "2024년 7월부터 캘리엠은 중소벤처기업부 주관 중소기업 혁신바우처 사업의 수행기관으로서, ",
-      "text_09": "의 브랜드 아이덴티티(BI), 브랜드 슬로건, 브랜드 스토리 개발 프로젝트를 진행해왔습니다.",
-      "text_10": "약 8개월간 이어진 이번 프로젝트는",
-      "text_11": "브랜드의 방향성과 철학 정립,",
-      "text_12": "소비자와의 접점을 고려한 트렌디한 BI 설계,",
-      "text_13": "브랜드의 진정성과 차별화를 담은 스토리 구성",
-      "text_14": "등을 중심으로, 캘리엠의 디자인 전략과 콘텐츠 기획 노하우를 바탕으로 진행되었습니다.",
-      "text_15": "그리고 2025년 3월 17일, 해당 과제는 최종 승인을 받았습니다.",
-      "text_16": "\"수행계획서 대비 수행내용과 최종 성과물이 누락 사항 없이 모두 제시되었으며, 수행 과정과 서비스 내용이 명확하게 기록됨. 최종 성과물이 트렌디하고 완성도 있게 완료된 것으로 평가됨.\"",
-      "text_17": "- 최종평가 코멘트 中",
-      "text_18": "이번 평가는 단순한 승인 이상의 의미를 담고 있습니다. 기획부터 실행, 최종 결과물까지의 전 과정을 명확하고 세심하게 수행한 점, 그리고 결과물의 완성도와 브랜드 트렌드를 반영한 점이 높은 평가를 받은 것입니다.",
-      "text_19": "앞으로도 캘리엠은 브랜드가 가진 고유의 색을 더 깊이 있게 정의하고, 그 가치를 시각적으로 설득력 있게 전할 수 있도록 정성과 전문성을 더하겠습니다.",
-      "text_20": "Back to Journals"
-    }
-  ]
+  "quote": "“브랜드의 철학을 담아\n 더 오래 기억되는\n 정체성을 만들다.”",
+  "paragraphs": [
+    "2024년 7월부터 캘리엠은 중소벤처기업부 주관 중소기업 혁신바우처 사업의 수행기관으로서, 의 브랜드 아이덴티티(BI), 브랜드 슬로건, 브랜드 스토리 개발 프로젝트를 진행해왔습니다.",
+    "약 8개월간 이어진 이번 프로젝트는",
+    "등을 중심으로, 캘리엠의 디자인 전략과 콘텐츠 기획 노하우를 바탕으로 진행되었습니다.",
+    "그리고 2025년 3월 17일, 해당 과제는 최종 승인을 받았습니다.",
+    "\"수행계획서 대비 수행내용과 최종 성과물이 누락 사항 없이 모두 제시되었으며, 수행 과정과 서비스 내용이 명확하게 기록됨. 최종 성과물이 트렌디하고 완성도 있게 완료된 것으로 평가됨.\"",
+    "- 최종평가 코멘트 中",
+    "이번 평가는 단순한 승인 이상의 의미를 담고 있습니다. 기획부터 실행, 최종 결과물까지의 전 과정을 명확하고 세심하게 수행한 점, 그리고 결과물의 완성도와 브랜드 트렌드를 반영한 점이 높은 평가를 받은 것입니다.",
+    "앞으로도 캘리엠은 브랜드가 가진 고유의 색을 더 깊이 있게 정의하고, 그 가치를 시각적으로 설득력 있게 전할 수 있도록 정성과 전문성을 더하겠습니다."
+  ],
+  "leftImage": "/media/existing/journal/innovation-voucher-brand-support/innovation-voucher-brand-support (1).webp",
+  "rightImage": "/media/existing/journal/innovation-voucher-brand-support/innovation-voucher-brand-support (2).webp",
+  "leftAlt": "브랜드 지원 최종 승인 01",
+  "rightAlt": "브랜드 지원 최종 승인 02",
+  "photoLayout": "two"
 }

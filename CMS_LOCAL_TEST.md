@@ -17,3 +17,5 @@
 아직 미확인: 확장된 관리자 UI의 실제 새 글 저장·사진 첨부·미리보기·게시·삭제, PC/모바일 화면 육안 비교. 코드 검사만으로 실제 화면 확인을 완료했다고 표시하지 않는다.
 
 메뉴 정리 후 콘텐츠 경로: src/content/portfolio/branding/*.json, package/*.json, project/*.json 및 src/content/journals/*.json. 상세 양식은 layout 배열의 단일 항목 type으로 유지한다. 관리자 왼쪽 Portfolio 제목 아래 네 분류를 표시하고 Journals는 별도 항목으로 둔다. 접기·펼치기는 이번 변경에 포함하지 않는다.
+
+2026-10-15 양식 정리: Journals는 quote와 paragraphs, 포트폴리오는 detailTitle/detailDesc/client/detailCategory/scope/keywords 및 sections·conclusionTitle/closingText 사용. 기존 템플릿의 화면 차이는 내부 _variant로 유지한다. 관리자에는 게시글 제목을 상세 양식 이름으로 노출하지 않는다. 사진 사이즈는 권장값이며 서로 다른 PC·모바일 비율에 동일 파일을 사용할 때 무조건 잘림이 없다고 보장하지 않는다. Branding 데이터는 존재하며 경로 문자열로 사용되던 slug 속성을 제거했다. 목록 복구는 배포 후 실제 화면 검증 필요.
