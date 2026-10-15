@@ -1,3 +1,4 @@
+import {comparePublished} from '../content/authoring.mjs';
 import {cmsProducts} from '../content/cmsContent';
 import { useEffect, useState, useMemo } from 'react';
 import { Navigation } from '../components/Navigation';
@@ -146,7 +147,7 @@ const Product = ({previewProduct}: {previewProduct?: any}) => {
     result = result.filter(p => p.year >= yearRange.min && p.year <= yearRange.max);
 
     result.sort((a, b) => {
-      return sortBy === 'latest' ? b.year - a.year : a.year - b.year;
+      return sortBy === 'latest' ? comparePublished(a,b) : comparePublished(b,a);
     });
 
     return result;

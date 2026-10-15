@@ -1,3 +1,4 @@
+import {comparePublished} from '../content/authoring.mjs';
 import {portfolioList} from '../content/cmsContent';
 import { useEffect, useState, useMemo } from 'react';
 import { Navigation } from '../components/Navigation';
@@ -58,7 +59,7 @@ const Package = () => {
 
     // Apply Sorting
     result.sort((a, b) => {
-      return sortBy === 'latest' ? b.year - a.year : a.year - b.year;
+      return sortBy === 'latest' ? comparePublished(a,b) : comparePublished(b,a);
     });
 
     return result;

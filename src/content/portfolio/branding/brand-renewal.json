@@ -4,17 +4,15 @@
   "desc": "브랜드의 철학과 감성을 다시 정의하며 시각적 일관성과 브랜드 방향성을 구축한 전략 브랜딩 프로젝트입니다.",
   "image": "/media/existing/branding/limewood/featured.webp",
   "year": 2026,
-  "isFeatured": true,
   "category": "branding",
   "route": "/project/brand-renewal",
   "template": "brand-renewal",
   "sections": [
     {
-      "type": "section",
+      "type": "photo",
       "_variant": "brand-renewal-0",
+      "_group": "brand-renewal-0",
       "photoLayout": "one",
-      "heading": "",
-      "paragraphs": [],
       "images": [
         {
           "image": "/media/existing/branding/limewood/overview.webp",
@@ -24,22 +22,22 @@
       "_imageGuide": "현재 영역: 16:9 · 16:9는 1920 × 1080px, 16:11은 1600 × 1100px"
     },
     {
-      "type": "section",
+      "type": "heading",
       "_variant": "brand-renewal-1",
-      "photoLayout": "none",
-      "heading": "아이의 성장을 위한 따뜻한 공간을 디자인하다",
-      "paragraphs": [
-        "라임우드는 자연 친화적인 감성과 아이의 성장 환경을 함께 고민하는 유아 가구 브랜드입니다. 이번 프로젝트는 단순한 로고 리뉴얼이 아닌, 브랜드의 방향성과 감성을 다시 정의하는 과정에 집중했습니다."
-      ],
-      "images": [],
-      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+      "_group": "brand-renewal-1",
+      "heading": "아이의 성장을 위한 따뜻한 공간을 디자인하다"
     },
     {
-      "type": "section",
+      "type": "paragraph",
+      "_variant": "brand-renewal-1",
+      "_group": "brand-renewal-1",
+      "text": "라임우드는 자연 친화적인 감성과 아이의 성장 환경을 함께 고민하는 유아 가구 브랜드입니다. 이번 프로젝트는 단순한 로고 리뉴얼이 아닌, 브랜드의 방향성과 감성을 다시 정의하는 과정에 집중했습니다."
+    },
+    {
+      "type": "photo",
       "_variant": "brand-renewal-2",
+      "_group": "brand-renewal-2",
       "photoLayout": "one",
-      "heading": "",
-      "paragraphs": [],
       "images": [
         {
           "image": "/media/existing/branding/limewood/block.webp",
@@ -49,22 +47,22 @@
       "_imageGuide": "현재 영역: 21:9 · 권장 2100 × 900px"
     },
     {
-      "type": "section",
+      "type": "heading",
       "_variant": "brand-renewal-3",
-      "photoLayout": "none",
-      "heading": "브랜드의 철학을 시각 언어로 재구성하다",
-      "paragraphs": [
-        "나무를 단순화한 심볼, 블록을 쌓아 올린 듯한 형태, 부드러운 곡선과 따뜻한 컬러를 통해 놀이와 배움, 안정감과 상상력이 공존하는 브랜드 경험을 구축하고자 했습니다."
-      ],
-      "images": [],
-      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+      "_group": "brand-renewal-3",
+      "heading": "브랜드의 철학을 시각 언어로 재구성하다"
     },
     {
-      "type": "section",
+      "type": "paragraph",
+      "_variant": "brand-renewal-3",
+      "_group": "brand-renewal-3",
+      "text": "나무를 단순화한 심볼, 블록을 쌓아 올린 듯한 형태, 부드러운 곡선과 따뜻한 컬러를 통해 놀이와 배움, 안정감과 상상력이 공존하는 브랜드 경험을 구축하고자 했습니다."
+    },
+    {
+      "type": "photo",
       "_variant": "brand-renewal-4",
+      "_group": "brand-renewal-4",
       "photoLayout": "one",
-      "heading": "",
-      "paragraphs": [],
       "images": [
         {
           "image": "/media/existing/branding/limewood/detail-01.webp",
@@ -74,22 +72,22 @@
       "_imageGuide": "현재 영역: 16:9 · 16:9는 1920 × 1080px, 16:11은 1600 × 1100px"
     },
     {
-      "type": "section",
+      "type": "heading",
       "_variant": "brand-renewal-5",
-      "photoLayout": "none",
-      "heading": "감성적이지만 정직한 브랜드 이미지",
-      "paragraphs": [
-        "브랜드 핵심 키워드는 감성, 정직, 그리고 로컬 기반의 따뜻함입니다. 친환경적인 분위기와 아이를 위한 안전한 성장 공간의 이미지를 시각적으로 전달하는 데 집중했습니다"
-      ],
-      "images": [],
-      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+      "_group": "brand-renewal-5",
+      "heading": "감성적이지만 정직한 브랜드 이미지"
     },
     {
-      "type": "section",
+      "type": "paragraph",
+      "_variant": "brand-renewal-5",
+      "_group": "brand-renewal-5",
+      "text": "브랜드 핵심 키워드는 감성, 정직, 그리고 로컬 기반의 따뜻함입니다. 친환경적인 분위기와 아이를 위한 안전한 성장 공간의 이미지를 시각적으로 전달하는 데 집중했습니다"
+    },
+    {
+      "type": "photo",
       "_variant": "brand-renewal-6",
+      "_group": "brand-renewal-6",
       "photoLayout": "one",
-      "heading": "",
-      "paragraphs": [],
       "images": [
         {
           "image": "/media/existing/branding/limewood/detail-02.webp",
@@ -99,22 +97,22 @@
       "_imageGuide": "현재 영역: 16:9 · 16:9는 1920 × 1080px, 16:11은 1600 × 1100px"
     },
     {
-      "type": "section",
+      "type": "heading",
       "_variant": "brand-renewal-7",
-      "photoLayout": "none",
-      "heading": "브랜드 전반에 적용 가능한 CI 시스템 구축",
-      "paragraphs": [
-        "심볼마크, 국·영문 워드마크, 컬러 시스템, 타이포그래피, 응용 디자인 가이드를 포함하여 온·오프라인 환경에서 일관된 브랜드 경험이 유지될 수 있도록 설계했습니다."
-      ],
-      "images": [],
-      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+      "_group": "brand-renewal-7",
+      "heading": "브랜드 전반에 적용 가능한 CI 시스템 구축"
     },
     {
-      "type": "section",
+      "type": "paragraph",
+      "_variant": "brand-renewal-7",
+      "_group": "brand-renewal-7",
+      "text": "심볼마크, 국·영문 워드마크, 컬러 시스템, 타이포그래피, 응용 디자인 가이드를 포함하여 온·오프라인 환경에서 일관된 브랜드 경험이 유지될 수 있도록 설계했습니다."
+    },
+    {
+      "type": "photo",
       "_variant": "brand-renewal-8",
+      "_group": "brand-renewal-8",
       "photoLayout": "two",
-      "heading": "",
-      "paragraphs": [],
       "images": [
         {
           "image": "/media/existing/branding/limewood/mockup-01.webp",
@@ -128,15 +126,16 @@
       "_imageGuide": "현재 영역: 정사각형 1:1 · 각 사진 권장 1600 × 1600px"
     },
     {
-      "type": "section",
+      "type": "heading",
       "_variant": "brand-renewal-9",
-      "photoLayout": "none",
-      "heading": "실제 운영을 고려한 브랜드 응용 디자인",
-      "paragraphs": [
-        "명함, 봉투, 쇼핑백, 사원증 등 실무 환경에서 사용 가능한 항목까지 확장하여 브랜드 운영 과정에서도 통일된 인상을 유지할 수 있도록 구성했습니다."
-      ],
-      "images": [],
-      "_imageGuide": "현재 영역은 원본 비율 또는 반응형 높이를 사용합니다. 1장 1920 × 1080px, 2장 각각 1600 × 1600px 권장. 기존 모바일 사진은 유지됩니다."
+      "_group": "brand-renewal-9",
+      "heading": "실제 운영을 고려한 브랜드 응용 디자인"
+    },
+    {
+      "type": "paragraph",
+      "_variant": "brand-renewal-9",
+      "_group": "brand-renewal-9",
+      "text": "명함, 봉투, 쇼핑백, 사원증 등 실무 환경에서 사용 가능한 항목까지 확장하여 브랜드 운영 과정에서도 통일된 인상을 유지할 수 있도록 구성했습니다."
     }
   ],
   "detailTitle": "라임우드 \n  브랜드 리뉴얼",
@@ -147,5 +146,6 @@
   "detailDesc": "브랜드의 철학과 감성을 다시 정의하며 시각적 일관성과 \n 브랜드 방향성을 구축한 전략 브랜딩 프로젝트입니다.",
   "conclusionTitle": "자연과 아이의 성장이 함께 어우러지는 브랜드 경험",
   "closingText": "아이와 공간, 그리고 자연이 함께 어우러지는 브랜드 경험을 목표로 라임우드만의 따뜻한 아이덴티티를 구축했습니다.",
-  "heroImage": "/media/existing/branding/limewood/featured.webp"
+  "heroImage": "/media/existing/branding/limewood/featured.webp",
+  "publishedAt": "2026-10-15T09:13:32+09:00"
 }

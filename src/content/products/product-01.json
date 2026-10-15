@@ -5,7 +5,6 @@
   "desc": "캘리엠의 시그니처 캘리그라피가 담긴 프리미엄 봉투",
   "image": "/media/existing/product/envelope/E2204.webp",
   "year": 2026,
-  "isFeatured": true,
   "size": "80 x 170 mm",
   "keywords": [
     "감사",
@@ -13,5 +12,6 @@
     "봉투",
     "캘리그라피"
   ],
-  "storeUrl": "https://smartstore.naver.com/"
+  "storeUrl": "https://smartstore.naver.com/",
+  "publishedAt": "2026-10-15T09:00:45+09:00"
 }
