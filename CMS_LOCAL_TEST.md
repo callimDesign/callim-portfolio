@@ -15,3 +15,5 @@
 검증: 기존 상세 12개의 클래스·스타일·애니메이션 속성 일치, 기존 사진 파일 바이트 일치, 글·상품 개수, 인증 검사, TypeScript, 배포 빌드 통과.
 
 아직 미확인: 확장된 관리자 UI의 실제 새 글 저장·사진 첨부·미리보기·게시·삭제, PC/모바일 화면 육안 비교. 코드 검사만으로 실제 화면 확인을 완료했다고 표시하지 않는다.
+
+메뉴 정리 후 콘텐츠 경로: src/content/portfolio/branding/*.json, package/*.json, project/*.json 및 src/content/journals/*.json. 상세 양식은 layout 배열의 단일 항목 type으로 유지한다. 관리자 왼쪽 Portfolio 제목 아래 네 분류를 표시하고 Journals는 별도 항목으로 둔다. 접기·펼치기는 이번 변경에 포함하지 않는다.
