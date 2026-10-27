@@ -1,0 +1,67 @@
+{
+  "template": "home-hero",
+  "textMode": "shared",
+  "sharedText": {
+    "heading": "Little Things, More Precious",
+    "subtitle": "아날로그의 온기로 일상의 가치를 디자인합니다",
+    "description": "소소한 일상의 기록부터 기업의 가치를 담는 브랜딩까지,\n캘리엠이 전하는 따스한 시각 언어"
+  },
+  "mobileImage": "/media/main-hero/hero_mobile.webp",
+  "slides": [
+    {
+      "name": "이미지 1",
+      "enabled": true,
+      "image": "/media/main-hero/hero.webp",
+      "alt": "캘리엠 메인 이미지 1",
+      "text": {
+        "heading": "Little Things, More Precious",
+        "subtitle": "아날로그의 온기로 일상의 가치를 디자인합니다",
+        "description": "소소한 일상의 기록부터 기업의 가치를 담는 브랜딩까지,\n캘리엠이 전하는 따스한 시각 언어"
+      }
+    },
+    {
+      "name": "이미지 2",
+      "enabled": true,
+      "image": "/media/main-hero/IMG_MAIN_NEW_01.jpg",
+      "alt": "캘리엠 메인 이미지 2",
+      "text": {
+        "heading": "Little Things, More Precious",
+        "subtitle": "아날로그의 온기로 일상의 가치를 디자인합니다",
+        "description": "소소한 일상의 기록부터 기업의 가치를 담는 브랜딩까지,\n캘리엠이 전하는 따스한 시각 언어"
+      }
+    },
+    {
+      "name": "이미지 3",
+      "enabled": true,
+      "image": "/media/main-hero/IMG_MAIN_NEW_02.jpg",
+      "alt": "캘리엠 메인 이미지 3",
+      "text": {
+        "heading": "Little Things, More Precious",
+        "subtitle": "아날로그의 온기로 일상의 가치를 디자인합니다",
+        "description": "소소한 일상의 기록부터 기업의 가치를 담는 브랜딩까지,\n캘리엠이 전하는 따스한 시각 언어"
+      }
+    },
+    {
+      "name": "이미지 4",
+      "enabled": true,
+      "image": "/media/main-hero/IMG_MAIN_NEW_03.jpg",
+      "alt": "캘리엠 메인 이미지 4",
+      "text": {
+        "heading": "Little Things, More Precious",
+        "subtitle": "아날로그의 온기로 일상의 가치를 디자인합니다",
+        "description": "소소한 일상의 기록부터 기업의 가치를 담는 브랜딩까지,\n캘리엠이 전하는 따스한 시각 언어"
+      }
+    },
+    {
+      "name": "이미지 5",
+      "enabled": true,
+      "image": "/media/main-hero/IMG_MAIN_NEW_05.jpg",
+      "alt": "캘리엠 메인 이미지 5",
+      "text": {
+        "heading": "Little Things, More Precious",
+        "subtitle": "아날로그의 온기로 일상의 가치를 디자인합니다",
+        "description": "소소한 일상의 기록부터 기업의 가치를 담는 브랜딩까지,\n캘리엠이 전하는 따스한 시각 언어"
+      }
+    }
+  ]
+}

@@ -8,12 +8,7 @@ import { Footer } from '../components/Footer';
 import { Section, Reveal } from '../components/Common';
 import { journalList } from './journals/journalData';
 
-import heroImage from "../images/main/hero/hero.webp";
-import heroImage1 from "../images/main/hero/IMG_MAIN_NEW_01.jpg";
-import heroImage2 from "../images/main/hero/IMG_MAIN_NEW_02.jpg";
-import heroImage3 from "../images/main/hero/IMG_MAIN_NEW_03.jpg";
-import heroImage4 from "../images/main/hero/IMG_MAIN_NEW_05.jpg";
-import heroMobileImage from "../images/main/hero_mobile.webp";
+import homeHero from '../content/settings/home-hero.json';
 import mainMiddleProduct from "../images/main/product.jpg";
 import mainMiddleProductMobile from "../images/main/product_mobile.webp";
 import mainMiddlePackage from "../images/main/package.jpg";
@@ -28,11 +23,17 @@ import mainBottomJournalMobile from "../images/main/journal_mobile.webp";
 // import journal03 from "../images/main/journal03.jpg"; // 저널 추가 이미지 예정
 
 
-const Hero = () => {
-  const images = [heroImage, heroImage1, heroImage2, heroImage3, heroImage4];
+export const Hero = ({settings = homeHero}: {settings?: typeof homeHero}) => {
+  const slides = (settings.slides || []).filter(slide => slide && slide.enabled !== false);
+  const images = slides.map(slide => slide.image);
+  const slideIndex = (current: number) => images.length ? current % images.length : 0;
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const active = slides[slideIndex(currentIndex)];
+  const copy = settings.textMode === 'individual' ? active?.text : settings.sharedText;
+
   useEffect(() => {
+    if (images.length < 2) return;
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 8000);
@@ -47,11 +48,13 @@ const Hero = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
+  if (!active) return null;
+
   return (
     <section className="relative h-screen flex items-center justify-center pt-20 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src={heroMobileImage}
+          src={settings.mobileImage || active.image}
           alt="Hero Background Mobile"
           className="md:hidden w-full h-full object-cover object-center"
         />
@@ -59,8 +62,8 @@ const Hero = () => {
           <AnimatePresence mode="popLayout">
             <motion.img
               key={currentIndex}
-              src={images[currentIndex]}
-              alt={`Hero Background ${currentIndex + 1}`}
+              src={active.image}
+              alt={active.alt}
               className="absolute inset-0 w-full h-full object-cover object-center"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -71,6 +74,7 @@ const Hero = () => {
         </div>
       </div>
 
+      {images.length > 1 && <>
       {/* Left Navigation Button */}
       <button
         onClick={handlePrev}
@@ -99,7 +103,7 @@ const Hero = () => {
                   <motion.div
                     className="absolute inset-y-0 left-0 bg-white/80"
                     initial={{ width: "0%" }}
-                    animate={{ width: currentIndex === idx ? "100%" : "0%" }}
+                    animate={{ width: slideIndex(currentIndex) === idx ? "100%" : "0%" }}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
                   />
                 </div>
@@ -108,36 +112,36 @@ const Hero = () => {
                 onClick={() => setCurrentIndex(idx)}
                 className={cn(
                   "transition-all duration-500 ease-in-out cursor-pointer font-mono text-xs tracking-wider flex items-center justify-center w-8 h-8 rounded-full",
-                  currentIndex === idx
+                  slideIndex(currentIndex) === idx
                     ? "text-white opacity-100 font-bold scale-110 bg-white/5 border border-white/10"
                     : "text-white opacity-40 hover:opacity-80"
                 )}
               >
-                0{idx + 1}
+                {String(idx + 1).padStart(2, '0')}
               </button>
             </Fragment>
           ))}
         </div>
       </div>
 
+      </>}
       <div className="relative z-10 text-center px-6 max-w-[1500px] mx-auto pointer-events-none">
         <div className="pointer-events-auto">
           <Reveal>
             <h1 className="w-full md:w-[1500px] mx-auto text-[40px] md:text-[100px] font-serif italic mb-8 text-white leading-tight drop-shadow-[0_4px_14px_rgba(0,0,0,0.75)]">
-              Little Things, <br className="md:hidden" /> More Precious
+              <span className="hidden md:inline whitespace-pre-line">{copy?.heading}</span><span className="md:hidden whitespace-pre-line">{settings.sharedText?.heading}</span>
             </h1>
           </Reveal>
           <Reveal delay={0.2}>
             <h2 className="text-[14px] md:text-[30px] font-bold mb-6 md:mb-10 serif-kor tracking-widest text-white/100 drop-shadow-[0_4px_14px_rgba(0,0,0,0.75)]">
-              아날로그의 온기로 <br className="md:hidden" />일상의 가치를 디자인합니다
+              <span className="hidden md:inline whitespace-pre-line">{copy?.subtitle}</span><span className="md:hidden whitespace-pre-line">{settings.sharedText?.subtitle}</span>
             </h2>
           </Reveal>
           <div className="hidden md:block">
             <Reveal delay={0.4}>
               <div className="w-40 h-[2px] bg-white/40 mx-auto mb-10" />
               <p className="text-[19px] text-white/100 max-w-xl mx-auto leading-relaxed tracking-[0.1em] uppercase font-bold drop-shadow-[0_4px_14px_rgba(0,0,0,0.75)]">
-                소소한 일상의 기록부터 기업의 가치를 담는 브랜딩까지, <br />
-                캘리엠이 전하는 따스한 시각 언어
+                <span className="whitespace-pre-line">{copy?.description}</span>
               </p>
             </Reveal>
           </div>
