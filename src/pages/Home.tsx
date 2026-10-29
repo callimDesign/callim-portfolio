@@ -28,9 +28,18 @@ export const Hero = ({settings = homeHero}: {settings?: typeof homeHero}) => {
   const images = slides.map(slide => slide.image);
   const slideIndex = (current: number) => images.length ? current % images.length : 0;
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
 
   const active = slides[slideIndex(currentIndex)];
   const copy = settings.textMode === 'individual' ? active?.text : settings.sharedText;
+  const frame = (active as any)?.framing || {};
+  const imageStyle = (device: 'desktop' | 'mobile') => {
+    const position = frame[device] || {};
+    const x = Math.max(0, Math.min(100, Number(position.x ?? 50)));
+    const y = Math.max(0, Math.min(100, Number(position.y ?? 50)));
+    const zoom = Math.max(1, Math.min(2, Number(position.zoom ?? 1)));
+    return { objectPosition: `${x}% ${y}%`, transform: `translate(${(50 - x) * (zoom - 1)}%, ${(50 - y) * (zoom - 1)}%) scale(${zoom})` };
+  };
 
   useEffect(() => {
     if (images.length < 2) return;
@@ -51,13 +60,25 @@ export const Hero = ({settings = homeHero}: {settings?: typeof homeHero}) => {
   if (!active) return null;
 
   return (
-    <section className="relative h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center pt-20 overflow-hidden"
+      onTouchStart={event => setTouchStart(event.touches[0].clientX)}
+      onTouchEnd={event => {
+        if (touchStart === null || images.length < 2) return;
+        const distance = event.changedTouches[0].clientX - touchStart;
+        if (Math.abs(distance) > 50) setCurrentIndex(index => (index + (distance < 0 ? 1 : -1) + images.length) % images.length);
+        setTouchStart(null);
+      }}>
       <div className="absolute inset-0 z-0">
-        <img
-          src={settings.mobileImage || active.image}
-          alt="Hero Background Mobile"
-          className="md:hidden w-full h-full object-cover object-center"
-        />
+        <div className="md:hidden w-full h-full overflow-hidden relative">
+          <AnimatePresence mode="popLayout">
+            <motion.img key={currentIndex} src={(active as any).mobileImageMode === 'separate' && (active as any).mobileImage ? (active as any).mobileImage : active.image}
+              alt={active.alt || 'Hero Background Mobile'}
+              className="absolute inset-0 w-full h-full object-cover"
+              style={imageStyle('mobile')}
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              transition={{ duration: 1.2, ease: 'easeInOut' }} />
+          </AnimatePresence>
+        </div>
         <div className="hidden md:block w-full h-full relative">
           <AnimatePresence mode="popLayout">
             <motion.img
@@ -65,6 +86,7 @@ export const Hero = ({settings = homeHero}: {settings?: typeof homeHero}) => {
               src={active.image}
               alt={active.alt}
               className="absolute inset-0 w-full h-full object-cover object-center"
+              style={imageStyle('desktop')}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -75,6 +97,11 @@ export const Hero = ({settings = homeHero}: {settings?: typeof homeHero}) => {
       </div>
 
       {images.length > 1 && <>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex md:hidden gap-2" aria-label="히어로 이미지 선택">
+        {images.map((_, index) => <button key={index} type="button" onClick={() => setCurrentIndex(index)}
+          aria-label={`${index + 1}번째 이미지`} aria-current={slideIndex(currentIndex) === index}
+          className={`h-2 rounded-full transition-all ${slideIndex(currentIndex) === index ? 'w-6 bg-white' : 'w-2 bg-white/50'}`} />)}
+      </div>
       {/* Left Navigation Button */}
       <button
         onClick={handlePrev}
@@ -129,12 +156,12 @@ export const Hero = ({settings = homeHero}: {settings?: typeof homeHero}) => {
         <div className="pointer-events-auto">
           <Reveal>
             <h1 className="w-full md:w-[1500px] mx-auto text-[40px] md:text-[100px] font-serif italic mb-8 text-white leading-tight drop-shadow-[0_4px_14px_rgba(0,0,0,0.75)]">
-              <span className="hidden md:inline whitespace-pre-line">{copy?.heading}</span><span className="md:hidden whitespace-pre-line">{settings.sharedText?.heading}</span>
+              <span className="whitespace-pre-line">{copy?.heading}</span>
             </h1>
           </Reveal>
           <Reveal delay={0.2}>
             <h2 className="text-[14px] md:text-[30px] font-bold mb-6 md:mb-10 serif-kor tracking-widest text-white/100 drop-shadow-[0_4px_14px_rgba(0,0,0,0.75)]">
-              <span className="hidden md:inline whitespace-pre-line">{copy?.subtitle}</span><span className="md:hidden whitespace-pre-line">{settings.sharedText?.subtitle}</span>
+              <span className="whitespace-pre-line">{copy?.subtitle}</span>
             </h2>
           </Reveal>
           <div className="hidden md:block">
