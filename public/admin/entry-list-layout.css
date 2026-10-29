@@ -1,0 +1,21 @@
+ul.callim-numbered-list { counter-reset: callim-entry; }
+ul.callim-numbered-list > li.callim-numbered-card { counter-increment: callim-entry; }
+ul.callim-numbered-list > li.callim-numbered-card > a { display: flex; align-items: center; gap: 18px; }
+ul.callim-numbered-list > li.callim-numbered-card > a::before {
+  content: counter(callim-entry);
+  display: block;
+  min-width: 20px;
+  color: #52616a;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+ul.callim-numbered-list > li.callim-numbered-card > a > h2 { flex: 1; min-width: 0; }
+.callim-journal-heading { display: flex; align-items: center; gap: 12px; width: 100%; font-size: 0 !important; }
+.callim-journal-heading::before { content: attr(data-callim-title); flex: 1; min-width: 0; font-size: 16px; }
+.callim-journal-heading::after { content: attr(data-callim-date); margin-left: auto; flex-shrink: 0; color: #697683; font-size: 13px; font-weight: 400; white-space: nowrap; }
+.callim-hide-native-product-filter { display: none !important; }
+.callim-product-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 12px; }
+.callim-product-tabs button { border: 1px solid #d3d9df; border-radius: 5px; background: #fff; padding: 7px 13px; color: #52616a; font-size: 13px; cursor: pointer; }
+.callim-product-tabs button:hover { border-color: #3670c7; color: #2459a7; }
+.callim-product-tabs button.is-active { border-color: #3670c7; background: #e8f3fb; color: #2459a7; font-weight: 700; }

@@ -29,13 +29,15 @@ const TEMP_KEYWORDS = ['감사', '선물', '일상', '캘리그라피'];
 const categories = [
   { id: 'all', label: 'ALL' },
   { id: 'card', label: '카드' },
-  { id: 'postcard', label: '엽서' },
+  { id: 'mini-card', label: '미니카드' },
   { id: 'envelope', label: '봉투' },
+  { id: 'postcard', label: '엽서' },
   { id: 'lifestyle', label: '라이프스타일' },
 ];
 
 const categoryColors: Record<string, string> = {
   card: '#b67a68',
+  'mini-card': '#7653a6',
   postcard: '#c31aa6',
   envelope: '#3798ee',
   lifestyle: '#279843',
