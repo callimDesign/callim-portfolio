@@ -49,12 +49,19 @@
         "subtitle": "아날로그의 온기로 일상의 가치를 디자인합니다",
         "description": "소소한 일상의 기록부터 기업의 가치를 담는 브랜딩까지,\n캘리엠이 전하는 따스한 시각 언어"
       },
-      "mobileImageMode": "shared"
+      "mobileImageMode": "shared",
+      "framing": {
+        "desktop": {
+          "x": 12,
+          "y": 51,
+          "zoom": 1.3
+        }
+      }
     },
     {
       "name": "이미지 3",
       "enabled": true,
-      "image": "/media/main-hero/IMG_MAIN_NEW_02.jpg",
+      "image": "/media/따뜻한-크리스마스-페이퍼-플랫레이.png",
       "alt": "캘리엠 메인 이미지 3",
       "text": {
         "heading": "Little Things, More Precious",
