@@ -1,0 +1,23 @@
+{
+  "heroImage": "/media/poster_composite_2400x1600.webp",
+  "detailDesc": "상세 설명",
+  "closingText": "마무리",
+  "detailTitle": "제 15회 전국 성인문해교육 시화전",
+  "keywords": "Literacy / Learning / Community / Warmth",
+  "client": "국가평생교육진흥원",
+  "sections": [
+    {
+      "type": "paragraph",
+      "text": "문단 내용 작성 예정"
+    }
+  ],
+  "detailCategory": "Public Design / Editorial Design",
+  "desc": "한 사람의 배움과 용기 그리고 삶의 변화를 보여주는 시와 그림을 만날 수 있는 문해 시화전. ",
+  "scope": "Poster Design / Calendar / Teabag / Handkerchief / Pamplet ",
+  "title": "제 15회 전국 성인문해교육 시화전",
+  "conclusionTitle": "결론 제목",
+  "template": "portfolio-default",
+  "image": "/media/poster_composite_2400x1600.webp",
+  "year": 2026,
+  "category": "project"
+}
