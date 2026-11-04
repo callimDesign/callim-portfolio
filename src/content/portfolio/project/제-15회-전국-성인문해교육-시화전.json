@@ -177,5 +177,6 @@
   "template": "portfolio-default",
   "image": "/media/poster_composite_2400x1600.webp",
   "year": 2026,
-  "category": "project"
+  "category": "project",
+  "publishedAt": "2026-11-04T14:54:21+09:00"
 }
