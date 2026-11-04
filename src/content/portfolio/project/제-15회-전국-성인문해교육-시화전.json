@@ -1,5 +1,6 @@
 {
   "heroImage": "/media/poster_composite_2400x1600.webp",
+  "publishedAt": "2026-11-04T14:54:21+09:00",
   "detailDesc": "문해 학습자의 시와 손글씨, 꽃 그림을 연결해\n포스터부터 행사 인쇄물, 굿즈와 달력까지 하나의 모습으로 담았습니다.",
   "closingText": "하나의 주제에서 출발한 그림과 문장을\n포스터와 인쇄물, 생활 속 물건으로 이어갔습니다.\n캘리엠은 각 매체의 쓰임에 맞춘 디자인과 제작 발주를 통해\n행사의 기억을 일상에서도 만날 수 있는 형태로 담았습니다.",
   "detailTitle": "제 15회 전국 성인문해교육 시화전",
@@ -76,7 +77,7 @@
       "photoLayout": "two",
       "images": [
         {
-          "image": "/media/kakaotalk_20260826_152705017_12.jpg"
+          "image": "/media/kakaotalk_20260826_152705017_05.jpg"
         },
         {
           "image": "/media/kakaotalk_20260826_152705017_09.jpg"
@@ -177,6 +178,5 @@
   "template": "portfolio-default",
   "image": "/media/poster_composite_2400x1600.webp",
   "year": 2026,
-  "category": "project",
-  "publishedAt": "2026-11-04T14:54:21+09:00"
+  "category": "project"
 }
