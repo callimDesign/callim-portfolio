@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /content-preview
+
+Sitemap: https://callimdesign.com/sitemap.xml
