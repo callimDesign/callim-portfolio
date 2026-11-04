@@ -151,7 +151,7 @@
     },
     {
       "type": "photo",
-      "photoLayout": "one",
+      "photoLayout": "two",
       "images": [
         {
           "image": "/media/6-1.webp"
