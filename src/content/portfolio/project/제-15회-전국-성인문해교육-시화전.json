@@ -1,24 +1,181 @@
 {
   "heroImage": "/media/poster_composite_2400x1600.webp",
-  "detailDesc": "상세 설명",
-  "closingText": "마무리",
+  "detailDesc": "문해 학습자의 시와 손글씨, 꽃 그림을 연결해\n포스터부터 행사 인쇄물, 굿즈와 달력까지 하나의 모습으로 담았습니다.",
+  "closingText": "하나의 주제에서 출발한 그림과 문장을\n포스터와 인쇄물, 생활 속 물건으로 이어갔습니다.\n캘리엠은 각 매체의 쓰임에 맞춘 디자인과 제작 발주를 통해\n행사의 기억을 일상에서도 만날 수 있는 형태로 담았습니다.",
   "detailTitle": "제 15회 전국 성인문해교육 시화전",
-  "keywords": "Literacy / Learning / Community / Warmth",
+  "keywords": "Literacy / Poetry / Flowers / Everyday Life / Warmth",
   "client": "국가평생교육진흥원",
   "sections": [
     {
+      "type": "heading",
+      "heading": "배움의 문장을 꽃으로 담다"
+    },
+    {
       "type": "paragraph",
-      "text": "문단 내용 작성 예정"
+      "text": "시화전은 올해도 문해 학습자들이 자신의 삶을 담아 쓴 시에서 출발했습니다.\n문예진 작가의 캘리그라피와 캘리엠의 꽃 일러스트를 함께 구성해\n배움의 기쁨과 각자의 이야기가 따뜻하게 전해지도록 했습니다.\n행사의 주제가 여러 인쇄물과 제품에서도 이어지도록 디자인하고, 제작 발주까지 진행했습니다."
+    },
+    {
+      "type": "photo",
+      "photoLayout": "two",
+      "images": [
+        {
+          "image": "/media/1-1.webp"
+        },
+        {
+          "image": "/media/1-2.webp"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "heading": "글자와 꽃이 함께 피어나는 포스터"
+    },
+    {
+      "type": "paragraph",
+      "text": "‘문해, 배움의 시간을 담다’라는 손글씨와\n한글 자모가 꽃처럼 어우러진 그림을 중심으로 포스터를 구성했습니다.\n풍성한 꽃의 색감과 여백의 균형을 맞추고,\n가로형과 세로형 각각의 비율에 맞춰 제목과 행사 정보를 배치했습니다."
+    },
+    {
+      "type": "photo",
+      "photoLayout": "two",
+      "images": [
+        {
+          "image": "/media/2-1.jpg"
+        },
+        {
+          "image": "/media/2-2.webp"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "heading": "하나의 인상을 이어가는 행사 인쇄물"
+    },
+    {
+      "type": "paragraph",
+      "text": "포스터의 꽃 그림과 색감을 행사 인쇄물에도 이어 적용했습니다.\n매체의 크기와 담아야 할 정보에 맞춰 그림의 비중과 지면 구성을 조정해,\n서로 다른 인쇄물에서도 같은 행사의 인상이 자연스럽게 이어지도록 했습니다."
+    },
+    {
+      "type": "photo",
+      "photoLayout": "one",
+      "images": [
+        {
+          "image": "/media/kakaotalk_20260826_152705017_23.jpg"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "heading": "시 한 구절을 담은 작은 패키지"
+    },
+    {
+      "type": "paragraph",
+      "text": "밀크티백 4종에는 시화전 수상작의 시 구절과 꽃 그림을 담았습니다.\n작은 포장에서도 문장과 그림이 함께 눈에 들어오도록 구성하고,\n제품을 묶는 박스와 띠지까지 행사의 분위기를 이어갔습니다.\n차를 마시는 짧은 휴식 속에서도 시의 여운을 만날 수 있도록 디자인했습니다."
+    },
+    {
+      "type": "photo",
+      "photoLayout": "two",
+      "images": [
+        {
+          "image": "/media/kakaotalk_20260826_152705017_12.jpg"
+        },
+        {
+          "image": "/media/kakaotalk_20260826_152705017_09.jpg"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "heading": "펼쳐 쓰는 꽃 그림"
+    },
+    {
+      "type": "paragraph",
+      "text": "손수건에는 포스터의 꽃 그림과 주제 문구를 담아\n하나의 그림처럼 펼쳐 볼 수 있도록 구성했습니다.\n가장자리에 색을 더해 화면을 정돈하고,\n손수건과 스카프 등 여러 방식으로 활용할 수 있는 60×60cm 크기로 제작했습니다."
+    },
+    {
+      "type": "photo",
+      "photoLayout": "two",
+      "images": [
+        {
+          "image": "/media/3-1.webp"
+        },
+        {
+          "image": "/media/3-2.webp"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "heading": "일상에서 오래 사용하는 행사 굿즈"
+    },
+    {
+      "type": "paragraph",
+      "text": "장바구니는 넓게 펼쳤을 때 꽃 그림이 드러나고,\n사용하지 않을 때는 작게 접어 휴대할 수 있도록 제작했습니다.\n기관 로고는 별도 라벨에 배치해 그림과 조화를 이루도록 했습니다.\n행사를 기념하는 의미와 일상에서의 쓰임을 함께 고려한 디자인입니다."
+    },
+    {
+      "type": "photo",
+      "photoLayout": "one",
+      "images": [
+        {
+          "image": "/media/4.webp"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "heading": "열두 달에 담은 시와 꽃"
+    },
+    {
+      "type": "paragraph",
+      "text": "2027년 달력은 문해 학습자의 시 구절을 달마다 다른 꽃 그림과 연결했습니다.\n화분과 병 안에 문예진 작가의 캘리그라피를 배치해\n글씨와 그림이 하나의 장면으로 읽히도록 구성했습니다.\n꽃의 종류와 배경색에 변화를 주어 열두 장마다 서로 다른 분위기를 담았습니다."
+    },
+    {
+      "type": "photo",
+      "photoLayout": "two",
+      "images": [
+        {
+          "image": "/media/5-1.jpg"
+        },
+        {
+          "image": "/media/5-2.jpg"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "heading": "달이 지나도 곁에 남는 그림"
+    },
+    {
+      "type": "paragraph",
+      "text": "달력은 한 장씩 따로 사용할 수 있는 엽서형으로 제작했습니다.\n벽이나 책상 앞에 붙여 두고, 달이 지난 뒤에도 그림으로 간직할 수 있도록\n날짜 영역과 일러스트 영역을 나누어 구성했습니다.\n시간을 확인하는 기능에 시와 그림을 감상하는 즐거움을 더했습니다."
+    },
+    {
+      "type": "photo",
+      "photoLayout": "one",
+      "images": [
+        {
+          "image": "/media/6-1.webp"
+        },
+        {
+          "image": "/media/6-2.webp"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "\n"
+    },
+    {
+      "type": "paragraph",
+      "text": "디자인·일러스트레이션·제작 발주 진행 | 캘리엠\n캘리그라피 | 문예진\n시 구절 | 전국 성인문해교육 시화전 수상작 중 발췌"
     }
   ],
-  "detailCategory": "Public Design / Editorial Design",
+  "detailCategory": "Public Design / Editorial Design / Goods Design",
   "desc": "한 사람의 배움과 용기 그리고 삶의 변화를 보여주는 시와 그림을 만날 수 있는 문해 시화전. ",
-  "scope": "Poster Design / Calendar / Teabag / Handkerchief / Pamplet ",
+  "scope": "Poster / Pamphlet / Calendar / Goods / Packaging / Production Coordination",
   "title": "제 15회 전국 성인문해교육 시화전",
-  "conclusionTitle": "결론 제목",
+  "conclusionTitle": "시화전이 일상에 머물도록",
   "template": "portfolio-default",
   "image": "/media/poster_composite_2400x1600.webp",
   "year": 2026,
-  "category": "project",
-  "publishedAt": "2026-11-04T14:54:21+09:00"
+  "category": "project"
 }
