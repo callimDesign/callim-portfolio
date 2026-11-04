@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import logoImage from '../images/logo.png';
 import threadsIcon from '../images/icons/threads.png';
 import smartstoreIcon from '../images/icons/smartstore.png';
+import naverBlogIcon from '../images/icons/naver-blog.png';
 
 export const Footer = () => (
   <footer className="bg-brand-bg pt-14 md:pt-24 pb-8 md:pb-12 border-t border-brand-ink/5">
@@ -42,6 +43,15 @@ export const Footer = () => (
             className="w-7 h-7 rounded-full border border-brand-ink/10 flex items-center justify-center hover:bg-brand-ink hover:text-brand-bg transition-colors"
           >
             <img src={smartstoreIcon} alt="Smart Store" className="w-3.5 h-3.5 object-contain" />
+          </a>
+          <a
+            href="https://blog.naver.com/calli-m"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="캘리엠 네이버 블로그"
+            className="w-7 h-7 rounded-full border border-brand-ink/10 flex items-center justify-center hover:bg-brand-ink hover:text-brand-bg transition-colors"
+          >
+            <img src={naverBlogIcon} alt="" className="w-[14px] h-[14px] object-contain" aria-hidden="true" />
           </a>
           <a 
             href="https://calli-m.com/" 
