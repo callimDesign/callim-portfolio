@@ -1,6 +1,6 @@
 {
   "template": "home-hero",
-  "textMode": "shared",
+  "textMode": "individual",
   "sharedText": {
     "heading": "Little Things, More Precious",
     "subtitle": "아날로그의 온기로 일상의 가치를 디자인합니다",
