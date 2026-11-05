@@ -1,6 +1,6 @@
 {
   "template": "home-hero",
-  "textMode": "shared",
+  "textMode": "individual",
   "sharedText": {
     "heading": "Little Things, More Precious",
     "subtitle": "아날로그의 온기로 일상의 가치를 디자인합니다",
@@ -8,7 +8,7 @@
   },
   "slides": [
     {
-      "name": "이미지 1",
+      "name": "기본",
       "enabled": true,
       "image": "/media/main-hero/hero.webp",
       "mobileImageMode": "separate",
@@ -21,14 +21,14 @@
       }
     },
     {
-      "name": "이미지 5",
+      "name": "크리스마스 시즌",
       "enabled": true,
       "image": "/media/더스트-핑크-크리스마스-플랫레이.webp",
       "alt": "캘리엠 메인 이미지 5",
       "text": {
-        "heading": "Little Things, More Precious",
-        "subtitle": "아날로그의 온기로 일상의 가치를 디자인합니다",
-        "description": "소소한 일상의 기록부터 기업의 가치를 담는 브랜딩까지,\n캘리엠이 전하는 따스한 시각 언어"
+        "heading": "Open Me at Christmas",
+        "subtitle": "선물을 열기 전, 먼저 만나는 크리스마스 인사",
+        "description": "빨간 리본 옆에 슬쩍 끼워 둔 카드 한 장.\n안에 뭐가 들었는지는 비밀이어도, 반가운 마음은 먼저 전해져요."
       },
       "mobileImageMode": "shared",
       "framing": {
@@ -45,14 +45,14 @@
       }
     },
     {
-      "name": "이미지 2",
+      "name": "데일리",
       "enabled": true,
       "image": "/media/holiday-present-blue-.webp",
       "alt": "캘리엠 메인 이미지 2",
       "text": {
-        "heading": "Little Things, More Precious",
-        "subtitle": "아날로그의 온기로 일상의 가치를 디자인합니다",
-        "description": "소소한 일상의 기록부터 기업의 가치를 담는 브랜딩까지,\n캘리엠이 전하는 따스한 시각 언어"
+        "heading": "Daily Goods",
+        "subtitle": "안부를 전하고 일상을 기록하는 문구",
+        "description": "고마운 마음을 적는 카드와 엽서, 용돈을 담아 건네는 일러스트 봉투\n평소의 안부부터 특별한 날의 축하까지, 마음을 전하는 캘리엠의 문구"
       },
       "mobileImageMode": "shared",
       "framing": {
@@ -64,28 +64,35 @@
       }
     },
     {
-      "name": "이미지 3",
+      "name": "브랜딩·패키지",
       "enabled": true,
       "image": "/media/따뜻한-크리스마스-페이퍼-플랫레이.webp",
       "alt": "캘리엠 메인 이미지 3",
       "text": {
-        "heading": "Little Things, More Precious",
-        "subtitle": "아날로그의 온기로 일상의 가치를 디자인합니다",
-        "description": "소소한 일상의 기록부터 기업의 가치를 담는 브랜딩까지,\n캘리엠이 전하는 따스한 시각 언어"
+        "heading": "Brand Identity & Packaging",
+        "subtitle": "기업과 브랜드의 얼굴을 만드는 디자인",
+        "description": "기업을 상징하는 CI, 브랜드의 개성을 담은 BI\n로고에서 패키지까지, 한눈에 알아볼 수 있는 브랜드의 인상"
       },
       "mobileImageMode": "shared"
     },
     {
-      "name": "이미지 4",
+      "name": "프로젝트",
       "enabled": true,
       "image": "/media/main-hero/IMG_MAIN_NEW_03.jpg",
       "alt": "캘리엠 메인 이미지 4",
       "text": {
-        "heading": "Little Things, More Precious",
-        "subtitle": "아날로그의 온기로 일상의 가치를 디자인합니다",
-        "description": "소소한 일상의 기록부터 기업의 가치를 담는 브랜딩까지,\n캘리엠이 전하는 따스한 시각 언어"
+        "heading": "Design Projects",
+        "subtitle": "사람과 장소의 이야기를 담은 디자인 프로젝트",
+        "description": "누군가의 시와 그림은 전시로, 동네의 풍경은 한 장의 엽서로\n캘리엠이 여러 사람과 함께 만든 작업을 소개합니다"
       },
-      "mobileImageMode": "shared"
+      "mobileImageMode": "shared",
+      "framing": {
+        "mobile": {
+          "x": 50,
+          "y": 50,
+          "zoom": 1
+        }
+      }
     }
   ]
 }
