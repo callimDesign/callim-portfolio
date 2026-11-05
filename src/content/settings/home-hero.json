@@ -50,9 +50,9 @@
       "image": "/media/holiday-present-blue-.webp",
       "alt": "캘리엠 메인 이미지 2",
       "text": {
-        "heading": "Just Because",
-        "subtitle": "별일 없는 날에도, 문득 전하고 싶은 마음",
-        "description": "같이 웃었던 일이 생각나서, 고맙다는 말을 이제야 꺼내고 싶어서.\n그런 날 가볍게 건넬 카드와 엽서를 만듭니다."
+        "heading": "Daily Goods",
+        "subtitle": "안부를 전하고 일상을 기록하는 문구",
+        "description": "고마운 마음을 적는 카드와 엽서, 용돈을 담아 건네는 일러스트 봉투\n평소의 안부부터 특별한 날의 축하까지, 마음을 전하는 캘리엠의 문구"
       },
       "mobileImageMode": "shared",
       "framing": {
@@ -69,9 +69,9 @@
       "image": "/media/따뜻한-크리스마스-페이퍼-플랫레이.webp",
       "alt": "캘리엠 메인 이미지 3",
       "text": {
-        "heading": "Before You Open It",
-        "subtitle": "제품을 꺼내기 전부터 브랜드가 보이도록",
-        "description": "무엇을 만들고 왜 만드는지, 브랜드의 이야기부터 듣습니다.\n그 안에서 찾은 색과 글자를 라벨 한 장부터 상자 전체까지 이어갑니다."
+        "heading": "Brand Identity & Packaging",
+        "subtitle": "기업과 브랜드의 얼굴을 만드는 디자인",
+        "description": "기업을 상징하는 CI, 브랜드의 개성을 담은 BI\n로고에서 패키지까지, 한눈에 알아볼 수 있는 브랜드의 인상"
       },
       "mobileImageMode": "shared"
     },
@@ -81,11 +81,18 @@
       "image": "/media/main-hero/IMG_MAIN_NEW_03.jpg",
       "alt": "캘리엠 메인 이미지 4",
       "text": {
-        "heading": "Made Together",
+        "heading": "Design Projects",
         "subtitle": "사람과 장소의 이야기를 담은 디자인 프로젝트",
-        "description": "누군가의 시와 그림은 전시로, 동네의 풍경은 한 장의 엽서로.\n캘리엠이 여러 사람과 함께 만든 작업을 소개합니다."
+        "description": "누군가의 시와 그림은 전시로, 동네의 풍경은 한 장의 엽서로\n캘리엠이 여러 사람과 함께 만든 작업을 소개합니다"
       },
-      "mobileImageMode": "shared"
+      "mobileImageMode": "shared",
+      "framing": {
+        "mobile": {
+          "x": 50,
+          "y": 50,
+          "zoom": 1
+        }
+      }
     }
   ]
 }
