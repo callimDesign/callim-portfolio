@@ -1,0 +1,23 @@
+.hero-photo-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: var(--hero-layer-opacity, 0);
+}
+
+[data-hero-layer="solid"] .hero-photo-layer {
+  background: var(--hero-layer-color);
+}
+
+[data-hero-layer="gradient"] .hero-photo-layer {
+  background: radial-gradient(ellipse farthest-corner, var(--hero-layer-color) 0% 20%, transparent 100%);
+}
+
+[data-hero-layer="gradient"][data-hero-direction="top"] { --hero-fade: to bottom; }
+[data-hero-layer="gradient"][data-hero-direction="bottom"] { --hero-fade: to top; }
+[data-hero-layer="gradient"][data-hero-direction="left"] { --hero-fade: to right; }
+[data-hero-layer="gradient"][data-hero-direction="right"] { --hero-fade: to left; }
+
+[data-hero-layer="gradient"]:is([data-hero-direction="top"], [data-hero-direction="bottom"], [data-hero-direction="left"], [data-hero-direction="right"]) .hero-photo-layer {
+  background: linear-gradient(var(--hero-fade), var(--hero-layer-color), transparent);
+}

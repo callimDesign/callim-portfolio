@@ -1,4 +1,4 @@
-import { useState, useEffect, Fragment } from 'react';
+import { type CSSProperties, useState, useEffect, Fragment } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
@@ -33,6 +33,7 @@ export const Hero = ({settings = homeHero}: {settings?: typeof homeHero}) => {
   const active = slides[slideIndex(currentIndex)];
   const copy = settings.textMode === 'individual' ? active?.text : settings.sharedText;
   const frame = (active as any)?.framing || {};
+  const layer = frame.overlay || {};
   const imageStyle = (device: 'desktop' | 'mobile') => {
     const position = frame[device] || {};
     const x = Math.max(0, Math.min(100, Number(position.x ?? 50)));
@@ -68,7 +69,8 @@ export const Hero = ({settings = homeHero}: {settings?: typeof homeHero}) => {
         if (Math.abs(distance) > 50) setCurrentIndex(index => (index + (distance < 0 ? 1 : -1) + images.length) % images.length);
         setTouchStart(null);
       }}>
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0" data-hero-layer={layer.mode || 'none'} data-hero-direction={layer.direction || 'center'}
+        style={{ '--hero-layer-color': layer.color || '#000000', '--hero-layer-opacity': (layer.opacity ?? 40) / 100 } as CSSProperties}>
         <div className="md:hidden w-full h-full overflow-hidden relative">
           <AnimatePresence mode="popLayout">
             <motion.img key={currentIndex} src={(active as any).mobileImageMode === 'separate' && (active as any).mobileImage ? (active as any).mobileImage : active.image}
@@ -94,6 +96,7 @@ export const Hero = ({settings = homeHero}: {settings?: typeof homeHero}) => {
             />
           </AnimatePresence>
         </div>
+        <div className="hero-photo-layer" aria-hidden="true" />
       </div>
 
       {images.length > 1 && <>

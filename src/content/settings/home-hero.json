@@ -33,14 +33,19 @@
       "mobileImageMode": "shared",
       "framing": {
         "mobile": {
-          "x": 36,
-          "y": 38,
+          "x": 48,
+          "y": 47,
           "zoom": 1
         },
         "desktop": {
           "x": 46,
           "y": 89,
           "zoom": 1.2
+        },
+        "overlay": {
+          "mode": "gradient",
+          "direction": "bottom",
+          "opacity": 27
         }
       }
     },
@@ -60,6 +65,16 @@
           "x": 12,
           "y": 51,
           "zoom": 1.3
+        },
+        "overlay": {
+          "mode": "gradient",
+          "direction": "left",
+          "opacity": 36
+        },
+        "mobile": {
+          "x": 35,
+          "y": 13,
+          "zoom": 1.25
         }
       }
     },
@@ -73,7 +88,19 @@
         "subtitle": "기업과 브랜드의 얼굴을 만드는 디자인",
         "description": "기업을 상징하는 CI, 브랜드의 개성을 담은 BI\n로고에서 패키지까지, 한눈에 알아볼 수 있는 브랜드의 인상"
       },
-      "mobileImageMode": "shared"
+      "mobileImageMode": "shared",
+      "framing": {
+        "mobile": {
+          "x": 69,
+          "y": 53,
+          "zoom": 1
+        },
+        "overlay": {
+          "mode": "gradient",
+          "direction": "bottom",
+          "opacity": 19
+        }
+      }
     },
     {
       "name": "프로젝트",
@@ -88,9 +115,14 @@
       "mobileImageMode": "shared",
       "framing": {
         "mobile": {
-          "x": 50,
-          "y": 50,
-          "zoom": 1
+          "x": 41,
+          "y": 31,
+          "zoom": 1.15
+        },
+        "overlay": {
+          "mode": "gradient",
+          "direction": "left",
+          "opacity": 26
         }
       }
     }

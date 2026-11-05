@@ -19,3 +19,8 @@ ul.callim-numbered-list > li.callim-numbered-card > a > h2 { flex: 1; min-width:
 .callim-product-tabs button { border: 1px solid #d3d9df; border-radius: 5px; background: #fff; padding: 7px 13px; color: #52616a; font-size: 13px; cursor: pointer; }
 .callim-product-tabs button:hover { border-color: #3670c7; color: #2459a7; }
 .callim-product-tabs button.is-active { border-color: #3670c7; background: #e8f3fb; color: #2459a7; font-weight: 700; }
+
+.hero-layer-controls { display: grid; gap: 12px; padding: 14px; border: 1px solid #d5d9de; border-radius: 6px; }
+.hero-layer-controls label { display: grid; gap: 6px; max-width: 520px; }
+.hero-layer-controls select { padding: 6px; }
+.hero-layer-controls input[type="range"] { width: 100%; }
